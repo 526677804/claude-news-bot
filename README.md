@@ -422,7 +422,17 @@ python3 push_to_feishu.py
 
 ### 定时任务设置
 
-#### 方式一：服务器 systemd（推荐，配置见 deploy/）
+#### 方式一：GitHub Actions（推荐，零服务器成本）
+- 配置文件：`.github/workflows/daily-news.yml`，每天 UTC 02:00（北京 10:00）自动运行，也可在 Actions 页面手动触发
+- 需要在仓库 **Settings → Secrets and variables → Actions** 配置 3 个 secret：
+  - `LARK_APP_ID`：飞书应用 App ID
+  - `LARK_APP_SECRET`：飞书应用 App Secret
+  - `TWITTERAPI_IO_KEY`：twitterapi.io 的 API Key
+- 优势：公开仓库 Actions 免费无限量；runner 在海外，所有海外信息源直连；全 bot 身份认证无需扫码，天然适配 CI
+- 注意：Actions cron 有 3~15 分钟浮动；每次运行的 raw/news 产物会归档为 artifact 保留 14 天
+- **限制：互动指令机器人（bot_listener）是常驻进程，无法跑在 Actions 上**，需要单独宿主（本机 manage.sh 或服务器 systemd）
+
+#### 方式二：服务器 systemd（备选，配置见 deploy/）
 ```bash
 # 服务器上 clone 仓库到 /opt/claude-news-bot 后：
 sudo bash deploy/setup.sh
@@ -434,9 +444,9 @@ sudo bash deploy/setup.sh
 2. `.env` 已配置 `TWITTERAPI_IO_KEY`
 3. 部署后运行 `python3 test_sources.py` 复测所有信息源连通性
 
-#### 方式二：豆包定时任务（当前使用方式）
+#### 方式三：豆包定时任务（当前使用方式，待下线）
 - 每天 10:00 触发，由 AI 执行完整流程（采集 → AI 整理 → 推送）
-- 服务器 systemd 上线后应停用，避免重复推送
+- GitHub Actions 或 systemd 上线后应停用，避免重复推送
 
 ### 互动机器人后台运行
 ```bash

@@ -1,0 +1,53 @@
+name: 每日资讯推送
+
+on:
+  schedule:
+    # UTC 02:00 = 北京时间 10:00（Actions 定时有 3~15 分钟浮动，属正常现象）
+    - cron: '0 2 * * *'
+  workflow_dispatch: {}   # 支持在 Actions 页面手动触发，方便测试
+
+jobs:
+  fetch-and-push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装 Python 依赖
+        run: pip install -r requirements.txt
+
+      - name: 安装并配置 lark-cli（bot 身份，无需扫码）
+        env:
+          LARK_APP_ID: ${{ secrets.LARK_APP_ID }}
+          LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
+        run: |
+          npm install -g @larksuite/cli
+          printf '%s' "$LARK_APP_SECRET" | lark-cli config init --app-id "$LARK_APP_ID" --app-secret-stdin
+
+      - name: 采集资讯
+        env:
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+        run: python3 fetch_news.py
+
+      - name: 生成报告
+        run: python3 generate_report.py
+
+      - name: 推送到飞书
+        run: python3 push_to_feishu.py
+
+      - name: 归档当日产物（便于回查）
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-${{ github.run_id }}
+          path: |
+            raw_news_*.json
+            news_*.md
+          retention-days: 14
