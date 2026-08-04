@@ -497,10 +497,8 @@ systemctl status claude-news-bot
 
 ### 4. 飞书 CLI 依赖与身份策略
 - 推送功能依赖 `lark-cli` 命令，不同环境需要单独配置飞书认证
-- **身份策略（v2.6 起）**：
-  - **写操作（发消息/告警/回复）走 bot 身份**（`--as bot`）：只依赖 App ID + Secret，无需用户授权，服务器无人值守更可靠；消息以机器人名义发送
-  - **读操作（读群消息/群成员）暂走用户身份**（`--as user`）：bot 的读 scope 在应用新版本中，等企业管理员审批通过后可全部切换为 bot
-- 前置条件：lark-cli 应用的机器人已加入目标群（本群已加入）
+- **身份策略（v2.6 起）**：所有 lark-cli 调用（读+写）均走 **bot 身份**（`--as bot`），只依赖 App ID + Secret，不依赖任何个人用户授权，服务器无人值守可靠；消息以机器人名义发送
+- 前置条件：lark-cli 应用的机器人已加入目标群（本群已加入），且应用已开通 bot 的收发消息、查看群成员等权限（已开通）
 - 注意：open_id 是按应用签发的，更换 lark-cli 应用后需重新解析 `feishu.admin_user_ids`（用 `lark-cli im +chat-members-list` 查群成员即可）
 
 ### 5. 消息轮询延迟
@@ -571,9 +569,9 @@ systemctl status claude-news-bot
 ## 📝 版本历史
 
 ### v2.6 (当前版本)
-- 飞书发送身份从用户切换为 bot（`--as bot`）：无需用户授权 scope，服务器部署更可靠，消息以机器人名义发送
-- 读操作显式走用户身份（bot 读 scope 待企业管理员审批应用新版本）
+- 飞书调用全面切换为 bot 身份（`--as bot`，读+写）：只依赖 App ID + Secret，零个人授权依赖，服务器部署可靠，消息以机器人名义发送
 - lark-cli 机器人已加入资讯群；管理员 open_id 更新为本应用签发的新值
+- 应用版本 1.0.2 已发布，bot 读写 scope 均已生效（实测验证）
 
 ### v2.5
 - X 采集改为双通道：twitterapi.io API 优先（API Key 走 `.env`/环境变量，未配置自动回退 nitter）

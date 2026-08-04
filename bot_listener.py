@@ -98,9 +98,8 @@ def save_known_members(members: List[str]):
 def get_chat_members(chat_id: str) -> List[dict]:
     """获取群成员列表"""
     try:
-        # 读操作走用户身份（bot 的读 scope 待应用新版本审批，通过后可切 --as bot）
         cmd = [
-            'lark-cli', 'im', '+chat-members-list', '--as', 'user',
+            'lark-cli', 'im', '+chat-members-list', '--as', 'bot',
             '--chat-id', chat_id,
             '--page-size', '100',
             '--format', 'json'
@@ -186,9 +185,8 @@ def check_new_members(chat_id: str) -> List[dict]:
 def get_new_messages(chat_id: str, last_message_id: str = '') -> List[dict]:
     """获取群里的新消息"""
     try:
-        # 读操作走用户身份（bot 的读 scope 待应用新版本审批，通过后可切 --as bot）
         cmd = [
-            'lark-cli', 'im', '+chat-messages-list', '--as', 'user',
+            'lark-cli', 'im', '+chat-messages-list', '--as', 'bot',
             '--chat-id', chat_id,
             '--page-size', '20',
             '--order', 'desc',
