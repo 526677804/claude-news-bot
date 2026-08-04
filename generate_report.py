@@ -41,6 +41,11 @@ def main():
     with open(raw_file, 'r', encoding='utf-8') as f:
         raw = json.load(f)
 
+    # 宁缺毋滥：当天没有任何新内容时不生成报告（调用方据此跳过推送）
+    if not raw.get('items'):
+        print("ℹ️ 今日无新增资讯，跳过报告生成")
+        sys.exit(0)
+
     categorized = raw.get('categorized', {})
     sections = config.get('output', {}).get('sections', {})
     date_str = datetime.now().strftime('%Y-%m-%d')

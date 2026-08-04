@@ -34,6 +34,7 @@ def build_prompt(today: str) -> str:
 - 每条格式：**加粗标题**（英文标题翻译成中文或保留原文均可，以可读为准）+ 一句话摘要/点评（说清楚"这条为什么值得看"）+ 🔗 来源链接（原样保留，不得改动 URL）
 - 语言：简体中文，简洁专业，适合技术和非技术读者
 - 事实必须来自 JSON 数据，不得编造内容或链接
+- **如果 JSON 的 items 为空，或没有任何值得推送的内容，不要创建 news 文件**，直接结束并说明原因（当天将跳过推送）
 
 只创建/覆盖 news_{today}.md 这一个文件，不要修改任何其他文件。"""
 
@@ -71,8 +72,14 @@ def main():
         print(f'❌ AI 代理启动失败: {e}')
         sys.exit(1)
 
-    # 校验产出：文件存在且内容像一份有效报告
+    # 无新内容时 AI 按约定不生成文件，属正常跳过（区别于生成失败）
+    import json
+    with open(raw_file, 'r', encoding='utf-8') as f:
+        has_items = bool(json.load(f).get('items'))
     if not os.path.exists(out_file):
+        if not has_items:
+            print('ℹ️ 今日无新增资讯，AI 按约定跳过报告生成')
+            sys.exit(0)
         print('❌ AI 未生成报告文件')
         sys.exit(2)
     content = open(out_file, 'r', encoding='utf-8').read()

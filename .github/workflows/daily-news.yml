@@ -40,11 +40,20 @@ jobs:
         run: python3 fetch_news.py
 
       - name: 生成报告（AI 整理优先，失败自动降级模板整理）
+        id: report
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-        run: python3 ai_report.py || python3 generate_report.py
+        run: |
+          python3 ai_report.py || python3 generate_report.py
+          if [ -f "news_$(date +%Y%m%d).md" ]; then
+            echo "has_report=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_report=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️ 今日无新增资讯，跳过推送"
+          fi
 
       - name: 推送到飞书
+        if: steps.report.outputs.has_report == 'true'
         run: python3 push_to_feishu.py
 
       - name: 更新已推送记录（防止旧闻重复推送）
