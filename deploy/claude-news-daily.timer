@@ -1,0 +1,10 @@
+[Unit]
+Description=每天 10:00（北京时间）触发 Claude Code 资讯推送
+
+[Timer]
+OnCalendar=*-*-* 10:00:00 Asia/Shanghai
+# 服务器宕机错过触发点时，恢复后补跑一次
+Persistent=true
+
+[Install]
+WantedBy=timers.target

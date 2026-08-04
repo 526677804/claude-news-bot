@@ -1,0 +1,14 @@
+[Unit]
+Description=Claude Code 资讯互动指令机器人（常驻监听群消息）
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/claude-news-bot
+ExecStart=/usr/bin/python3 bot_listener.py
+Restart=always
+RestartSec=10
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target

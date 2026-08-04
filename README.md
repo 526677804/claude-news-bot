@@ -21,13 +21,20 @@
 claude-news-bot/
 ├── config.json              # 配置文件（核心）
 ├── fetch_news.py            # 资讯采集脚本
+├── generate_report.py       # 报告生成脚本（无 AI 环境的降级整理）
 ├── push_to_feishu.py        # 飞书推送脚本
 ├── bot_listener.py          # 互动指令监听机器人
-├── manage.sh                # 运维管理脚本
+├── manage.sh                # 运维管理脚本（本地/手动模式）
 ├── test_sources.py          # 信息源测试脚本
 ├── welcome_message.txt      # 新成员欢迎消息
+├── requirements.txt         # Python 依赖
 ├── .env.example             # 环境变量模板（API Key 配置）
 ├── .gitignore               # Git 忽略配置
+├── deploy/                  # 服务器部署配置
+│   ├── setup.sh             # 一键部署脚本（Ubuntu/Debian）
+│   ├── claude-news-daily.service   # 每日采集推送（systemd oneshot）
+│   ├── claude-news-daily.timer     # 每天 10:00 触发（systemd timer）
+│   └── claude-news-bot.service     # 互动机器人常驻服务
 └── README.md                # 本说明文档
 ```
 
@@ -389,7 +396,7 @@ python3 test_sources.py
 
 ### 安装依赖
 ```bash
-pip3 install requests feedparser
+pip3 install -r requirements.txt
 ```
 
 ### 手动运行
@@ -397,34 +404,47 @@ pip3 install requests feedparser
 # 1. 采集资讯
 python3 fetch_news.py
 
-# 2. AI 整理（需要 AI 介入，读取 raw_news_*.json 生成 news_*.md）
+# 2. 整理报告（二选一）
+#    首选：AI 整理（阅读 raw_news_*.json，生成带摘要/点评/TOP 1 的 news_*.md）
+#    降级：模板化整理（无 AI 环境下保证链路可用）
+python3 generate_report.py
 
 # 3. 推送到飞书
 python3 push_to_feishu.py
 ```
 
+### 整理环节的两种模式
+
+| 模式 | 执行者 | 质量 | 适用场景 |
+|------|--------|------|---------|
+| AI 整理 | 豆包定时任务中的 AI / 其他 AI 代理 | 高（摘要、点评、TOP 1 精选） | 首选 |
+| 降级整理 | `generate_report.py`（纯模板） | 基础（标题+链接+板块分类） | 服务器无 AI 时兜底 |
+
 ### 定时任务设置
 
-#### 方式一：crontab（Linux/macOS）
+#### 方式一：服务器 systemd（推荐，配置见 deploy/）
 ```bash
-# 编辑 crontab
-crontab -e
-
-# 添加一行（每天 10:00 运行）
-0 10 * * * cd /path/to/claude-news-bot && python3 fetch_news.py && python3 push_to_feishu.py
+# 服务器上 clone 仓库到 /opt/claude-news-bot 后：
+sudo bash deploy/setup.sh
+# 会安装依赖、注册 systemd timer（每天 10:00 北京时间）和互动机器人常驻服务
 ```
 
+部署前置条件（setup.sh 会检查并提示）：
+1. `lark-cli` 已安装，`config init` 完成，且用户身份有 `im:message.send_as_user` scope
+2. `.env` 已配置 `TWITTERAPI_IO_KEY`
+3. 部署后运行 `python3 test_sources.py` 复测所有信息源连通性
+
 #### 方式二：豆包定时任务（当前使用方式）
-- 使用豆包平台的定时任务功能
-- 每天 10:00 触发，由 AI 执行完整流程（采集 → 整理 → 推送）
+- 每天 10:00 触发，由 AI 执行完整流程（采集 → AI 整理 → 推送）
+- 服务器 systemd 上线后应停用，避免重复推送
 
 ### 互动机器人后台运行
 ```bash
-# 启动
-./manage.sh start
+# 服务器（systemd，随 setup.sh 自动注册，崩溃自动重启、开机自启）
+systemctl status claude-news-bot
 
-# 设为开机自启（可选）
-# 需要配置 systemd 或其他方式
+# 本地/手动模式
+./manage.sh start
 ```
 
 ---

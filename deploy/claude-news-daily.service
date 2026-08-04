@@ -1,0 +1,11 @@
+[Unit]
+Description=Claude Code 每日资讯：采集、整理并推送到飞书
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/claude-news-bot
+ExecStart=/bin/bash -c 'python3 fetch_news.py && python3 generate_report.py && python3 push_to_feishu.py'
+# lark-cli 和 python3 的安装路径按实际环境调整
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
