@@ -453,9 +453,9 @@ sudo bash deploy/setup.sh
 2. `.env` 已配置 `TWITTERAPI_IO_KEY`
 3. 部署后运行 `python3 test_sources.py` 复测所有信息源连通性
 
-#### 方式三：豆包定时任务（当前使用方式，待下线）
-- 每天 10:00 触发，由 AI 执行完整流程（采集 → AI 整理 → 推送）
-- GitHub Actions 或 systemd 上线后应停用，避免重复推送
+#### 方式三：豆包定时任务（已于 2026-08-04 停用）
+- 曾经的方式：每天 10:00 触发，由 AI 执行完整流程（采集 → AI 整理 → 推送）
+- 已被 GitHub Actions 替代并暂停；如需恢复可在豆包对话中说"恢复定时任务"
 
 ### 互动机器人后台运行
 ```bash
@@ -577,11 +577,9 @@ systemctl status claude-news-bot
 - **管理员 open_id**：ou_ec49eba4f8ac4c6d7d799e04929c65e6（本应用签发；旧值 ou_e8baac73... 属豆包应用，已作废）
 - **管理员邮箱**：changtao@vastai3d.com
 
-### 定时任务（豆包平台）
-- **任务名称**：Claude Code 每日资讯推送
-- **任务 ID**：11314484045058
-- **cron 表达式**：`0 10 * * *`（每天 10:00）
-- **状态**：运行中
+### 定时任务
+- **当前方式**：GitHub Actions（`.github/workflows/daily-news.yml`，每天北京时间 10:00）
+- **豆包旧任务**：Claude Code 每日资讯推送（任务 ID 11314484045058），已于 2026-08-04 停用
 
 ---
 
