@@ -553,7 +553,7 @@ systemctl status claude-news-bot
 ### 飞书相关
 - **群名称**：Claude Code 每日资讯
 - **群 Chat ID**：oc_ed60c1bee04f5d29cdbce9f929eaf6f1
-- **群链接**：https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=4bat0a05-8af7-42ba-bd36-f33c5896fbf0
+- **群链接**：（公开仓库不放邀请链接，入群请联系管理员）
 - **lark-cli 应用**：畅涛's Feishu CLI（App ID: cli_aafa3defaf389bef，机器人已入群）
 - **管理员 open_id**：ou_ec49eba4f8ac4c6d7d799e04929c65e6（本应用签发；旧值 ou_e8baac73... 属豆包应用，已作废）
 - **管理员邮箱**：changtao@vastai3d.com
