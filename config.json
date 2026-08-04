@@ -1,0 +1,181 @@
+{
+  "keywords": [
+    "Claude Code",
+    "ClaudeCode",
+    "Anthropic",
+    "Claude 3.5",
+    "Claude 3.5 Sonnet",
+    "Claude 3 Opus",
+    "Claude 3 Haiku",
+    "Dario Amodei",
+    "Daniela Amodei",
+    "Claude AI",
+    "Anthropic Claude",
+    "Claude API",
+    "Claude 4",
+    "Claude Opus",
+    "Claude Sonnet"
+  ],
+  "sources": {
+    "official_blog": {
+      "enabled": true,
+      "url": "https://www.anthropic.com/news",
+      "name": "Anthropic 官方博客",
+      "reliability": "official"
+    },
+    "claude_code_releases": {
+      "enabled": true,
+      "url": "https://github.com/anthropics/claude-code/releases.atom",
+      "name": "Claude Code 版本发布",
+      "reliability": "official"
+    },
+    "github": {
+      "enabled": true,
+      "name": "GitHub",
+      "reliability": "high"
+    },
+    "hackernews": {
+      "enabled": true,
+      "name": "Hacker News",
+      "reliability": "high"
+    },
+    "techcrunch": {
+      "enabled": true,
+      "name": "TechCrunch",
+      "reliability": "high",
+      "url": "https://techcrunch.com/tag/anthropic/"
+    },
+    "theverge": {
+      "enabled": true,
+      "name": "The Verge",
+      "reliability": "high",
+      "url": "https://www.theverge.com/ai-artificial-intelligence"
+    },
+    "arstechnica": {
+      "enabled": true,
+      "name": "Ars Technica",
+      "reliability": "high",
+      "url": "https://arstechnica.com/ai/"
+    },
+    "reddit": {
+      "enabled": true,
+      "subreddits": ["ClaudeAI", "Anthropic"],
+      "name": "Reddit",
+      "reliability": "medium"
+    },
+    "v2ex": {
+      "enabled": false,
+      "name": "V2EX",
+      "nodes": ["programmer", "create", "share", "ai"],
+      "reliability": "medium"
+    },
+    "twitter": {
+      "enabled": true,
+      "name": "X (Twitter)",
+      "reliability": "high",
+      "api_provider": {
+        "name": "twitterapi.io",
+        "base_url": "https://api.twitterapi.io",
+        "api_key_env": "TWITTERAPI_IO_KEY"
+      },
+      "nitter_instances": [
+        "https://nitter.net",
+        "https://nitter.perennialte.ch"
+      ],
+      "max_age_hours": 36,
+      "account_groups": {
+        "official": {
+          "name": "官方账号",
+          "filter_by_keywords": false,
+          "score": 90,
+          "accounts": ["AnthropicAI", "claudeai"]
+        },
+        "claude_code_team": {
+          "name": "Claude Code 核心团队",
+          "filter_by_keywords": false,
+          "score": 80,
+          "accounts": [
+            "bcherny",
+            "catwu",
+            "trq212",
+            "noahzweben",
+            "amorriscode",
+            "alexalbert__",
+            "neilhtennek",
+            "lydiahallie"
+          ]
+        },
+        "founders": {
+          "name": "Anthropic 创始人",
+          "filter_by_keywords": true,
+          "score": 70,
+          "accounts": ["DarioAmodei", "DanielaAmodei", "jackclarkSF", "jaredkaplan"]
+        },
+        "researchers": {
+          "name": "核心研究员",
+          "filter_by_keywords": true,
+          "score": 60,
+          "accounts": ["karpathy", "sleepinyourhat", "ch402", "johnschulman2", "amandaaskell"]
+        }
+      }
+    },
+    "kol_blogs": {
+      "enabled": true,
+      "name": "KOL 博客",
+      "reliability": "high",
+      "feeds": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/atom/everything/"
+        }
+      ]
+    }
+  },
+  "output": {
+    "language": "zh-CN",
+    "sections": {
+      "official": {
+        "title": "📌 官方动态",
+        "max_items": 3,
+        "description": "Anthropic 官方发布的更新、公告、博客"
+      },
+      "industry": {
+        "title": "🏢 行业资讯",
+        "max_items": 3,
+        "description": "权威科技媒体的相关报道"
+      },
+      "tools": {
+        "title": "🛠️ 工具推荐",
+        "max_items": 3,
+        "description": "实用的开源项目、插件、工具"
+      },
+      "community": {
+        "title": "💡 社区精选",
+        "max_items": 3,
+        "description": "社区热门讨论和实用技巧"
+      }
+    }
+  },
+  "schedule": {
+    "time": "10:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "feishu": {
+    "chat_id": "oc_ed60c1bee04f5d29cdbce9f929eaf6f1",
+    "chat_name": "Claude Code 每日资讯",
+    "admin_user_id": "ou_e8baac7349338da94493c8db654d7227",
+    "admin_user_ids": [
+      "ou_e8baac7349338da94493c8db654d7227"
+    ]
+  },
+  "quality": {
+    "min_relevance_score": 0.6,
+    "enable_ai_summary": true,
+    "enable_value_comment": true,
+    "enable_top_pick": true
+  },
+  "retry": {
+    "max_retries": 2,
+    "retry_delay": 3
+  }
+}
