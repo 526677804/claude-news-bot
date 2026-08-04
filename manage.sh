@@ -38,7 +38,8 @@ start() {
     echo "🚀 启动 Claude Code 资讯机器人..."
     
     # 启动机器人
-    nohup python3 "$BOT_SCRIPT" > "$LOG_FILE" 2>&1 &
+    # -u：无缓冲输出，保证日志实时写入文件
+    nohup python3 -u "$BOT_SCRIPT" > "$LOG_FILE" 2>&1 &
     local pid=$!
     echo "$pid" > "$PID_FILE"
     
