@@ -703,7 +703,8 @@ def send_admin_alert(config: dict, alert_msg: str) -> bool:
     
     try:
         result = subprocess.run(
-            ['lark-cli', 'im', '+messages-send', '--user-id', admin_user_id, '--text', text],
+            ['lark-cli', 'im', '+messages-send', '--as', 'bot',
+             '--user-id', admin_user_id, '--text', text],
             capture_output=True, text=True, timeout=30
         )
         if result.returncode == 0:

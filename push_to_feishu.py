@@ -24,9 +24,9 @@ def send_to_feishu(chat_id: str, content: str, msg_type: str = 'markdown') -> bo
     使用 lark-cli 命令行工具
     """
     try:
-        # 使用 lark-cli 发送消息
+        # 使用 lark-cli 以机器人身份发送消息
         cmd = [
-            'lark-cli', 'im', '+messages-send',
+            'lark-cli', 'im', '+messages-send', '--as', 'bot',
             '--chat-id', chat_id,
             '--markdown', content
         ]
@@ -54,7 +54,7 @@ def send_text_message(chat_id: str, text: str) -> bool:
     """发送纯文本消息"""
     try:
         cmd = [
-            'lark-cli', 'im', '+messages-send',
+            'lark-cli', 'im', '+messages-send', '--as', 'bot',
             '--chat-id', chat_id,
             '--text', text
         ]
@@ -96,7 +96,7 @@ def send_alert_to_admin(admin_user_id: str, error_msg: str) -> bool:
 """.strip()
         
         cmd = [
-            'lark-cli', 'im', '+messages-send',
+            'lark-cli', 'im', '+messages-send', '--as', 'bot',
             '--user-id', admin_user_id,
             '--text', alert_text
         ]

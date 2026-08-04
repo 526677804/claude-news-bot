@@ -495,10 +495,13 @@ systemctl status claude-news-bot
 - VM 重启或会话结束后进程会停止
 - 建议：生产环境使用 systemd 或 supervisor 管理
 
-### 4. 飞书 CLI 依赖
-- 推送功能依赖 `lark-cli` 命令
-- 不同环境需要单独配置飞书认证
-- 确保 lark-cli 已登录并有权限发送消息
+### 4. 飞书 CLI 依赖与身份策略
+- 推送功能依赖 `lark-cli` 命令，不同环境需要单独配置飞书认证
+- **身份策略（v2.6 起）**：
+  - **写操作（发消息/告警/回复）走 bot 身份**（`--as bot`）：只依赖 App ID + Secret，无需用户授权，服务器无人值守更可靠；消息以机器人名义发送
+  - **读操作（读群消息/群成员）暂走用户身份**（`--as user`）：bot 的读 scope 在应用新版本中，等企业管理员审批通过后可全部切换为 bot
+- 前置条件：lark-cli 应用的机器人已加入目标群（本群已加入）
+- 注意：open_id 是按应用签发的，更换 lark-cli 应用后需重新解析 `feishu.admin_user_ids`（用 `lark-cli im +chat-members-list` 查群成员即可）
 
 ### 5. 消息轮询延迟
 - 互动指令使用轮询方式，每 10 秒检查一次
@@ -553,7 +556,8 @@ systemctl status claude-news-bot
 - **群名称**：Claude Code 每日资讯
 - **群 Chat ID**：oc_ed60c1bee04f5d29cdbce9f929eaf6f1
 - **群链接**：https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=4bat0a05-8af7-42ba-bd36-f33c5896fbf0
-- **管理员 open_id**：ou_e8baac7349338da94493c8db654d7227
+- **lark-cli 应用**：畅涛's Feishu CLI（App ID: cli_aafa3defaf389bef，机器人已入群）
+- **管理员 open_id**：ou_ec49eba4f8ac4c6d7d799e04929c65e6（本应用签发；旧值 ou_e8baac73... 属豆包应用，已作废）
 - **管理员邮箱**：changtao@vastai3d.com
 
 ### 定时任务（豆包平台）
@@ -566,7 +570,12 @@ systemctl status claude-news-bot
 
 ## 📝 版本历史
 
-### v2.5 (当前版本)
+### v2.6 (当前版本)
+- 飞书发送身份从用户切换为 bot（`--as bot`）：无需用户授权 scope，服务器部署更可靠，消息以机器人名义发送
+- 读操作显式走用户身份（bot 读 scope 待企业管理员审批应用新版本）
+- lark-cli 机器人已加入资讯群；管理员 open_id 更新为本应用签发的新值
+
+### v2.5
 - X 采集改为双通道：twitterapi.io API 优先（API Key 走 `.env`/环境变量，未配置自动回退 nitter）
 - API 途径带互动数据（点赞/转发）作为热度加分
 - 新增采集失败告警：X 源全部失败或可疑 0 条时私信管理员
