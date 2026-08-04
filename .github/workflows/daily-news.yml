@@ -6,6 +6,9 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch: {}   # 支持在 Actions 页面手动触发，方便测试
 
+permissions:
+  contents: write   # 推送成功后把已推送记录 seen_urls.json 写回仓库
+
 jobs:
   fetch-and-push:
     runs-on: ubuntu-latest
@@ -21,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: 安装 Python 依赖
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt cursor-sdk
 
       - name: 安装并配置 lark-cli（bot 身份，无需扫码）
         env:
@@ -36,11 +39,24 @@ jobs:
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
         run: python3 fetch_news.py
 
-      - name: 生成报告
-        run: python3 generate_report.py
+      - name: 生成报告（AI 整理优先，失败自动降级模板整理）
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: python3 ai_report.py || python3 generate_report.py
 
       - name: 推送到飞书
         run: python3 push_to_feishu.py
+
+      - name: 更新已推送记录（防止旧闻重复推送）
+        run: |
+          python3 mark_seen.py
+          git add seen_urls.json
+          if ! git diff --cached --quiet; then
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -m "chore: 更新已推送记录 [skip ci]"
+            git push
+          fi
 
       - name: 归档当日产物（便于回查）
         if: always()

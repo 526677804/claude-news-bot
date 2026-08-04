@@ -21,7 +21,10 @@
 claude-news-bot/
 ├── config.json              # 配置文件（核心）
 ├── fetch_news.py            # 资讯采集脚本
-├── generate_report.py       # 报告生成脚本（无 AI 环境的降级整理）
+├── ai_report.py             # AI 整理脚本（Cursor SDK 无头代理，首选）
+├── generate_report.py       # 模板整理脚本（AI 不可用时的降级方案）
+├── mark_seen.py             # 已推送记录维护（推送成功后运行）
+├── seen_urls.json           # 已推送 URL 记录（保留 60 天，Actions 自动回写）
 ├── push_to_feishu.py        # 飞书推送脚本
 ├── bot_listener.py          # 互动指令监听机器人
 ├── manage.sh                # 运维管理脚本（本地/手动模式）
@@ -417,17 +420,23 @@ python3 push_to_feishu.py
 
 | 模式 | 执行者 | 质量 | 适用场景 |
 |------|--------|------|---------|
-| AI 整理 | 豆包定时任务中的 AI / 其他 AI 代理 | 高（摘要、点评、TOP 1 精选） | 首选 |
-| 降级整理 | `generate_report.py`（纯模板） | 基础（标题+链接+板块分类） | 服务器无 AI 时兜底 |
+| AI 整理 | `ai_report.py`（Cursor SDK 无头代理，需 `CURSOR_API_KEY`） | 高（摘要、点评、TOP 1 精选、择优） | 首选，Actions 中自动优先 |
+| 降级整理 | `generate_report.py`（纯模板） | 基础（标题+链接+板块分类） | AI 不可用时自动兜底 |
+
+### 编辑原则（两种模式共同遵守）
+- **宁缺毋滥**：板块没有新内容就整个省略，不硬塞旧闻；TOP 1 仅在官方有真正重要内容时设置
+- **择优**：内容超量时按重要性、时效性、影响面挑选（AI 模式），模板模式按分数排序取前 N
+- **不重复**：已推送过的 URL 记录在 `seen_urls.json`（保留 60 天），后续采集自动过滤
 
 ### 定时任务设置
 
 #### 方式一：GitHub Actions（推荐，零服务器成本）
 - 配置文件：`.github/workflows/daily-news.yml`，每天 UTC 02:00（北京 10:00）自动运行，也可在 Actions 页面手动触发
-- 需要在仓库 **Settings → Secrets and variables → Actions** 配置 3 个 secret：
-  - `LARK_APP_ID`：飞书应用 App ID
-  - `LARK_APP_SECRET`：飞书应用 App Secret
-  - `TWITTERAPI_IO_KEY`：twitterapi.io 的 API Key
+- 需要在仓库 **Settings → Secrets and variables → Actions** 配置 secret：
+  - `LARK_APP_ID`：飞书应用 App ID（必需）
+  - `LARK_APP_SECRET`：飞书应用 App Secret（必需）
+  - `TWITTERAPI_IO_KEY`：twitterapi.io 的 API Key（必需）
+  - `CURSOR_API_KEY`：Cursor API Key，用于 AI 整理（可选，缺省时自动降级模板整理）
 - 优势：公开仓库 Actions 免费无限量；runner 在海外，所有海外信息源直连；全 bot 身份认证无需扫码，天然适配 CI
 - 注意：Actions cron 有 3~15 分钟浮动；每次运行的 raw/news 产物会归档为 artifact 保留 14 天
 - **限制：互动指令机器人（bot_listener）是常驻进程，无法跑在 Actions 上**，需要单独宿主（本机 manage.sh 或服务器 systemd）
@@ -482,9 +491,9 @@ systemctl status claude-news-bot
 - **X (Twitter)**：主途径 twitterapi.io 需要配置 API Key（见 `.env.example`），未配置时回退 nitter RSS；nitter 可用实例只有 nitter.net 和 nitter.perennialte.ch 两个，全部失效时会触发管理员告警；@neilhtennek 的 RSS 在两个 nitter 实例上都是 404（账号受限，网页版正常），配置 API Key 后可正常采集
 - **Reddit**：JSON API 已被封，RSS 可用但限流严格（429），已加 30 秒退避重试
 
-### 🚫 已禁用的功能
+### 🚫 已禁用/暂停的功能
 - **V2EX**：国内源，按需求禁用
-- 互动指令机器人（需要手动启动，VM 重启后会停止）
+- **互动指令机器人**：暂不启用（代码保留在 `bot_listener.py`，需要时 `./manage.sh start` 启动；推送消息中已移除指令相关提示文案）
 
 ---
 
@@ -578,7 +587,14 @@ systemctl status claude-news-bot
 
 ## 📝 版本历史
 
-### v2.6 (当前版本)
+### v2.7 (当前版本)
+- AI 整理接入 Cursor SDK 无头代理（`ai_report.py`，Actions 中优先执行，失败自动降级模板）
+- 新增已推送记录去重（`seen_urls.json` + `mark_seen.py`）：不重复推送旧闻，宁缺毋滥
+- 修复官博标题-链接错配 bug（正则跨卡片匹配导致）
+- TOP 1 仅在官方板块有新内容时设置，不再全局兜底
+- 互动指令机器人暂停启用，推送文案移除指令提示
+
+### v2.6
 - 飞书调用全面切换为 bot 身份（`--as bot`，读+写）：只依赖 App ID + Secret，零个人授权依赖，服务器部署可靠，消息以机器人名义发送
 - lark-cli 机器人已加入资讯群；管理员 open_id 更新为本应用签发的新值
 - 应用版本 1.0.2 已发布，bot 读写 scope 均已生效（实测验证）

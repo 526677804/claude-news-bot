@@ -145,7 +145,8 @@ def fetch_anthropic_blog(keywords: List[str]) -> List[NewsItem]:
             content = resp.text
             
             # 匹配文章链接和标题（h4 标题格式）
-            pattern = r'<a[^>]+href="(/news/[a-zA-Z0-9-]+)"[^>]*>.*?<h4[^>]*>([^<]+)</h4>'
+            # (?:(?!</a>).)*? 保证标题匹配不跨出当前 <a> 卡片，避免标题和链接错配
+            pattern = r'<a[^>]+href="(/news/[a-zA-Z0-9-]+)"[^>]*>(?:(?!</a>).)*?<h4[^>]*>([^<]+)</h4>'
             matches = re.findall(pattern, content, re.DOTALL)
             
             seen = set()
@@ -667,6 +668,18 @@ def fetch_kol_blogs(keywords: List[str], feeds: List[dict]) -> List[NewsItem]:
     return items[:10]
 
 
+def load_seen_urls() -> set:
+    """加载历史已推送 URL（由 mark_seen.py 在推送成功后维护）"""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'seen_urls.json')
+    if os.path.exists(path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                return set(json.load(f).get('urls', {}).keys())
+        except Exception:
+            pass
+    return set()
+
+
 def deduplicate_items(items: List[NewsItem]) -> List[NewsItem]:
     """去重"""
     seen_urls = set()
@@ -857,6 +870,13 @@ def main():
     print(f"\n🔍 去重前: {len(all_items)} 条")
     all_items = deduplicate_items(all_items)
     print(f"🔍 去重后: {len(all_items)} 条")
+    
+    # 过滤历史已推送内容（宁缺毋滥：没有新内容就不硬塞旧闻）
+    seen_urls = load_seen_urls()
+    if seen_urls:
+        before = len(all_items)
+        all_items = [item for item in all_items if item.url not in seen_urls]
+        print(f"🔍 过滤已推送后: {len(all_items)} 条（去掉 {before - len(all_items)} 条历史内容）")
     
     # 按分类整理
     categorized = {}

@@ -47,8 +47,8 @@ def main():
 
     parts = [f"# 📰 Claude Code 每日资讯 · {date_str}"]
 
-    # TOP 1：官方分类中分数最高的一条，没有官方内容时取全局最高分
-    top_pool = categorized.get('official') or raw.get('items') or []
+    # TOP 1：仅当官方分类有新内容时才设置（宁缺毋滥，不硬塞）
+    top_pool = categorized.get('official') or []
     if top_pool:
         top = max(top_pool, key=lambda x: x.get('score', 0))
         parts.append(
@@ -66,7 +66,7 @@ def main():
 
     parts.append(
         f"\n---\n\n📊 本期数据：采集 {raw.get('total_count', 0)} 条资讯"
-        f"\n🤖 由 Claude Code 资讯机器人自动生成 · 发送 /资讯 帮助 查看指令"
+        f"\n🤖 由 Claude Code 资讯机器人自动生成"
     )
 
     output_file = os.path.join(os.path.dirname(__file__), f'news_{today}.md')
