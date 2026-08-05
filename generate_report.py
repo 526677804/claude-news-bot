@@ -53,15 +53,18 @@ def main():
     parts = [f"# 📰 Claude Code 每日资讯 · {date_str}"]
 
     # TOP 1：仅当官方分类有新内容时才设置（宁缺毋滥，不硬塞）
+    top_url = None
     top_pool = categorized.get('official') or []
     if top_pool:
         top = max(top_pool, key=lambda x: x.get('score', 0))
+        top_url = top['url']
         parts.append(
             f"\n## 🏆 今日 TOP 1\n\n**{top['title'].strip()}**\n🔗 {top['url']}"
         )
 
     for cat_key, section in sections.items():
-        items = categorized.get(cat_key, [])
+        # TOP 1 选中的条目不在下方板块重复出现
+        items = [i for i in categorized.get(cat_key, []) if i['url'] != top_url]
         if not items:
             continue
         max_items = section.get('max_items', 3)
