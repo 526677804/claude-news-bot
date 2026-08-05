@@ -265,7 +265,8 @@ class NewsItem:
 | `fetch_kol_blogs` | KOL 博客 | ✅ 正常 | RSS（当前含 Simon Willison） |
 
 **X (Twitter) 账号分组：**
-- **官方账号**（不做关键词过滤）：@AnthropicAI、@claudeai
+- **官方账号**（不做关键词过滤）：@AnthropicAI、@claudeai、@ClaudeDevs
+- **生态自动账号**（不做关键词过滤）：@ClaudeCodeLog（Claude Code 变更日志 bot，注意：twitterapi.io 对它无数据，靠 nitter 回退采集）
 - **Claude Code 核心团队**（不做关键词过滤）：@bcherny、@catwu、@trq212、@noahzweben、@amorriscode、@alexalbert__、@neilhtennek、@lydiahallie
 - **Anthropic 创始人**（按关键词过滤）：@DarioAmodei、@DanielaAmodei、@jackclarkSF、@jaredkaplan
 - **核心研究员**（按关键词过滤）：@karpathy、@sleepinyourhat、@ch402、@johnschulman2、@amandaaskell
@@ -278,7 +279,7 @@ class NewsItem:
    - 把 Key 写入项目目录的 `.env` 文件（参考 `.env.example`）或环境变量 `TWITTERAPI_IO_KEY`
    - API 途径额外提供互动数据（点赞/转发），会作为热度加分（封顶 +20）
    - twitterapi.io 对低价套餐有 QPS 限流，代码内置 429 退避重试（最多 3 次），单账号重试后仍失败才回退 nitter
-2. **回退途径：nitter RSS**（免费）：API 未配置或单账号失败时自动回退，实例列表见 `sources.twitter.nitter_instances`
+2. **回退途径：nitter RSS**（免费）：API 未配置、单账号失败、或 API 成功但返回空（部分 bot 账号在 twitterapi.io 无数据）时自动回退，实例列表见 `sources.twitter.nitter_instances`
 
 **采集失败告警：** X 源全部账号采集失败（API 和 nitter 都不可用）、或部分失败且当日 0 条时，自动私信告警管理员，避免静默失效。
 

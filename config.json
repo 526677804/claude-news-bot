@@ -88,7 +88,13 @@
           "name": "官方账号",
           "filter_by_keywords": false,
           "score": 90,
-          "accounts": ["AnthropicAI", "claudeai"]
+          "accounts": ["AnthropicAI", "claudeai", "ClaudeDevs"]
+        },
+        "ecosystem": {
+          "name": "生态自动账号",
+          "filter_by_keywords": false,
+          "score": 75,
+          "accounts": ["ClaudeCodeLog"]
         },
         "claude_code_team": {
           "name": "Claude Code 核心团队",

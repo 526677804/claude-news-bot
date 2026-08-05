@@ -576,6 +576,9 @@ def fetch_twitter(keywords: List[str], twitter_config: dict) -> List[NewsItem]:
             if api_key:
                 try:
                     tweets = fetch_tweets_via_api(account, api_cfg, api_key, max_age_hours)
+                    # API 对部分账号（如自动化 bot）会成功返回空列表，用 nitter 双确认
+                    if not tweets:
+                        tweets = None
                 except Exception as e:
                     print(f"   ⚠️ X @{account} API 采集失败（{e}），尝试 nitter 回退...")
             
@@ -587,6 +590,10 @@ def fetch_twitter(keywords: List[str], twitter_config: dict) -> List[NewsItem]:
                     TWITTER_STATS['failed_accounts'] += 1
                     time.sleep(1)
                     continue
+            
+            if not tweets:
+                time.sleep(1)
+                continue
             
             for tw in tweets:
                 if need_filter and not match_keywords(tw['title'] + ' ' + tw['summary'], keywords):
