@@ -431,7 +431,8 @@ python3 push_to_feishu.py
 ### 定时任务设置
 
 #### 方式一：GitHub Actions（推荐，零服务器成本）
-- 配置文件：`.github/workflows/daily-news.yml`，每天 UTC 02:00（北京 10:00）自动运行，也可在 Actions 页面手动触发
+- 配置文件：`.github/workflows/daily-news.yml`，每天 UTC 02:07（北京 10:07）自动运行，也可在 Actions 页面手动触发
+- 触发时间特意避开整点：GitHub 在整点高峰可能延迟甚至丢弃 scheduled 任务（2026-08-05 实际踩坑：02:00 整的 cron 未被触发）
 - 需要在仓库 **Settings → Secrets and variables → Actions** 配置 secret：
   - `LARK_APP_ID`：飞书应用 App ID（必需）
   - `LARK_APP_SECRET`：飞书应用 App Secret（必需）

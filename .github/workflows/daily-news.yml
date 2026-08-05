@@ -2,8 +2,9 @@ name: 每日资讯推送
 
 on:
   schedule:
-    # UTC 02:00 = 北京时间 10:00（Actions 定时有 3~15 分钟浮动，属正常现象）
-    - cron: '0 2 * * *'
+    # UTC 02:07 = 北京时间 10:07
+    # 特意避开整点：GitHub 在整点高峰时段可能延迟甚至丢弃 scheduled 任务
+    - cron: '7 2 * * *'
   workflow_dispatch: {}   # 支持在 Actions 页面手动触发，方便测试
 
 permissions:
