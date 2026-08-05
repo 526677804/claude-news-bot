@@ -1,8 +1,8 @@
 [Unit]
-Description=每天 10:30（北京时间）触发 Claude Code 资讯推送
+Description=每天 10:57（北京时间）触发 Claude Code 资讯推送
 
 [Timer]
-OnCalendar=*-*-* 10:30:00 Asia/Shanghai
+OnCalendar=*-*-* 10:57:00 Asia/Shanghai
 # 服务器宕机错过触发点时，恢复后补跑一次
 Persistent=true
 

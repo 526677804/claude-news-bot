@@ -36,7 +36,7 @@ claude-news-bot/
 ├── deploy/                  # 服务器部署配置
 │   ├── setup.sh             # 一键部署脚本（Ubuntu/Debian）
 │   ├── claude-news-daily.service   # 每日采集推送（systemd oneshot）
-│   ├── claude-news-daily.timer     # 每天 10:30 触发（systemd timer）
+│   ├── claude-news-daily.timer     # 每天 10:57 触发（systemd timer）
 │   └── claude-news-bot.service     # 互动机器人常驻服务
 └── README.md                # 本说明文档
 ```
@@ -431,7 +431,7 @@ python3 push_to_feishu.py
 ### 定时任务设置
 
 #### 方式一：GitHub Actions（推荐，零服务器成本）
-- 配置文件：`.github/workflows/daily-news.yml`，每天 UTC 02:30（北京 10:30）自动运行，也可在 Actions 页面手动触发
+- 配置文件：`.github/workflows/daily-news.yml`，每天 UTC 02:57（北京 10:57）自动运行，也可在 Actions 页面手动触发
 - 触发时间特意避开整点：GitHub 在整点高峰可能延迟甚至丢弃 scheduled 任务（2026-08-05 实际踩坑：02:00 整的 cron 未被触发）
 - 需要在仓库 **Settings → Secrets and variables → Actions** 配置 secret：
   - `LARK_APP_ID`：飞书应用 App ID（必需）
@@ -446,7 +446,7 @@ python3 push_to_feishu.py
 ```bash
 # 服务器上 clone 仓库到 /opt/claude-news-bot 后：
 sudo bash deploy/setup.sh
-# 会安装依赖、注册 systemd timer（每天 10:30 北京时间）和互动机器人常驻服务
+# 会安装依赖、注册 systemd timer（每天 10:57 北京时间）和互动机器人常驻服务
 ```
 
 部署前置条件（setup.sh 会检查并提示）：
@@ -579,7 +579,7 @@ systemctl status claude-news-bot
 - **管理员邮箱**：changtao@vastai3d.com
 
 ### 定时任务
-- **当前方式**：GitHub Actions（`.github/workflows/daily-news.yml`，每天北京时间 10:30）
+- **当前方式**：GitHub Actions（`.github/workflows/daily-news.yml`，每天北京时间 10:57）
 - **豆包旧任务**：Claude Code 每日资讯推送（任务 ID 11314484045058），已于 2026-08-04 停用
 
 ---

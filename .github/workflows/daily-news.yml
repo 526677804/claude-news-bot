@@ -2,9 +2,9 @@ name: 每日资讯推送
 
 on:
   schedule:
-    # UTC 02:30 = 北京时间 10:30
-    # 避开整点：GitHub 在整点高峰时段可能延迟甚至丢弃 scheduled 任务
-    - cron: '30 2 * * *'
+    # UTC 02:57 = 北京时间 10:57
+    # 用非规整分钟避开拥堵：整点/半点是全球 cron 扎堆时刻，GitHub 高峰可能延迟甚至丢弃任务
+    - cron: '57 2 * * *'
   workflow_dispatch: {}   # 支持在 Actions 页面手动触发，方便测试
 
 permissions:
