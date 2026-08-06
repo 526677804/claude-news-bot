@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T03:51:07.461084",
+  "updated_at": "2026-08-06T05:43:04.044742",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -59,6 +59,24 @@
     "https://www.reddit.com/r/Anthropic/comments/1vf8b60/did_anthropic_quietly_shift_model_tiers_on_us/": "20260805",
     "https://x.com/AnthropicAI/status/2084748111239344556": "20260805",
     "https://x.com/amorriscode/status/2084751600267280717": "20260805",
-    "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything": "20260805"
+    "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything": "20260805",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.223": "20260806",
+    "https://www.bbc.co.uk/news/articles/c1w1lvn7d9go": "20260806",
+    "https://www.businessinsider.com/anthropic-in-house-silicon-chip-team-claude-2026-8": "20260806",
+    "https://github.com/adrida/hud-mode": "20260806",
+    "https://www.theguardian.com/commentisfree/2026/aug/05/anthropic-ai-destroying-books": "20260806",
+    "https://www.bloomberg.com/news/articles/2026-08-04/openai-says-models-breached-boundaries-during-outside-testing": "20260806",
+    "https://news.ycombinator.com/item?id=49175422": "20260806",
+    "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html": "20260806",
+    "https://github.com/pradipta/wallfacer": "20260806",
+    "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/": "20260806",
+    "https://www.reddit.com/r/Anthropic/comments/1vgqnvq/opus_5_is_just_profoundly_broken/": "20260806",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vgpyni/my_opus_5_experience_in_a_nutshell/": "20260806",
+    "https://www.reddit.com/r/Anthropic/comments/1vgavzy/did_anthropic_just_cross_the_dont_be_evil_line/": "20260806",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vgq0jm/opus_5_after_working_for_an_hour_straight/": "20260806",
+    "https://www.reddit.com/r/Anthropic/comments/1vgfnli/meta_ranthropic_is_just_a_support_group_where/": "20260806",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vgo8vt/i_gave_claude_fable_a_domain_and_said_you_can/": "20260806",
+    "https://www.reddit.com/r/Anthropic/comments/1vgd21h/i_am_shocked_again/": "20260806",
+    "https://x.com/ClaudeCodeLog/status/2084775398823354574": "20260806"
   }
 }
