@@ -2,16 +2,41 @@ name: 每日资讯推送
 
 on:
   schedule:
-    # UTC 02:57 = 北京时间 10:57
-    # 用非规整分钟避开拥堵：整点/半点是全球 cron 扎堆时刻，GitHub 高峰可能延迟甚至丢弃任务
-    - cron: '57 2 * * *'
-  workflow_dispatch: {}   # 支持在 Actions 页面手动触发，方便测试
+    # 备份触发：UTC 03:57 = 北京时间 11:57
+    # 主触发是外部定时服务在 10:57 精准调用 workflow_dispatch（GitHub 自身的
+    # scheduled 事件高峰期会延迟数小时，实测 2026-08-06 延迟 2h43m，不能作为主通道）；
+    # 本备份仅在当天还没有成功推送时才实际执行（见 guard job）
+    - cron: '57 3 * * *'
+  workflow_dispatch: {}   # 主触发通道：外部定时服务调用 + 手动触发
 
 permissions:
   contents: write   # 推送成功后把已推送记录 seen_urls.json 写回仓库
 
 jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+      - name: 备份触发时检查今天是否已成功推送
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            last=$(python3 -c "import json; print(json.load(open('seen_urls.json')).get('updated_at','')[:10])" 2>/dev/null || echo "")
+            today=$(date -u +%F)
+            if [ "$last" = "$today" ]; then
+              echo "proceed=false" >> "$GITHUB_OUTPUT"
+              echo "ℹ️ 今天已有成功运行（$last），备份触发跳过"
+              exit 0
+            fi
+          fi
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+
   fetch-and-push:
+    needs: guard
+    if: needs.guard.outputs.proceed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
