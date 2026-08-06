@@ -577,7 +577,7 @@ systemctl status claude-news-bot
 ## 🔑 关键 ID 和配置
 
 ### 飞书相关
-- **群名称**：Claude Code 每日资讯
+- **群名称**：Claude Code 交流群（2026-08-06 由"Claude Code 每日资讯"更名；"每日资讯"保留为日报刊头）
 - **群 Chat ID**：oc_ed60c1bee04f5d29cdbce9f929eaf6f1
 - **群链接**：（公开仓库不放邀请链接，入群请联系管理员）
 - **lark-cli 应用**：畅涛's Feishu CLI（App ID: cli_aafa3defaf389bef，机器人已入群）

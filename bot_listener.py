@@ -135,7 +135,7 @@ def get_welcome_message() -> str:
     
     # 默认欢迎消息
     return """
-👋 欢迎加入 Claude Code 每日资讯群！
+👋 欢迎加入 Claude Code 交流群！
 
 每天早上 10:57 自动推送 Claude Code 相关资讯。
 
