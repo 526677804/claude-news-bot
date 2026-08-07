@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T05:43:04.044742",
+  "updated_at": "2026-08-07T05:31:59.987453",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -77,6 +77,20 @@
     "https://www.reddit.com/r/Anthropic/comments/1vgfnli/meta_ranthropic_is_just_a_support_group_where/": "20260806",
     "https://www.reddit.com/r/ClaudeAI/comments/1vgo8vt/i_gave_claude_fable_a_domain_and_said_you_can/": "20260806",
     "https://www.reddit.com/r/Anthropic/comments/1vgd21h/i_am_shocked_again/": "20260806",
-    "https://x.com/ClaudeCodeLog/status/2084775398823354574": "20260806"
+    "https://x.com/ClaudeCodeLog/status/2084775398823354574": "20260806",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.224": "20260807",
+    "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute": "20260807",
+    "https://www.ft.com/content/c492ce6b-483b-4196-8f2a-9bd1afda92d3": "20260807",
+    "https://www.bloomberg.com/news/articles/2026-08-04/anthropic-inks-10-billion-computing-deal-with-new-cloud-startup": "20260807",
+    "https://www.reddit.com/r/Anthropic/comments/1vhe8m5/your_account_has_been_suspended/": "20260807",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vhkhjx/opus_5_is_literally_useless_for_documentation/": "20260807",
+    "https://www.reddit.com/r/Anthropic/comments/1vhekkt/opus_5_is_the_worst_anthropic_model_ive_ever_used/": "20260807",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vhagay/my_experience_with_opus_5_so_far/": "20260807",
+    "https://www.reddit.com/r/Anthropic/comments/1vhr42g/cancelled_claude_max_x20/": "20260807",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vhp54h/i_gave_a_claude_fable_5_agent_a_domain_and_90_it/": "20260807",
+    "https://www.reddit.com/r/Anthropic/comments/1vhnqxj/can_a_weaker_model_at_max_effort_outperform_a/": "20260807",
+    "https://x.com/claudeai/status/2085563808773189680": "20260807",
+    "https://x.com/noahzweben/status/2085488359502409799": "20260807",
+    "https://x.com/ClaudeCodeLog/status/2085170539719483394": "20260807"
   }
 }
