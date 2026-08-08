@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T06:01:41.003629",
+  "updated_at": "2026-08-08T03:01:14.492003",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -92,6 +92,34 @@
     "https://x.com/claudeai/status/2085563808773189680": "20260807",
     "https://x.com/noahzweben/status/2085488359502409799": "20260807",
     "https://x.com/ClaudeCodeLog/status/2085170539719483394": "20260807",
-    "https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-reportedly-worried-hires-160000647.html": "20260807"
+    "https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-reportedly-worried-hires-160000647.html": "20260807",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.226": "20260808",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.225": "20260808",
+    "https://twitter.com/ClaudeDevs/status/2085794862608318627": "20260808",
+    "https://twitter.com/ClaudeDevs/status/2085817074816070014": "20260808",
+    "https://www.highflame.com/blog/the-44kb-of-claude-codes-rulebook-you-cant-print/": "20260808",
+    "https://code.claude.com/docs/en/cross-session-messaging": "20260808",
+    "https://mirafold.com/": "20260808",
+    "https://www.ft.com/content/9b8383b1-a28d-4940-8c4e-2f0cd21556ef": "20260808",
+    "https://oxide.computer/blog/oxide-anthropic-project-glasswing": "20260808",
+    "https://github.com/noambrand/kivun-terminal-wsl": "20260808",
+    "https://www.reddit.com/r/Anthropic/comments/1vi8pwo/the_year_is_2030_claude_9_has_gone_rogue_and/": "20260808",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vi5guo/i_used_claude_cli_to_vibe_code_a_compass_app_to/": "20260808",
+    "https://www.reddit.com/r/Anthropic/comments/1vi68pa/yikes/": "20260808",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vihql9/i_asked_claude_to_scare_me_im_not_sure_i_like_the/": "20260808",
+    "https://www.reddit.com/r/Anthropic/comments/1vhuack/dario_go_fix_opus_5/": "20260808",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vii2zl/i_used_claude_to_build_a_poker_app_where_you_deal/": "20260808",
+    "https://www.reddit.com/r/Anthropic/comments/1vig6ie/i_can_finally_talk_to_fable_about_my_raspberry/": "20260808",
+    "https://x.com/ClaudeDevs/status/2085817074816070014": "20260808",
+    "https://x.com/ClaudeDevs/status/2085794862608318627": "20260808",
+    "https://x.com/ClaudeDevs/status/2085853169930957158": "20260808",
+    "https://x.com/bcherny/status/2085807103382519872": "20260808",
+    "https://x.com/amorriscode/status/2085891597389156834": "20260808",
+    "https://x.com/trq212/status/2085804064491929979": "20260808",
+    "https://x.com/trq212/status/2085804481984475437": "20260808",
+    "https://x.com/bcherny/status/2085860677990883454": "20260808",
+    "https://x.com/trq212/status/2085863307106468143": "20260808",
+    "https://x.com/lydiahallie/status/2085799128857272783": "20260808",
+    "https://x.com/ClaudeCodeLog/status/2085580408490451419": "20260808"
   }
 }
