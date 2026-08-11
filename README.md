@@ -25,6 +25,7 @@ claude-news-bot/
 ├── generate_report.py       # 模板整理脚本（AI 不可用时的降级方案）
 ├── mark_seen.py             # 已推送记录维护（推送成功后运行）
 ├── seen_urls.json           # 已推送 URL 记录（保留 60 天，Actions 自动回写）
+├── recent_topics.json       # 近 7 天已推送条目标题（AI 跨天事件去重，Actions 自动回写）
 ├── push_to_feishu.py        # 飞书推送脚本
 ├── bot_listener.py          # 互动指令监听机器人
 ├── manage.sh                # 运维管理脚本（本地/手动模式）
@@ -428,6 +429,7 @@ python3 push_to_feishu.py
 - **宁缺毋滥**：板块没有新内容就整个省略，不硬塞旧闻；TOP 1 仅在官方有真正重要内容时设置
 - **择优**：内容超量时按重要性、时效性、影响面挑选（AI 模式），模板模式按分数排序取前 N
 - **不重复**：已推送过的 URL 记录在 `seen_urls.json`（保留 60 天），后续采集自动过滤
+- **跨天不重复（仅 AI 模式）**：近 7 天已推送的条目标题记录在 `recent_topics.json`（`mark_seen.py` 维护，窗口在其顶部常量调整），AI 整理时注入 prompt——已报道事件仅在有实质新进展时以"进展跟进"形式再现，同一事件原则上最多上一次 TOP 1；降级模板模式无语义判断能力，仅有 URL 去重
 
 ### 定时任务设置
 
@@ -592,7 +594,11 @@ systemctl status claude-news-bot
 
 ## 📝 版本历史
 
-### v2.7 (当前版本)
+### v2.8 (当前版本)
+- 新增跨天事件去重：`mark_seen.py` 把每日日报条目标题记入 `recent_topics.json`（保留 7 天，Actions 回写），`ai_report.py` 注入 prompt——同一事件的连日跟进报道仅在有实质新进展时以"进展跟进"形式出现，最多上一次 TOP 1（修复 Auto Mode 事件连续 3 天占据 TOP 1 的问题，2026-08-09~11 实例）
+- 种子数据已回填 8/9~8/11 三天的推送标题（从群消息整理，8/10、8/11 为部分清单）
+
+### v2.7
 - AI 整理接入 Cursor SDK 无头代理（`ai_report.py`，Actions 中优先执行，失败自动降级模板）
 - 新增已推送记录去重（`seen_urls.json` + `mark_seen.py`）：不重复推送旧闻，宁缺毋滥
 - 修复官博标题-链接错配 bug（正则跨卡片匹配导致）
@@ -676,5 +682,5 @@ systemctl status claude-news-bot
 
 ---
 
-**最后更新：2026-08-04（v2.5 X 双通道采集 + 失败告警）**
+**最后更新：2026-08-11（v2.8 跨天事件去重）**
 **维护者：畅涛 (changtao@vastai3d.com)**

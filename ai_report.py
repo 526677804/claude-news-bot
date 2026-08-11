@@ -8,6 +8,7 @@ AI 整理脚本（首选整理方式）
 未配置或执行失败时退出非 0，由调用方降级到 generate_report.py（模板整理）。
 """
 
+import json
 import os
 import sys
 from datetime import datetime
@@ -15,7 +16,38 @@ from datetime import datetime
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-def build_prompt(today: str) -> str:
+def load_recent_topics(today: str) -> str:
+    """读取近几日已推送的条目标题（mark_seen.py 维护），拼成 prompt 参考块"""
+    path = os.path.join(BASE_DIR, 'recent_topics.json')
+    if not os.path.exists(path):
+        return ''
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            days = json.load(f).get('days', {})
+    except Exception:
+        return ''
+    lines = []
+    for d in sorted(days, reverse=True):
+        if d >= today:  # 同日重跑时不把当天条目当历史
+            continue
+        for title in days[d]:
+            lines.append(f'- [{d[:4]}-{d[4:6]}-{d[6:]}] {title}')
+    return '\n'.join(lines)
+
+
+def build_prompt(today: str, recent_block: str = '') -> str:
+    dedup_rule = ''
+    dedup_section = ''
+    if recent_block:
+        dedup_rule = """
+- **跨天不重复**：文末「近几日已推送」清单中已报道过的事件，仅当今天出现实质性新进展\
+（如官方正式发布、生效时间或范围变更、重要数据更新）时才可再次出现，且点评中必须注明是进展跟进\
+（例如"此前 8 月 9 日已报道，今日官方正式公告落地"）；无实质增量则整条跳过（宁缺毋滥）。\
+同一事件原则上最多登上一次 TOP 1，官方正式公告日可作为例外再上一次。"""
+        dedup_section = f"""
+## 近几日已推送（跨天去重参考，判断"事件是否已报道过"以此为准）
+{recent_block}
+"""
     return f"""你是「Claude Code 每日资讯」的编辑。请阅读本目录下的 raw_news_{today}.json（当天采集的原始资讯数据），\
 撰写一份中文日报，写入文件 news_{today}.md（UTF-8，Markdown 格式，用于飞书群推送）。
 
@@ -34,12 +66,12 @@ def build_prompt(today: str) -> str:
 - **同一事件全报告只出现一次（最重要的规则之一）**：
   - 不同渠道报道同一件事（如官博发布 + 媒体报道 + 社区讨论 + KOL 推文都在说同一个新版本/新模型）时，只保留一条，放进最合适的板块，来源链接选最权威的（官方 > 媒体 > 社区）；如次要渠道有独特价值（如深度评测），可在该条摘要里一笔带过
   - 被选为 TOP 1 的内容，不得再出现在下方任何板块
-  - 各板块之间不得出现同一事件的重复条目
+  - 各板块之间不得出现同一事件的重复条目{dedup_rule}
 - 每条格式：**加粗标题**（英文标题翻译成中文或保留原文均可，以可读为准）+ 一句话摘要/点评（说清楚"这条为什么值得看"）+ 🔗 来源链接（原样保留，不得改动 URL）
 - 语言：简体中文，简洁专业，适合技术和非技术读者
 - 事实必须来自 JSON 数据，不得编造内容或链接
 - **如果 JSON 的 items 为空，或没有任何值得推送的内容，不要创建 news 文件**，直接结束并说明原因（当天将跳过推送）
-
+{dedup_section}
 只创建/覆盖 news_{today}.md 这一个文件，不要修改任何其他文件。"""
 
 
@@ -59,10 +91,14 @@ def main():
 
     from cursor_sdk import Agent, AgentOptions, LocalAgentOptions, CursorAgentError
 
+    recent_block = load_recent_topics(today)
+    if recent_block:
+        print(f'🧠 已注入近几日推送记忆（{len(recent_block.splitlines())} 个条目标题）')
+
     print('🤖 启动 Cursor 无头代理进行 AI 整理...')
     try:
         result = Agent.prompt(
-            build_prompt(today),
+            build_prompt(today, recent_block),
             AgentOptions(
                 api_key=api_key,
                 model='auto',
@@ -77,7 +113,6 @@ def main():
         sys.exit(1)
 
     # 无新内容时 AI 按约定不生成文件，属正常跳过（区别于生成失败）
-    import json
     with open(raw_file, 'r', encoding='utf-8') as f:
         has_items = bool(json.load(f).get('items'))
     if not os.path.exists(out_file):

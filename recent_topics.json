@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-08-11T15:55:00",
+  "days": {
+    "20260809": [
+      "Claude Code 将 Auto Mode 设为默认",
+      "Anthropic Economic Index（经济影响指数）",
+      "Claude Code 2.1.226 发布",
+      "Claude Code 核心成员谈「零源码逆向并现代化 1996 系统」",
+      "Claude Code 支持 macOS 上会话互相通信",
+      "越高效，越焦虑？社区讨论 AI 时代该练什么"
+    ],
+    "20260810": [
+      "Anthropic 将于 8 月 14 日起默认开启 Claude Code Auto Mode",
+      "以色列初创公司 Irregular 被指与针对 OpenAI、Anthropic、Meta 的 AI 攻击有关",
+      "AI 收入约七成来自 OpenAI 与 Anthropic",
+      "Qwen 3.8 与 Claude Opus 5：基准高分不等于账单更划算",
+      "Whetstone：20 个从真实翻车经验提炼的 Claude Code Skills",
+      "Benzi：号称在 Sonnet 上能打过 Claude Code 的编码 Agent",
+      "grill-me Skill：先连问 10~15 个问题再动手写代码",
+      "Claude Code 核心成员 @bcherny：Prompt Injection 已是骗子攻击 Agent 的最常见手段"
+    ],
+    "20260811": [
+      "Auto mode 将成为 Claude Code 默认模式",
+      "Claude Code 发布 v2.1.227",
+      "Claude Sonnet 5 上市优惠价改为长期价",
+      "未发布研究版 Claude 冲击黎曼猜想相关问题",
+      "Claude Code 会话之间可以互相发消息（macOS / Linux）",
+      "把「Claudish」译成人话的 Claude Code 插件"
+    ]
+  }
+}
