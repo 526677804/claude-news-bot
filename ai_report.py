@@ -6,14 +6,34 @@ AI 整理脚本（首选整理方式）
 
 需要环境变量 CURSOR_API_KEY（Cursor Dashboard → Integrations 生成）。
 未配置或执行失败时退出非 0，由调用方降级到 generate_report.py（模板整理）。
+代理运行失败（如 status=error 的瞬时故障）会自动重试一次，重试仍失败才降级，
+并输出运行 ID、时长、结果文本等细节便于排障（2026-08-12 首次线上失败仅有
+status=error 一行可查，教训）。
 """
 
 import json
 import os
 import sys
+import time
 from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MAX_ATTEMPTS = 2      # 共尝试次数（1 次正式 + 1 次重试）
+RETRY_DELAY = 30      # 重试前等待秒数
+
+
+def describe_result(result) -> str:
+    """把 SDK 运行结果的关键信息拼成一行，供失败排障"""
+    parts = [f"status={getattr(result, 'status', '?')}"]
+    for attr in ('id', 'agent_id', 'duration_ms', 'model'):
+        value = getattr(result, attr, None)
+        if value:
+            parts.append(f'{attr}={value}')
+    text = (getattr(result, 'result', '') or '').strip()
+    if text:
+        parts.append(f'result={text[:500]}')
+    return ' | '.join(parts)
 
 
 def load_recent_topics(today: str) -> str:
@@ -96,21 +116,32 @@ def main():
         print(f'🧠 已注入近几日推送记忆（{len(recent_block.splitlines())} 个条目标题）')
 
     print('🤖 启动 Cursor 无头代理进行 AI 整理...')
-    try:
-        result = Agent.prompt(
-            build_prompt(today, recent_block),
-            AgentOptions(
-                api_key=api_key,
-                model='auto',
-                local=LocalAgentOptions(cwd=BASE_DIR),
-            ),
-        )
-        if result.status != 'finished':
-            print(f'❌ AI 整理运行失败: status={result.status}')
-            sys.exit(2)
-    except CursorAgentError as e:
-        print(f'❌ AI 代理启动失败: {e}')
-        sys.exit(1)
+    result = None
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            result = Agent.prompt(
+                build_prompt(today, recent_block),
+                AgentOptions(
+                    api_key=api_key,
+                    model='auto',
+                    local=LocalAgentOptions(cwd=BASE_DIR),
+                ),
+            )
+            if result.status == 'finished':
+                break
+            print(f'❌ AI 整理运行失败（第 {attempt}/{MAX_ATTEMPTS} 次）: {describe_result(result)}')
+        except CursorAgentError as e:
+            result = None
+            print(f'❌ AI 代理启动失败（第 {attempt}/{MAX_ATTEMPTS} 次）: {e!r}')
+        if attempt < MAX_ATTEMPTS:
+            print(f'⏳ {RETRY_DELAY} 秒后重试...')
+            time.sleep(RETRY_DELAY)
+
+    if result is None or result.status != 'finished':
+        # 放弃前清掉失败运行可能留下的半成品，避免被当作有效报告推送
+        if os.path.exists(out_file):
+            os.remove(out_file)
+        sys.exit(2)
 
     # 无新内容时 AI 按约定不生成文件，属正常跳过（区别于生成失败）
     with open(raw_file, 'r', encoding='utf-8') as f:
