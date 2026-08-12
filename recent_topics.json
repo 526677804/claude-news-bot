@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T03:03:11.670354",
+  "updated_at": "2026-08-12T03:47:29.004548",
   "days": {
     "20260809": [
       "Claude Code 将 Auto Mode 设为默认",
@@ -26,6 +26,14 @@
       "未发布研究版 Claude 冲击黎曼猜想相关问题",
       "Claude Code 会话之间可以互相发消息（macOS / Linux）",
       "把「Claudish」译成人话的 Claude Code 插件"
+    ],
+    "20260812": [
+      "Anthropic 将对 Claude 生成文本嵌入隐形水印",
+      "Claude Code 发布 v2.1.228",
+      "Hindcast：在 Mac 上搜索、回放并恢复任意 Claude Code 会话",
+      "@bcherny：LLM 写出的 bug 类型正在变",
+      "从专有 LLM API「偷」推理轨迹（CoT）",
+      "Claude Code 在 curl 的 User-Agent 中泄露真实邮箱"
     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T03:03:11.669906",
+  "updated_at": "2026-08-12T03:47:29.003956",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -172,6 +172,28 @@
     "https://x.com/amorriscode/status/2086926012252930372": "20260811",
     "https://x.com/trq212/status/2086876017319457181": "20260811",
     "https://x.com/trq212/status/2086931647468097932": "20260811",
-    "https://x.com/ClaudeCodeLog/status/2086954941327786168": "20260811"
+    "https://x.com/ClaudeCodeLog/status/2086954941327786168": "20260811",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.228": "20260812",
+    "https://twitter.com/_can1357/status/2087228354399265125": "20260812",
+    "https://github.com/anthropics/claude-code/issues/78431": "20260812",
+    "https://www.theaithinker.com/p/how-to-organize-claude-code-for-product": "20260812",
+    "https://quesma.com/blog/claude-code-pricing-for-enterprise/": "20260812",
+    "https://jeremytian.substack.com/p/can-claude-code-in-a-loop-improve": "20260812",
+    "https://github.com/karanb192/hindcast": "20260812",
+    "https://news.ycombinator.com/item?id=49254381": "20260812",
+    "https://www.cbsnews.com/news/china-security-backdoor-anthropic-ai-coding-tool/": "20260812",
+    "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/": "20260812",
+    "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/": "20260812",
+    "https://www.reddit.com/r/Anthropic/comments/1vlfave/claude_watermark/": "20260812",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vlidn0/claude_will_now_include_invisible_marks_to_show_a/": "20260812",
+    "https://www.reddit.com/r/Anthropic/comments/1vlyl9u/anthropics_claude_code_limit_hike_expires_aug_19/": "20260812",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vls7dp/fable_5_vs_opus_5_for_2d_sprites/": "20260812",
+    "https://www.reddit.com/r/Anthropic/comments/1vlmiu7/ok_its_getting_weird/": "20260812",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vlme0b/what_the_hell_happened/": "20260812",
+    "https://www.reddit.com/r/Anthropic/comments/1vlqsaq/account_banned_after_file_conversion/": "20260812",
+    "https://x.com/bcherny/status/2087284684103537011": "20260812",
+    "https://x.com/bcherny/status/2087023960034783616": "20260812",
+    "https://x.com/trq212/status/2087258090169414008": "20260812",
+    "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything": "20260812"
   }
 }
