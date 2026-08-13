@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T03:47:29.004548",
+  "updated_at": "2026-08-13T03:01:50.755392",
   "days": {
     "20260809": [
       "Claude Code 将 Auto Mode 设为默认",
@@ -34,6 +34,16 @@
       "@bcherny：LLM 写出的 bug 类型正在变",
       "从专有 LLM API「偷」推理轨迹（CoT）",
       "Claude Code 在 curl 的 User-Agent 中泄露真实邮箱"
+    ],
+    "20260813": [
+      "Claude Code 发布 v2.1.229",
+      "Claude in Chrome 会话可同步到桌面、网页与手机",
+      "Anthropic 据报洽谈以约 60 亿美元收购 Decart",
+      "Theseus：别人出钱，Anthropic 拿专用算力中心",
+      "面试题默认候选人买得起 Claude Code Max？",
+      "PSA：Claude Code 会话以明文 JSON 落盘，粘贴过的内容都在",
+      "PSA：核对来源——Claude 整段论证建在 Grokipedia 条目上",
+      "@amorriscode：Anthropic 员工不会私信你"
     ]
   }
 }

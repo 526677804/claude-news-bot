@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T03:47:29.003956",
+  "updated_at": "2026-08-13T03:01:50.754773",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -194,6 +194,28 @@
     "https://x.com/bcherny/status/2087284684103537011": "20260812",
     "https://x.com/bcherny/status/2087023960034783616": "20260812",
     "https://x.com/trq212/status/2087258090169414008": "20260812",
-    "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything": "20260812"
+    "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything": "20260812",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.229": "20260813",
+    "https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion": "20260813",
+    "https://thenextweb.com/news/anthropic-macquarie-gic-theseus-infrastructure-data-centre-partnership": "20260813",
+    "https://leaddev.com/ai/your-interview-questions-assume-candidates-can-afford-claude-code-max": "20260813",
+    "https://fortune.com/2026/08/11/anthropic-claude-watermark-ai-text-police-ai-slop/": "20260813",
+    "https://daringfireball.net/linked/2026/08/11/anthropic-claude-watermarks": "20260813",
+    "https://www.theguardian.com/commentisfree/2026/aug/12/openai-anthropic-ai-models": "20260813",
+    "https://twitter.com/kimmonismus/status/2087475010050920549": "20260813",
+    "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/": "20260813",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vmsrq0/your_claude_in_chrome_sessions_now_carry_over_to/": "20260813",
+    "https://www.reddit.com/r/Anthropic/comments/1vmmx0i/still_early_but_some_of_first_benchmarks_for/": "20260813",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vmjzh7/i_asked_opus_5_to_build_gta6_on_its_own_in_24/": "20260813",
+    "https://www.reddit.com/r/Anthropic/comments/1vmhpof/psa_check_sources_claude_built_a_whole_argument/": "20260813",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vmpplr/psa_your_claude_code_sessions_are_on_disk_as/": "20260813",
+    "https://www.reddit.com/r/Anthropic/comments/1vmtlo4/my_ai_agents_are_talking_to_each_other/": "20260813",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vm8zgv/new_to_claude_but_this_is_the_greatest/": "20260813",
+    "https://www.reddit.com/r/Anthropic/comments/1vmcbu7/watermarks_are_not_intended_to_ensure/": "20260813",
+    "https://x.com/claudeai/status/2087635262390026525": "20260813",
+    "https://x.com/amorriscode/status/2087722925164232772": "20260813",
+    "https://x.com/amorriscode/status/2087568140494585872": "20260813",
+    "https://x.com/ClaudeCodeLog/status/2087274049709707404": "20260813",
+    "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/": "20260813"
   }
 }
