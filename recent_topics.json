@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T03:01:50.755392",
+  "updated_at": "2026-08-14T03:01:54.751037",
   "days": {
     "20260809": [
       "Claude Code 将 Auto Mode 设为默认",
@@ -44,6 +44,16 @@
       "PSA：Claude Code 会话以明文 JSON 落盘，粘贴过的内容都在",
       "PSA：核对来源——Claude 整段论证建在 Grokipedia 条目上",
       "@amorriscode：Anthropic 员工不会私信你"
+    ],
+    "20260814": [
+      "Claude Code 发布 v2.1.232",
+      "Claude Code 发布 v2.1.231",
+      "Claude Code 桌面端：用量额度用尽后可「自动续跑」",
+      "Anthropic 把多个 AI Agent 丢进同一任务，结果打起「地盘战」",
+      "投资者押注 Anthropic 以约 2 万亿美元估值冲击创纪录 IPO",
+      "@bcherny：让 Claude 接管日常应用维护，已出现「活过来」的迹象",
+      "@amorriscode：桌面端 Browser 窗格可点选元素再口述修改",
+      "@noahzweben：Claude 更「懂何时闭嘴」，主动打扰消息约降 45%"
     ]
   }
 }

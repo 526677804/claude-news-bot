@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T03:01:50.754773",
+  "updated_at": "2026-08-14T03:01:54.750385",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -216,6 +216,34 @@
     "https://x.com/amorriscode/status/2087722925164232772": "20260813",
     "https://x.com/amorriscode/status/2087568140494585872": "20260813",
     "https://x.com/ClaudeCodeLog/status/2087274049709707404": "20260813",
-    "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/": "20260813"
+    "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/": "20260813",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.232": "20260814",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.231": "20260814",
+    "https://news.ycombinator.com/item?id=49286056": "20260814",
+    "https://www.reuters.com/technology/anthropic-talks-buy-decart-ai-source-says-2026-08-13/": "20260814",
+    "https://www.ft.com/content/840ac156-af1c-4a82-b260-ae791072fcfa": "20260814",
+    "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/": "20260814",
+    "https://www.orangecrumbs.com/stories/show-hn": "20260814",
+    "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/": "20260814",
+    "https://www.reddit.com/r/Anthropic/comments/1vn346k/gm_dario_u_need_to_wake_up_and_fix_claudia/": "20260814",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vn7yk3/i_built_a_watercolor_simulator_based_on_real/": "20260814",
+    "https://www.reddit.com/r/Anthropic/comments/1vnperz/fable_guidelines_against_medical_conversations/": "20260814",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vnnpur/example_of_a_real_working_loop_orchestrator/": "20260814",
+    "https://www.reddit.com/r/Anthropic/comments/1vnfhla/opus_5_setting_new_sota_on_programbench_solves/": "20260814",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vnj1xq/why_arent_businesses_using_fable_5/": "20260814",
+    "https://www.reddit.com/r/Anthropic/comments/1vnftxk/i_think_chatgpt_is_just_as_bad_if_not_worse_than/": "20260814",
+    "https://x.com/ClaudeDevs/status/2088014831605702937": "20260814",
+    "https://x.com/bcherny/status/2088020840243945554": "20260814",
+    "https://x.com/bcherny/status/2088014489438621990": "20260814",
+    "https://x.com/bcherny/status/2087752313700319456": "20260814",
+    "https://x.com/trq212/status/2088049989306192106": "20260814",
+    "https://x.com/amorriscode/status/2087957180507181296": "20260814",
+    "https://x.com/lydiahallie/status/2087960413820580002": "20260814",
+    "https://x.com/noahzweben/status/2087985717817274698": "20260814",
+    "https://x.com/amorriscode/status/2088015100330561969": "20260814",
+    "https://x.com/bcherny/status/2088020924268511293": "20260814",
+    "https://x.com/amorriscode/status/2088034151387791385": "20260814",
+    "https://x.com/amorriscode/status/2087783117214154810": "20260814",
+    "https://x.com/ClaudeCodeLog/status/2087648975927087570": "20260814"
   }
 }
