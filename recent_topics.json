@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T03:01:54.751037",
+  "updated_at": "2026-08-15T03:01:07.112865",
   "days": {
     "20260809": [
       "Claude Code 将 Auto Mode 设为默认",
@@ -54,6 +54,17 @@
       "@bcherny：让 Claude 接管日常应用维护，已出现「活过来」的迹象",
       "@amorriscode：桌面端 Browser 窗格可点选元素再口述修改",
       "@noahzweben：Claude 更「懂何时闭嘴」，主动打扰消息约降 45%"
+    ],
+    "20260815": [
+      "Auto Mode 今日正式滚动成为 Claude Code 默认权限模式",
+      "Claude Code 发布 v2.1.233",
+      "Anthropic 发布第二份 RSP Risk Report（2026 年 8 月）",
+      "官方博客：如何最大化 Claude Code 会话价值",
+      "OpenAI 与 Anthropic 陷入价格战，中国厂商紧逼",
+      "Graft：用 Claude Code hooks 把 grep 相关 token 砍掉约 42%",
+      "@amorriscode：桌面端可直接在会话里查看与编辑文件",
+      "@lydiahallie：还想个性化 Claude Code 的哪些能力？",
+      "有人用 Claude Code 拿真金白银炒股，社区晒结果"
     ]
   }
 }

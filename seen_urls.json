@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T03:01:54.750385",
+  "updated_at": "2026-08-15T03:01:07.112016",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -244,6 +244,27 @@
     "https://x.com/bcherny/status/2088020924268511293": "20260814",
     "https://x.com/amorriscode/status/2088034151387791385": "20260814",
     "https://x.com/amorriscode/status/2087783117214154810": "20260814",
-    "https://x.com/ClaudeCodeLog/status/2087648975927087570": "20260814"
+    "https://x.com/ClaudeCodeLog/status/2087648975927087570": "20260814",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.233": "20260815",
+    "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions": "20260815",
+    "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf": "20260815",
+    "https://www.wsj.com/tech/ai/claude-dario-amodei-wife-anthropic-e1eeda7d": "20260815",
+    "https://github.com/NanoNets/Graft": "20260815",
+    "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/": "20260815",
+    "https://www.reddit.com/r/Anthropic/comments/1vol9sb/anthropic_needs_to_release_a_statement_about/": "20260815",
+    "https://www.reddit.com/r/ClaudeAI/comments/1voi341/i_let_claude_code_trade_stocks_with_my_real_money/": "20260815",
+    "https://www.reddit.com/r/Anthropic/comments/1vojosm/wife_of_anthropic_ceo_dario_amodei_tried_to_raise/": "20260815",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vokr48/anthropic_writes_an_faq_about_watermarking/": "20260815",
+    "https://www.reddit.com/r/Anthropic/comments/1vompl1/china_al_qwen_38_open_weights_model_is_out_and/": "20260815",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vo7klb/claude_changed_the_way_i_eat_9_kg_down_this/": "20260815",
+    "https://www.reddit.com/r/Anthropic/comments/1vo3m4n/laughing_nervously/": "20260815",
+    "https://x.com/AnthropicAI/status/2088343978873966687": "20260815",
+    "https://x.com/ClaudeDevs/status/2088332927189049738": "20260815",
+    "https://x.com/AnthropicAI/status/2088324824863236248": "20260815",
+    "https://x.com/alexalbert__/status/2088344658858631575": "20260815",
+    "https://x.com/trq212/status/2088339390435377456": "20260815",
+    "https://x.com/amorriscode/status/2088362849215332800": "20260815",
+    "https://x.com/lydiahallie/status/2088298127346536578": "20260815",
+    "https://x.com/ClaudeCodeLog/status/2088048589566042367": "20260815"
   }
 }
