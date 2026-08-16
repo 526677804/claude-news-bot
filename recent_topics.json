@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T03:01:07.112865",
+  "updated_at": "2026-08-16T03:01:15.497233",
   "days": {
     "20260809": [
       "Claude Code 将 Auto Mode 设为默认",
@@ -65,6 +65,13 @@
       "@amorriscode：桌面端可直接在会话里查看与编辑文件",
       "@lydiahallie：还想个性化 Claude Code 的哪些能力？",
       "有人用 Claude Code 拿真金白银炒股，社区晒结果"
+    ],
+    "20260816": [
+      "Anthropic 详解 Claude 文本水印如何工作",
+      "Anthropic IPO 估值锚定 2028 年约 1900–2000 亿美元营收预期",
+      "@DarioAmodei：罕见亲自下场，长文回应一场 X 上的激烈争论",
+      "PSA：默认开启「帮助改进 Claude」时，对话可能保留长达 5 年",
+      "有人从 Opus 5「降级」回 Opus 4.6，体感判若两天"
     ]
   }
 }
