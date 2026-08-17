@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-08-16T03:01:15.497233",
+  "updated_at": "2026-08-17T03:02:04.186042",
   "days": {
-    "20260809": [
-      "Claude Code 将 Auto Mode 设为默认",
-      "Anthropic Economic Index（经济影响指数）",
-      "Claude Code 2.1.226 发布",
-      "Claude Code 核心成员谈「零源码逆向并现代化 1996 系统」",
-      "Claude Code 支持 macOS 上会话互相通信",
-      "越高效，越焦虑？社区讨论 AI 时代该练什么"
-    ],
     "20260810": [
       "Anthropic 将于 8 月 14 日起默认开启 Claude Code Auto Mode",
       "以色列初创公司 Irregular 被指与针对 OpenAI、Anthropic、Meta 的 AI 攻击有关",
@@ -72,6 +64,14 @@
       "@DarioAmodei：罕见亲自下场，长文回应一场 X 上的激烈争论",
       "PSA：默认开启「帮助改进 Claude」时，对话可能保留长达 5 年",
       "有人从 Opus 5「降级」回 Opus 4.6，体感判若两天"
+    ],
+    "20260817": [
+      "John Gruber：Anthropic 的文本「水印」是对写作的玷污",
+      "Anthropic 第二季度营收据报突破 115 亿美元",
+      "在 Claude Code 里实测月之暗面 Kimi K3",
+      "@trq212：Django / Flask / Rails 三位作者很早就「All in AI」",
+      "社区呼吁：把临时 150% Claude Code 额度变成新默认",
+      "用 Claude 做出第一款 Unity 游戏 FrogPop"
     ]
   }
 }
