@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:02:04.186042",
+  "updated_at": "2026-08-18T03:05:23.840318",
   "days": {
-    "20260810": [
-      "Anthropic 将于 8 月 14 日起默认开启 Claude Code Auto Mode",
-      "以色列初创公司 Irregular 被指与针对 OpenAI、Anthropic、Meta 的 AI 攻击有关",
-      "AI 收入约七成来自 OpenAI 与 Anthropic",
-      "Qwen 3.8 与 Claude Opus 5：基准高分不等于账单更划算",
-      "Whetstone：20 个从真实翻车经验提炼的 Claude Code Skills",
-      "Benzi：号称在 Sonnet 上能打过 Claude Code 的编码 Agent",
-      "grill-me Skill：先连问 10~15 个问题再动手写代码",
-      "Claude Code 核心成员 @bcherny：Prompt Injection 已是骗子攻击 Agent 的最常见手段"
-    ],
     "20260811": [
       "Auto mode 将成为 Claude Code 默认模式",
       "Claude Code 发布 v2.1.227",
@@ -72,6 +62,18 @@
       "@trq212：Django / Flask / Rails 三位作者很早就「All in AI」",
       "社区呼吁：把临时 150% Claude Code 额度变成新默认",
       "用 Claude 做出第一款 Unity 游戏 FrogPop"
+    ],
+    "20260818": [
+      "Claude Code 新增 `/design` skill（研究预览）：命令行里也能做设计",
+      "Claude Code 发布 v2.1.234",
+      "Claude Code CLI 的 p99 CPU 占用减半",
+      "客户案例：ABC Legal 用 Claude Managed Agents 部署 50+ 智能体",
+      "Anthropic 年化营收跑速升至 650 亿美元",
+      "Anthropic 被称作「AI 界的苹果」：最贵，但拿走最多收入",
+      "statuslin.es：Claude Code 状态栏社区图库",
+      "有用户吐槽：更新太勤，体验像「每次工程师一提交就弹窗重载」",
+      "@trq212：程序化艺术、视频剪辑和 3D 游戏 demo，让我更相信 LLM 编程模型在不少创意活上强过 diffusion",
+      "@amorriscode：给 Claude 更多自主权之后，自己开始做更高杠杆的事"
     ]
   }
 }

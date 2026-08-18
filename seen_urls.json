@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T03:02:04.185272",
+  "updated_at": "2026-08-18T03:05:23.839434",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -293,6 +293,30 @@
     "https://www.reddit.com/r/ClaudeAI/comments/1vq9qp8/i_just_got_this_in_right_bottom_of_web_page_what/": "20260817",
     "https://www.reddit.com/r/Anthropic/comments/1vq8kif/claude_is_vastly_superior_to_chatgpt/": "20260817",
     "https://x.com/trq212/status/2089085004966207679": "20260817",
-    "https://simonwillison.net/2026/Aug/16/dario-amodei/": "20260817"
+    "https://simonwillison.net/2026/Aug/16/dario-amodei/": "20260817",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.234": "20260818",
+    "https://twitter.com/TheAhmadOsman/status/2065307070044234186": "20260818",
+    "https://www.techradar.com/pro/anthropic-becomes-the-apple-of-ai-as-it-grabs-most-revenue-despite-being-the-most-expensive": "20260818",
+    "https://statuslin.es": "20260818",
+    "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/": "20260818",
+    "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system": "20260818",
+    "https://www.reddit.com/r/Anthropic/comments/1vqx80k/anthropic_is_eyeing_recordshattering_3trillion/": "20260818",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vr9vri/the_extreme_number_of_updates_comes_off_as_janky/": "20260818",
+    "https://www.reddit.com/r/Anthropic/comments/1vqxlcv/claude_tag_now_reads_even_more_of_the_room/": "20260818",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vqx297/i_coded_terminal_manager_for_adhd_brains_100/": "20260818",
+    "https://www.reddit.com/r/Anthropic/comments/1vqrwkl/what_happened_to_the_additional_weekly_usage/": "20260818",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vqsas9/claude_is_losing_me_after_being_heavy_user_since/": "20260818",
+    "https://www.reddit.com/r/Anthropic/comments/1vqxtda/can_we_get_a_true_oled_black_theme_for_the_claude/": "20260818",
+    "https://x.com/ClaudeDevs/status/2089509659090780193": "20260818",
+    "https://x.com/ClaudeDevs/status/2089471692762673408": "20260818",
+    "https://x.com/ClaudeDevs/status/2089436153208549876": "20260818",
+    "https://x.com/amorriscode/status/2089542297574932763": "20260818",
+    "https://x.com/lydiahallie/status/2089481116759834797": "20260818",
+    "https://x.com/trq212/status/2089415712007938315": "20260818",
+    "https://x.com/trq212/status/2089529798850969805": "20260818",
+    "https://x.com/bcherny/status/2089538781909332210": "20260818",
+    "https://x.com/bcherny/status/2089537919795212565": "20260818",
+    "https://x.com/amorriscode/status/2089472668504649914": "20260818",
+    "https://x.com/ClaudeCodeLog/status/2089451690252493285": "20260818"
   }
 }
