@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T03:05:23.839434",
+  "updated_at": "2026-08-19T03:05:15.147620",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -317,6 +317,31 @@
     "https://x.com/bcherny/status/2089538781909332210": "20260818",
     "https://x.com/bcherny/status/2089537919795212565": "20260818",
     "https://x.com/amorriscode/status/2089472668504649914": "20260818",
-    "https://x.com/ClaudeCodeLog/status/2089451690252493285": "20260818"
+    "https://x.com/ClaudeCodeLog/status/2089451690252493285": "20260818",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.235": "20260819",
+    "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion": "20260819",
+    "https://cdn.kuber.studio/chat/hp-laser-1008a-driver": "20260819",
+    "https://getunblocked.com/blog/moving-agent-loops-from-anthropic-to-glm/": "20260819",
+    "https://www.wsj.com/tech/ai/openais-second-quarter-sales-show-tepid-growth-compared-with-anthropic-5cb42998": "20260819",
+    "https://www.schneier.com/blog/archives/2026/08/if-the-markets-reject-openai-and-anthropic-the-us-should-nationalize-them.html": "20260819",
+    "https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo": "20260819",
+    "https://github.com/radium0090/Compute-Gateway": "20260819",
+    "https://www.reddit.com/r/Anthropic/comments/1vrlpux/patterns_and_problems_in_multiagent_systems/": "20260819",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vrzmx9/anthropic_extends_50_limit_increase_to_aug_31/": "20260819",
+    "https://www.reddit.com/r/Anthropic/comments/1vrs2ov/almost_nobody_is_using_anthropics_fable_5/": "20260819",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vs4ntq/what_is_happening/": "20260819",
+    "https://www.reddit.com/r/Anthropic/comments/1vrzq72/50_increase_to_weekly_claude_code_limits_through/": "20260819",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vrjryf/week_3_of_making_my_fishing_game_entirely_with_ai/": "20260819",
+    "https://www.reddit.com/r/Anthropic/comments/1vrwn16/claude_code_weekly_limits_reduce_by_a_third/": "20260819",
+    "https://x.com/AnthropicAI/status/2089842387845804246": "20260819",
+    "https://x.com/claudeai/status/2089806039088517356": "20260819",
+    "https://x.com/claudeai/status/2089756371570900999": "20260819",
+    "https://x.com/ClaudeDevs/status/2089798442306711646": "20260819",
+    "https://x.com/ClaudeDevs/status/2089860955266228548": "20260819",
+    "https://x.com/bcherny/status/2089801784944640312": "20260819",
+    "https://x.com/trq212/status/2089844723691479333": "20260819",
+    "https://x.com/trq212/status/2089801032562029045": "20260819",
+    "https://x.com/amorriscode/status/2089860366012682729": "20260819",
+    "https://x.com/jackclarkSF/status/2089745418372755545": "20260819"
   }
 }
