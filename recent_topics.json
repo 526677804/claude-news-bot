@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:05:15.148478",
+  "updated_at": "2026-08-20T03:01:36.955296",
   "days": {
-    "20260812": [
-      "Anthropic 将对 Claude 生成文本嵌入隐形水印",
-      "Claude Code 发布 v2.1.228",
-      "Hindcast：在 Mac 上搜索、回放并恢复任意 Claude Code 会话",
-      "@bcherny：LLM 写出的 bug 类型正在变",
-      "从专有 LLM API「偷」推理轨迹（CoT）",
-      "Claude Code 在 curl 的 User-Agent 中泄露真实邮箱"
-    ],
     "20260813": [
       "Claude Code 发布 v2.1.229",
       "Claude in Chrome 会话可同步到桌面、网页与手机",
@@ -75,6 +67,17 @@
       "用 Claude Code 给 macOS 写出 HP 从不支持的打印机驱动",
       "@trq212：把 SaaS 做成无头接口，让智能体来用",
       "把 Agent 循环从 Anthropic 迁到 GLM：价目表上省 95%，账单上只省 68%"
+    ],
+    "20260820": [
+      "Claude Code 发布 v2.1.237：内置「Concise」简洁输出模式",
+      "Claude Code 发布 v2.1.236",
+      "Claude Managed Agents 三项功能更新",
+      "OpenAI 推新隐私保护，欲在企业市场压过 Anthropic",
+      "Anthropic 论文：多智能体系统中的「思维病毒」",
+      "smolmachines / smolvm：不可信 Python 与 JavaScript 的沙箱方案",
+      "用 Claude 从零写出硬件级 NES 模拟器，精度超越 Mesen 2",
+      "@lydiahallie：Auto Mode 可用自然语言配置权限规则",
+      "社区讨论：Claude Sonnet 5 识别「AI 安全研究员」身份后会改变行为"
     ]
   }
 }

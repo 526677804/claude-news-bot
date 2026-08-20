@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T03:05:15.147620",
+  "updated_at": "2026-08-20T03:01:36.954568",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -342,6 +342,31 @@
     "https://x.com/trq212/status/2089844723691479333": "20260819",
     "https://x.com/trq212/status/2089801032562029045": "20260819",
     "https://x.com/amorriscode/status/2089860366012682729": "20260819",
-    "https://x.com/jackclarkSF/status/2089745418372755545": "20260819"
+    "https://x.com/jackclarkSF/status/2089745418372755545": "20260819",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.237": "20260820",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.236": "20260820",
+    "https://twitter.com/ClaudeDevs/status/2089798442306711646": "20260820",
+    "https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/": "20260820",
+    "https://www.businessinsider.com/claude-users-cancel-subscriptions-citing-anthropic-new-ai-watermark-2026-8": "20260820",
+    "https://arxiv.org/abs/2608.10218": "20260820",
+    "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/": "20260820",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vt5drr/list_of_latest_discussion_hubs_on_rclaudeai/": "20260820",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vst16y/claude_sonnet_5_shifts_behavior_when_it/": "20260820",
+    "https://www.reddit.com/r/Anthropic/comments/1vsoyqd/this_doesnt_look_good/": "20260820",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vt3ezy/a_few_days_ago_i_posted_about_claude_building_me/": "20260820",
+    "https://www.reddit.com/r/Anthropic/comments/1vsqw4i/working_with_llms_in_a_nutshell/": "20260820",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vsztvg/give_back_claudes_thought_process/": "20260820",
+    "https://www.reddit.com/r/Anthropic/comments/1vt4246/anthropics_coding_bar_is_fucking_ridiculous/": "20260820",
+    "https://x.com/ClaudeDevs/status/2090245922685063634": "20260820",
+    "https://x.com/ClaudeDevs/status/2090218983962390950": "20260820",
+    "https://x.com/bcherny/status/2089956862968074503": "20260820",
+    "https://x.com/bcherny/status/2089924199804711410": "20260820",
+    "https://x.com/trq212/status/2090134945490678071": "20260820",
+    "https://x.com/trq212/status/2090182422415716414": "20260820",
+    "https://x.com/lydiahallie/status/2090248755933270053": "20260820",
+    "https://x.com/lydiahallie/status/2090134982161502394": "20260820",
+    "https://x.com/amorriscode/status/2089873349963096287": "20260820",
+    "https://x.com/ch402/status/2090091327681872015": "20260820",
+    "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/": "20260820"
   }
 }
