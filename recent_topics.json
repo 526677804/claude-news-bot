@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:01:36.955296",
+  "updated_at": "2026-08-21T03:02:54.350953",
   "days": {
-    "20260813": [
-      "Claude Code 发布 v2.1.229",
-      "Claude in Chrome 会话可同步到桌面、网页与手机",
-      "Anthropic 据报洽谈以约 60 亿美元收购 Decart",
-      "Theseus：别人出钱，Anthropic 拿专用算力中心",
-      "面试题默认候选人买得起 Claude Code Max？",
-      "PSA：Claude Code 会话以明文 JSON 落盘，粘贴过的内容都在",
-      "PSA：核对来源——Claude 整段论证建在 Grokipedia 条目上",
-      "@amorriscode：Anthropic 员工不会私信你"
-    ],
     "20260814": [
       "Claude Code 发布 v2.1.232",
       "Claude Code 发布 v2.1.231",
@@ -78,6 +68,20 @@
       "用 Claude 从零写出硬件级 NES 模拟器，精度超越 Mesen 2",
       "@lydiahallie：Auto Mode 可用自然语言配置权限规则",
       "社区讨论：Claude Sonnet 5 识别「AI 安全研究员」身份后会改变行为"
+    ],
+    "20260821": [
+      "Computer use、浏览器工具、Skills API 与 Files API 正式在 Claude 平台全面可用",
+      "Claude Code 发布 v2.1.238",
+      "Claude Academy 正式上线",
+      "企业侧 Fable 安全护栏可跑在客户自有基础设施上",
+      "TechCrunch：新数据显示，OpenAI 正在企业用户侧追赶 Anthropic",
+      "彭博：Anthropic 预期 IPO 规模将追平甚至超过 SpaceX 纪录（进展跟进）",
+      "Epho：用一条 curl 跑起 Claude Code",
+      "only-cli（oc）：把网站收成微型 CLI，给 Claude Code 省 token",
+      "Obsidian + Claude Code：作者日常工作流搭法",
+      "《Claude Code 是不是一个糟糕的 harness？》",
+      "「Claude 是思考搭档，Opus 5 不像 Claude」",
+      "让 Claude 代理交易一个月：亏了约 3.1 万美元"
     ]
   }
 }
