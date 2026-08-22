@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:02:54.350953",
+  "updated_at": "2026-08-22T03:03:01.064317",
   "days": {
-    "20260814": [
-      "Claude Code 发布 v2.1.232",
-      "Claude Code 发布 v2.1.231",
-      "Claude Code 桌面端：用量额度用尽后可「自动续跑」",
-      "Anthropic 把多个 AI Agent 丢进同一任务，结果打起「地盘战」",
-      "投资者押注 Anthropic 以约 2 万亿美元估值冲击创纪录 IPO",
-      "@bcherny：让 Claude 接管日常应用维护，已出现「活过来」的迹象",
-      "@amorriscode：桌面端 Browser 窗格可点选元素再口述修改",
-      "@noahzweben：Claude 更「懂何时闭嘴」，主动打扰消息约降 45%"
-    ],
     "20260815": [
       "Auto Mode 今日正式滚动成为 Claude Code 默认权限模式",
       "Claude Code 发布 v2.1.233",
@@ -82,6 +72,19 @@
       "《Claude Code 是不是一个糟糕的 harness？》",
       "「Claude 是思考搭档，Opus 5 不像 Claude」",
       "让 Claude 代理交易一个月：亏了约 3.1 万美元"
+    ],
+    "20260822": [
+      "Claude Security 扫描现已跑在 Claude Mythos 5 上，对企业客户公开测试",
+      "Claude Code 发布 v2.1.239",
+      "Remote Control 可靠性大修：官方回应社区第一诉求",
+      "TechCrunch：Claude Opus 4.6 仍易绕过色情内容限制",
+      "路透：Anthropic 计划调整企业数据留存政策",
+      "Hermit：把 Claude Code 变成 7×24 常驻 Agent",
+      "Vesta：给 Claude Code 加一层代码图谱与本体论",
+      "用一个 Claude Code Skill 替代 Grafana 监控栈",
+      "@trq212 推荐 Anthropic 内部常用 skill：ELI5",
+      "@amorriscode：会话中途发现新活，Claude 会建议新开会话接住",
+      "社区观察：系统提示似乎更少「中途征求用户意见」"
     ]
   }
 }

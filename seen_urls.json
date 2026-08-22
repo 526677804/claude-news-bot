@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T03:02:54.350088",
+  "updated_at": "2026-08-22T03:03:01.063283",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -399,6 +399,29 @@
     "https://x.com/trq212/status/2090569474139439335": "20260821",
     "https://x.com/amorriscode/status/2090526413195763712": "20260821",
     "https://x.com/lydiahallie/status/2090549776047800534": "20260821",
-    "https://x.com/ClaudeCodeLog/status/2090171086553894992": "20260821"
+    "https://x.com/ClaudeCodeLog/status/2090171086553894992": "20260821",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.239": "20260822",
+    "https://zenodo.org/records/21696066": "20260822",
+    "https://github.com/govarthenan/islp-epub": "20260822",
+    "https://www.reuters.com/business/anthropic-plans-change-enterprise-data-retention-policy-source-says-2026-08-20/": "20260822",
+    "https://github.com/gtapps/claude-code-hermit/": "20260822",
+    "https://frigade.com/blog/we-replaced-grafana-with-a-claude-code-skill": "20260822",
+    "https://github.com/kanjani-ai-research/Vesta": "20260822",
+    "https://www.bloomberg.com/news/articles/2026-08-20/anthropic-plans-to-change-data-retention-policy-for-advanced-ai": "20260822",
+    "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/": "20260822",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vuuiot/having_unlimited_tokens_is_wild/": "20260822",
+    "https://www.reddit.com/r/Anthropic/comments/1vux0n5/anthropic_added_system_prompt_to_avoid_claude/": "20260822",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vuh7rl/decayfmt_a_file_format_which_corrupts_a_little/": "20260822",
+    "https://www.reddit.com/r/Anthropic/comments/1vugjfl/any_other_heavy_user_that_had_noticed_a_sharp/": "20260822",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vuovcy/oh_mythos_5_is_no_longer_a_dangerous_model_and/": "20260822",
+    "https://www.reddit.com/r/Anthropic/comments/1vuxw1p/opus_46_48_as_main_and_opus_5_as_subagent/": "20260822",
+    "https://x.com/claudeai/status/2090852314319880425": "20260822",
+    "https://x.com/ClaudeDevs/status/2090933155847143498": "20260822",
+    "https://x.com/trq212/status/2090884854590382515": "20260822",
+    "https://x.com/amorriscode/status/2090861991187620115": "20260822",
+    "https://x.com/lydiahallie/status/2090980530481463323": "20260822",
+    "https://x.com/lydiahallie/status/2090896441296486730": "20260822",
+    "https://x.com/noahzweben/status/2090865922525573547": "20260822",
+    "https://x.com/ClaudeCodeLog/status/2090893358088482877": "20260822"
   }
 }
