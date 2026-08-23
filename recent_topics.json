@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:03:01.064317",
+  "updated_at": "2026-08-23T03:01:53.867133",
   "days": {
-    "20260815": [
-      "Auto Mode 今日正式滚动成为 Claude Code 默认权限模式",
-      "Claude Code 发布 v2.1.233",
-      "Anthropic 发布第二份 RSP Risk Report（2026 年 8 月）",
-      "官方博客：如何最大化 Claude Code 会话价值",
-      "OpenAI 与 Anthropic 陷入价格战，中国厂商紧逼",
-      "Graft：用 Claude Code hooks 把 grep 相关 token 砍掉约 42%",
-      "@amorriscode：桌面端可直接在会话里查看与编辑文件",
-      "@lydiahallie：还想个性化 Claude Code 的哪些能力？",
-      "有人用 Claude Code 拿真金白银炒股，社区晒结果"
-    ],
     "20260816": [
       "Anthropic 详解 Claude 文本水印如何工作",
       "Anthropic IPO 估值锚定 2028 年约 1900–2000 亿美元营收预期",
@@ -85,6 +74,9 @@
       "@trq212 推荐 Anthropic 内部常用 skill：ELI5",
       "@amorriscode：会话中途发现新活，Claude 会建议新开会话接住",
       "社区观察：系统提示似乎更少「中途征求用户意见」"
+    ],
+    "20260823": [
+      "Anthropic 疑似在 Claude Code 中 A/B 测试降低 Effort 档位，官方回应系 API 配置预演"
     ]
   }
 }

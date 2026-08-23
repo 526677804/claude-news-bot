@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T03:03:01.063283",
+  "updated_at": "2026-08-23T03:01:53.866131",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -422,6 +422,20 @@
     "https://x.com/lydiahallie/status/2090980530481463323": "20260822",
     "https://x.com/lydiahallie/status/2090896441296486730": "20260822",
     "https://x.com/noahzweben/status/2090865922525573547": "20260822",
-    "https://x.com/ClaudeCodeLog/status/2090893358088482877": "20260822"
+    "https://x.com/ClaudeCodeLog/status/2090893358088482877": "20260822",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.241": "20260823",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.240": "20260823",
+    "https://twitter.com/argofowl/status/2091150597374537729": "20260823",
+    "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html": "20260823",
+    "https://www.nytimes.com/2026/08/21/technology/anthropic-ipo-100-billion.html": "20260823",
+    "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/": "20260823",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vvi3x1/i_built_an_english_claudish_translator/": "20260823",
+    "https://www.reddit.com/r/Anthropic/comments/1vvpj45/is_anthropic_reaching_out_to_applicants_to/": "20260823",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vvjr5n/anthropic_stealth_nerfing_effort_levels/": "20260823",
+    "https://www.reddit.com/r/Anthropic/comments/1vvt81d/what_exactly_does_one_need_to_prepare_for_a_role/": "20260823",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vvo1a5/devs_who_actually_use_claude_code_properly_not/": "20260823",
+    "https://www.reddit.com/r/Anthropic/comments/1vvnp1m/fable_rescued_my_home_assistant_install_from_disk/": "20260823",
+    "https://x.com/bcherny/status/2091068805934105045": "20260823",
+    "https://x.com/amorriscode/status/2091027620049862834": "20260823"
   }
 }
