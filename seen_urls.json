@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T03:01:53.866131",
+  "updated_at": "2026-08-24T03:01:07.138917",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -436,6 +436,21 @@
     "https://www.reddit.com/r/ClaudeAI/comments/1vvo1a5/devs_who_actually_use_claude_code_properly_not/": "20260823",
     "https://www.reddit.com/r/Anthropic/comments/1vvnp1m/fable_rescued_my_home_assistant_install_from_disk/": "20260823",
     "https://x.com/bcherny/status/2091068805934105045": "20260823",
-    "https://x.com/amorriscode/status/2091027620049862834": "20260823"
+    "https://x.com/amorriscode/status/2091027620049862834": "20260823",
+    "https://github.com/ptmrio/harness-subagent": "20260824",
+    "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245": "20260824",
+    "https://12gramsofcarbon.com/p/is-ai-structurally-a-centralizing": "20260824",
+    "https://structo.redbeardlab.com/": "20260824",
+    "https://github.com/arturlimaaa/terminito": "20260824",
+    "https://skillworks.kynth.studio": "20260824",
+    "https://marginalrevolution.com/marginalrevolution/2026/08/my-recent-visit-to-anthropic.html": "20260824",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vwinim/opus_5_real_usecase_decoded_using_it_for_coding/": "20260824",
+    "https://www.reddit.com/r/Anthropic/comments/1vwgnww/amazon_kept_shutting_down_my_tablet_so_i_spent/": "20260824",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vwkw83/how_to_stop_claude_code_from_adding_every/": "20260824",
+    "https://www.reddit.com/r/Anthropic/comments/1vwg5g2/chatgpt_computer_use_is_lapping_claude/": "20260824",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vw868t/lattice_an_isometric_game_kit_for_agents/": "20260824",
+    "https://www.reddit.com/r/Anthropic/comments/1vw08ar/want_to_save_12k_context_at_every_session_start/": "20260824",
+    "https://x.com/ClaudeCodeLog/status/2091330470499832052": "20260824",
+    "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/": "20260824"
   }
 }
