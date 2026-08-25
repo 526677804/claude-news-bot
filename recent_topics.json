@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:01:07.140013",
+  "updated_at": "2026-08-25T03:03:32.321046",
   "days": {
-    "20260817": [
-      "John Gruber：Anthropic 的文本「水印」是对写作的玷污",
-      "Anthropic 第二季度营收据报突破 115 亿美元",
-      "在 Claude Code 里实测月之暗面 Kimi K3",
-      "@trq212：Django / Flask / Rails 三位作者很早就「All in AI」",
-      "社区呼吁：把临时 150% Claude Code 额度变成新默认",
-      "用 Claude 做出第一款 Unity 游戏 FrogPop"
-    ],
     "20260818": [
       "Claude Code 新增 `/design` skill（研究预览）：命令行里也能做设计",
       "Claude Code 发布 v2.1.234",
@@ -81,6 +73,19 @@
       "禁用 Artifacts 与 Chrome MCP Server，每次启动可省 12k+ context",
       "如何阻止 Claude Code 把每次纠错都写进 spec？",
       "社区 A/B 实测：ChatGPT Computer Use 体验领先 Claude"
+    ],
+    "20260825": [
+      "Claude 文本水印如何工作（官方说明）",
+      "改进 Fable 5 的生物学安全护栏",
+      "Claude Code 发布 v2.1.243",
+      "Web / 桌面端长回复流式渲染约快 4 倍",
+      "Axios：Anthropic 候选人会面对直白的「钱」相关问题",
+      "Kindle 高亮导出 Skill（突破导出截断）",
+      "llm-anthropic 0.27",
+      "session-migrate：跨 Claude Code / Codex / Pi 迁移会话",
+      "开源权重 GLM-5.3：Ed-o-meter 上性价比压过闭源巨头？",
+      "为何 Anthropic 对外文风一点也不像 Claude？",
+      "Indeed 裁员后，用 Claude 做出求职竞品并已帮 3 人入职"
     ]
   }
 }

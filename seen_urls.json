@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T03:01:07.138917",
+  "updated_at": "2026-08-25T03:03:32.320011",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -451,6 +451,27 @@
     "https://www.reddit.com/r/ClaudeAI/comments/1vw868t/lattice_an_isometric_game_kit_for_agents/": "20260824",
     "https://www.reddit.com/r/Anthropic/comments/1vw08ar/want_to_save_12k_context_at_every_session_start/": "20260824",
     "https://x.com/ClaudeCodeLog/status/2091330470499832052": "20260824",
-    "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/": "20260824"
+    "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/": "20260824",
+    "https://www.anthropic.com/news/claude-text-watermark": "20260825",
+    "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards": "20260825",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.243": "20260825",
+    "https://reinvently.co.uk/tools/ed-o-meter/": "20260825",
+    "https://status.claude.com/uptime": "20260825",
+    "https://cmart.blog/claude-writing/": "20260825",
+    "https://github.com/l3a0/claude-plugins": "20260825",
+    "https://www.axios.com/2026/08/24/scoop-anthropic-candidates-face-blunt-money-question": "20260825",
+    "https://github.com/xhluca/session-migrate": "20260825",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vx6fyn/what_i_built_with_claude_sweet_potatoes/": "20260825",
+    "https://www.reddit.com/r/Anthropic/comments/1vxguke/opus_51_this_week_next_week/": "20260825",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai/": "20260825",
+    "https://www.reddit.com/r/Anthropic/comments/1vx5w37/after_3_years_im_out/": "20260825",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vx4kn7/indeed_laid_off_my_pregnant_wife_so_i_built_a_job/": "20260825",
+    "https://www.reddit.com/r/Anthropic/comments/1vxcsbd/how_much_did_slack_pay_to_get_an_ad_in_claude/": "20260825",
+    "https://x.com/ClaudeDevs/status/2092006814804214163": "20260825",
+    "https://x.com/ClaudeDevs/status/2091953609185657251": "20260825",
+    "https://x.com/amorriscode/status/2092019475982016836": "20260825",
+    "https://x.com/lydiahallie/status/2092007449897386096": "20260825",
+    "https://x.com/ClaudeCodeLog/status/2092037167216292188": "20260825",
+    "https://simonwillison.net/2026/Aug/24/llm-anthropic/": "20260825"
   }
 }
