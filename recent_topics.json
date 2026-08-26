@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-08-25T03:03:32.321046",
+  "updated_at": "2026-08-26T03:01:52.637378",
   "days": {
-    "20260818": [
-      "Claude Code 新增 `/design` skill（研究预览）：命令行里也能做设计",
-      "Claude Code 发布 v2.1.234",
-      "Claude Code CLI 的 p99 CPU 占用减半",
-      "客户案例：ABC Legal 用 Claude Managed Agents 部署 50+ 智能体",
-      "Anthropic 年化营收跑速升至 650 亿美元",
-      "Anthropic 被称作「AI 界的苹果」：最贵，但拿走最多收入",
-      "statuslin.es：Claude Code 状态栏社区图库",
-      "有用户吐槽：更新太勤，体验像「每次工程师一提交就弹窗重载」",
-      "@trq212：程序化艺术、视频剪辑和 3D 游戏 demo，让我更相信 LLM 编程模型在不少创意活上强过 diffusion",
-      "@amorriscode：给 Claude 更多自主权之后，自己开始做更高杠杆的事"
-    ],
     "20260819": [
       "Claude Code 周额度 50% 上浮延期至 8 月 31 日",
       "Claude Cowork 已对所有付费计划开放移动端与网页",
@@ -86,6 +74,18 @@
       "开源权重 GLM-5.3：Ed-o-meter 上性价比压过闭源巨头？",
       "为何 Anthropic 对外文风一点也不像 Claude？",
       "Indeed 裁员后，用 Claude 做出求职竞品并已帮 3 人入职"
+    ],
+    "20260826": [
+      "Claude 聊天与 Cowork 现已共用一套记忆，内容由你决定",
+      "Claude Code 发布 v2.1.246",
+      "Claude Code 发布 v2.1.245",
+      "Business Insider：Anthropic 因安保可能罢工，让旧金山员工居家办公",
+      "华尔街日报：Anthropic 拟向投资者称潜在收入空间超 30 万亿美元",
+      "MulmoTerminal：并行跑多个 Claude Code / Codex，一眼看出谁在等你",
+      "Claude Code Tips：45+ 条从入门到进阶的用法清单",
+      "@trq212：很快会分享如何让 Claude Code 更可 hack",
+      "@amorriscode 转发：别在同一会话里频繁换模型",
+      "社区热议：Opus 5 为何「不如」4.8？啰嗦、不稳成主诉"
     ]
   }
 }

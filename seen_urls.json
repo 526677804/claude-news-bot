@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T03:03:32.320011",
+  "updated_at": "2026-08-26T03:01:52.636204",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -472,6 +472,24 @@
     "https://x.com/amorriscode/status/2092019475982016836": "20260825",
     "https://x.com/lydiahallie/status/2092007449897386096": "20260825",
     "https://x.com/ClaudeCodeLog/status/2092037167216292188": "20260825",
-    "https://simonwillison.net/2026/Aug/24/llm-anthropic/": "20260825"
+    "https://simonwillison.net/2026/Aug/24/llm-anthropic/": "20260825",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.246": "20260826",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.245": "20260826",
+    "https://www.businessinsider.com/anthropic-san-francisco-staff-work-remote-office-security-strike-2026-8": "20260826",
+    "https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea": "20260826",
+    "https://www.reuters.com/business/media-telecom/anthropic-expected-tell-investors-it-sees-over-30-trillion-potential-revenue-wsj-2026-08-25/": "20260826",
+    "https://github.com/ykdojo/claude-code-tips": "20260826",
+    "https://news.ycombinator.com/item?id=49415754": "20260826",
+    "https://github.com/receptron/mulmoterminal": "20260826",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vy40r2/claude_in_a_box/": "20260826",
+    "https://www.reddit.com/r/Anthropic/comments/1vyev9h/how_did_anthropic_get_opus_5_so_wrong_from_great/": "20260826",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vy7ue3/i_built_omegle_for_political_debates_you_get/": "20260826",
+    "https://www.reddit.com/r/Anthropic/comments/1vy75lu/i_hate_opus_5/": "20260826",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vy3f0s/opus_5_feels_like_i_am_talking_to_jordan_peterson/": "20260826",
+    "https://www.reddit.com/r/Anthropic/comments/1vyf512/sol_is_as_good_as_opus/": "20260826",
+    "https://x.com/claudeai/status/2092299704864284888": "20260826",
+    "https://x.com/amorriscode/status/2092277388327756154": "20260826",
+    "https://x.com/bcherny/status/2092355642363453943": "20260826",
+    "https://x.com/trq212/status/2092303682616627311": "20260826"
   }
 }
