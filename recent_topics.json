@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:01:52.637378",
+  "updated_at": "2026-08-27T03:01:14.371891",
   "days": {
-    "20260819": [
-      "Claude Code 周额度 50% 上浮延期至 8 月 31 日",
-      "Claude Cowork 已对所有付费计划开放移动端与网页",
-      "Claude 现可在 Gmail 发信、在 Google Drive 管理文件",
-      "Claude Code 发布 v2.1.235",
-      "用 Claude Code 给 macOS 写出 HP 从不支持的打印机驱动",
-      "@trq212：把 SaaS 做成无头接口，让智能体来用",
-      "把 Agent 循环从 Anthropic 迁到 GLM：价目表上省 95%，账单上只省 68%"
-    ],
     "20260820": [
       "Claude Code 发布 v2.1.237：内置「Concise」简洁输出模式",
       "Claude Code 发布 v2.1.236",
@@ -86,6 +77,18 @@
       "@trq212：很快会分享如何让 Claude Code 更可 hack",
       "@amorriscode 转发：别在同一会话里频繁换模型",
       "社区热议：Opus 5 为何「不如」4.8？啰嗦、不稳成主诉"
+    ],
+    "20260827": [
+      "Cowork 内置浏览器正式上线",
+      "Claude Code 发布 v2.1.247",
+      "Anthropic 首次向外部研究者开放隐私保护的使用数据",
+      "Admin API 纳入 SDK 与 `ant` CLI",
+      "Anthropic 与 Nscale 签署 450 亿美元算力协议",
+      "Claude 原生接入 Salesforce（Claudeforce）",
+      "JAIPilot：Java 高性能优化的 Codex / Claude Code Harness",
+      "《我怀念旧版 Claude Code》",
+      "Shopify CEO 考虑禁用 Claude Code",
+      "用 Claude Code 做出百人联机 Three.js 坦克游戏"
     ]
   }
 }

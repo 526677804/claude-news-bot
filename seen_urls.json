@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T03:01:52.636204",
+  "updated_at": "2026-08-27T03:01:14.370794",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -490,6 +490,32 @@
     "https://x.com/claudeai/status/2092299704864284888": "20260826",
     "https://x.com/amorriscode/status/2092277388327756154": "20260826",
     "https://x.com/bcherny/status/2092355642363453943": "20260826",
-    "https://x.com/trq212/status/2092303682616627311": "20260826"
+    "https://x.com/trq212/status/2092303682616627311": "20260826",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.247": "20260827",
+    "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/": "20260827",
+    "https://twitter.com/tobi/status/2092259436538495186": "20260827",
+    "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.JAIPilot%2Fjaipilot/versions/6.4.2": "20260827",
+    "https://news.ycombinator.com/item?id=49434551": "20260827",
+    "https://www.phoronix.com/news/Linux-7.3-Device-Mapper": "20260827",
+    "https://www.loopwerk.io/articles/2026/how-i-use-claude-code/": "20260827",
+    "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/": "20260827",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vz70zy/i_claude_coded_a_multiplayer_threejs_tank_game/": "20260827",
+    "https://www.reddit.com/r/Anthropic/comments/1vz01jp/oxalpha_on_opencode_is_in_fact_glm_53_flash_it/": "20260827",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vyo76q/what_my_wifes_claude_knows_about_me/": "20260827",
+    "https://www.reddit.com/r/Anthropic/comments/1vz1n56/anthropic_tells_san_francisco_staff_to_work_from/": "20260827",
+    "https://www.reddit.com/r/ClaudeAI/comments/1vz8l1f/why_do_we_trust_microsoft_365_with_sensitive/": "20260827",
+    "https://www.reddit.com/r/Anthropic/comments/1vz23ll/opus_5_is_hot_garbage/": "20260827",
+    "https://x.com/claudeai/status/2092755571455758427": "20260827",
+    "https://x.com/ClaudeDevs/status/2092695038270775647": "20260827",
+    "https://x.com/AnthropicAI/status/2092661573223657834": "20260827",
+    "https://x.com/ClaudeDevs/status/2092672740197081360": "20260827",
+    "https://x.com/noahzweben/status/2092776564530569484": "20260827",
+    "https://x.com/trq212/status/2092696449616376140": "20260827",
+    "https://x.com/noahzweben/status/2092776593676738607": "20260827",
+    "https://x.com/trq212/status/2092729394565657010": "20260827",
+    "https://x.com/amorriscode/status/2092772345756946712": "20260827",
+    "https://x.com/amorriscode/status/2092644908616356219": "20260827",
+    "https://x.com/ClaudeCodeLog/status/2092383817587658996": "20260827",
+    "https://x.com/jackclarkSF/status/2092673759895511201": "20260827"
   }
 }
