@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:01:14.371891",
+  "updated_at": "2026-08-28T03:03:34.215085",
   "days": {
-    "20260820": [
-      "Claude Code 发布 v2.1.237：内置「Concise」简洁输出模式",
-      "Claude Code 发布 v2.1.236",
-      "Claude Managed Agents 三项功能更新",
-      "OpenAI 推新隐私保护，欲在企业市场压过 Anthropic",
-      "Anthropic 论文：多智能体系统中的「思维病毒」",
-      "smolmachines / smolvm：不可信 Python 与 JavaScript 的沙箱方案",
-      "用 Claude 从零写出硬件级 NES 模拟器，精度超越 Mesen 2",
-      "@lydiahallie：Auto Mode 可用自然语言配置权限规则",
-      "社区讨论：Claude Sonnet 5 识别「AI 安全研究员」身份后会改变行为"
-    ],
     "20260821": [
       "Computer use、浏览器工具、Skills API 与 Files API 正式在 Claude 平台全面可用",
       "Claude Code 发布 v2.1.238",
@@ -89,6 +78,19 @@
       "《我怀念旧版 Claude Code》",
       "Shopify CEO 考虑禁用 Claude Code",
       "用 Claude Code 做出百人联机 Three.js 坦克游戏"
+    ],
+    "20260828": [
+      "法官裁定：特朗普政府将 Anthropic 列入黑名单违法",
+      "Claude Code 发布 v2.1.248：新增 `--restricted` 受限模式",
+      "Anthropic 启动 Model Hardware Standard (MHS) 研究预览",
+      "Claude 向 1 万名科学家开放 Team 计划",
+      "纽约时报：Meta 预计未来向 Anthropic 投入约 100 亿美元",
+      "100+ 家科技公司联名呼吁防范「流氓 AI」网络安全威胁",
+      "Concord：让 Claude Code、Codex 与 Cursor 互相通信",
+      "Leadcode：Claude Code / Codex / GitHub 按客户隔离账号",
+      "Simon Willison：Claude Code Opus 5 Auto Mode 可被绕过",
+      "Claude 诊断 RTX 4090 多年疑难并构建防护方案",
+      "「人人能造」的隐性代价：Claude Code 降低了构建门槛之后"
     ]
   }
 }
