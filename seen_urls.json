@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T03:03:34.213906",
+  "updated_at": "2026-08-29T03:02:23.931594",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -546,6 +546,32 @@
     "https://x.com/amorriscode/status/2092839825707774457": "20260828",
     "https://x.com/amorriscode/status/2093160545776267697": "20260828",
     "https://x.com/lydiahallie/status/2093066690817126609": "20260828",
-    "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/": "20260828"
+    "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/": "20260828",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.251": "20260829",
+    "https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/": "20260829",
+    "https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html": "20260829",
+    "https://www.ibtimes.com/anthropic-just-beat-pentagon-court-judge-said-national-security-was-used-punish-its-ai-rules-3806895": "20260829",
+    "https://twitter.com/MorgantWillis/status/2093342777841013096": "20260829",
+    "https://github.com/nilbuild/rundown": "20260829",
+    "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/": "20260829",
+    "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/": "20260829",
+    "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w0mw5l/trump_administrations_blacklisting_of_anthropic/": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w10ef9/dario_amodei_says_anthropic_is_not_interested_in/": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w0wcvi/how_i_actually_use_claude_daily_and_none_of_it_is/": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w1444j/i_used_fable_as_the_lead_and_a_fleet_of_sonnet/": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w0xhp3/is_it_better_to_use_claude_code_in_visual_studio/": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w16qt7/do_you_find_the_lydia_emails_helpful/": "20260829",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w0osys/i_built_onlycli_turn_any_website_into_a_compact/": "20260829",
+    "https://x.com/AnthropicAI/status/2093386528668172373": "20260829",
+    "https://x.com/ClaudeDevs/status/2093480630801858750": "20260829",
+    "https://x.com/ClaudeDevs/status/2093368017304371503": "20260829",
+    "https://x.com/bcherny/status/2093224959330132327": "20260829",
+    "https://x.com/trq212/status/2093176635940016380": "20260829",
+    "https://x.com/trq212/status/2093151652190769612": "20260829",
+    "https://x.com/noahzweben/status/2093133238311239808": "20260829",
+    "https://x.com/lydiahallie/status/2093374909930156279": "20260829",
+    "https://x.com/amorriscode/status/2093402316598907175": "20260829",
+    "https://x.com/ClaudeCodeLog/status/2093104161684369626": "20260829"
   }
 }

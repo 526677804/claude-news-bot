@@ -1,20 +1,6 @@
 {
-  "updated_at": "2026-08-28T03:03:34.215085",
+  "updated_at": "2026-08-29T03:02:23.932728",
   "days": {
-    "20260821": [
-      "Computer use、浏览器工具、Skills API 与 Files API 正式在 Claude 平台全面可用",
-      "Claude Code 发布 v2.1.238",
-      "Claude Academy 正式上线",
-      "企业侧 Fable 安全护栏可跑在客户自有基础设施上",
-      "TechCrunch：新数据显示，OpenAI 正在企业用户侧追赶 Anthropic",
-      "彭博：Anthropic 预期 IPO 规模将追平甚至超过 SpaceX 纪录（进展跟进）",
-      "Epho：用一条 curl 跑起 Claude Code",
-      "only-cli（oc）：把网站收成微型 CLI，给 Claude Code 省 token",
-      "Obsidian + Claude Code：作者日常工作流搭法",
-      "《Claude Code 是不是一个糟糕的 harness？》",
-      "「Claude 是思考搭档，Opus 5 不像 Claude」",
-      "让 Claude 代理交易一个月：亏了约 3.1 万美元"
-    ],
     "20260822": [
       "Claude Security 扫描现已跑在 Claude Mythos 5 上，对企业客户公开测试",
       "Claude Code 发布 v2.1.239",
@@ -91,6 +77,16 @@
       "Simon Willison：Claude Code Opus 5 Auto Mode 可被绕过",
       "Claude 诊断 RTX 4090 多年疑难并构建防护方案",
       "「人人能造」的隐性代价：Claude Code 降低了构建门槛之后"
+    ],
+    "20260829": [
+      "Anthropic Fellows 研究：Claude 能否自主对齐其他 AI？",
+      "Claude Code 发布 v2.1.251",
+      "Claude Code 桌面端支持 /resume 恢复终端会话",
+      "@ClaudeDevs：本周按社区反馈密集改进 Claude Code",
+      "Rundown：集成 Claude Code 与 Codex 的 Hacker News 客户端",
+      "用 Fable 当主脑、Sonnet 舰队打下手：完整游戏已上架 Steam",
+      "Claude Tag 最热用例：值班 On-call",
+      "开源 harness 将 Claude Opus 5 在 ARC-AGI-3 上从 30% 拉到 99.95%"
     ]
   }
 }
