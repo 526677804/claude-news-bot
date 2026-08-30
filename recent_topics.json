@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-08-29T03:02:23.932728",
+  "updated_at": "2026-08-30T03:01:59.459784",
   "days": {
-    "20260822": [
-      "Claude Security 扫描现已跑在 Claude Mythos 5 上，对企业客户公开测试",
-      "Claude Code 发布 v2.1.239",
-      "Remote Control 可靠性大修：官方回应社区第一诉求",
-      "TechCrunch：Claude Opus 4.6 仍易绕过色情内容限制",
-      "路透：Anthropic 计划调整企业数据留存政策",
-      "Hermit：把 Claude Code 变成 7×24 常驻 Agent",
-      "Vesta：给 Claude Code 加一层代码图谱与本体论",
-      "用一个 Claude Code Skill 替代 Grafana 监控栈",
-      "@trq212 推荐 Anthropic 内部常用 skill：ELI5",
-      "@amorriscode：会话中途发现新活，Claude 会建议新开会话接住",
-      "社区观察：系统提示似乎更少「中途征求用户意见」"
-    ],
     "20260823": [
       "Anthropic 疑似在 Claude Code 中 A/B 测试降低 Effort 档位，官方回应系 API 配置预演"
     ],
@@ -87,6 +74,14 @@
       "用 Fable 当主脑、Sonnet 舰队打下手：完整游戏已上架 Steam",
       "Claude Tag 最热用例：值班 On-call",
       "开源 harness 将 Claude Opus 5 在 ARC-AGI-3 上从 30% 拉到 99.95%"
+    ],
+    "20260830": [
+      "Claude Code：9 月 14 日起标准周限额永久上调 25%",
+      "索尼音乐、华纳等起诉 Anthropic，指控「明目张胆」盗用受版权保护的音乐作品",
+      "SFGATE 专栏：OpenAI 与 Anthropic 正在「毁掉」旧金山？",
+      "@trq212：赞赏 Cursor 团队，期待继续合作",
+      "用 Claude 复活一家停业十年的睡眠产品公司",
+      "Ask HN：如何戒掉 Claude Code 瘾？"
     ]
   }
 }
