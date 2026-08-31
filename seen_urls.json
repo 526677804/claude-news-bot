@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T03:01:59.458638",
+  "updated_at": "2026-08-31T03:01:10.015087",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -591,6 +591,16 @@
     "https://x.com/trq212/status/2093541555068182781": "20260830",
     "https://x.com/amorriscode/status/2093563661076062537": "20260830",
     "https://x.com/amorriscode/status/2093563054672007305": "20260830",
-    "https://x.com/ClaudeCodeLog/status/2093407907446444049": "20260830"
+    "https://x.com/ClaudeCodeLog/status/2093407907446444049": "20260830",
+    "https://igupta.in/blog/why-i-am-no-longer-letting-claude-code-add-itself-as-coauthor/": "20260831",
+    "https://www.theregister.com/research/2026/08/28/researcher-shows-how-claude-code-can-be-tricked-simply-by-asking-it-to-summarize-a-website/5293372": "20260831",
+    "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/": "20260831",
+    "https://thenewstack.io/claude-built-in-browser-cowork/": "20260831",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w2xapb/i_have_been_working_on_quantum_computing_with/": "20260831",
+    "https://www.reddit.com/r/Anthropic/comments/1w2tr93/wow_this_is_the_definition_of_a_disaster/": "20260831",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w2t9x1/all_leaks_and_news_about_fable_opus_and_sometimes/": "20260831",
+    "https://www.reddit.com/r/Anthropic/comments/1w2wfke/one_of_the_biggest_disaster_announcements_in_the/": "20260831",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w2z3h6/the_complaints_i_see_every_hour_here_and_on/": "20260831",
+    "https://www.reddit.com/r/Anthropic/comments/1w2zah8/nice_product_terrible_service_well_bye_anthropic/": "20260831"
   }
 }

@@ -1,9 +1,6 @@
 {
-  "updated_at": "2026-08-30T03:01:59.459784",
+  "updated_at": "2026-08-31T03:01:10.016085",
   "days": {
-    "20260823": [
-      "Anthropic 疑似在 Claude Code 中 A/B 测试降低 Effort 档位，官方回应系 API 配置预演"
-    ],
     "20260824": [
       "Anthropic 最强 AI 模型难敌廉价工具，用户增长承压（Financial Times）",
       "Claude Code 发布 v2.1.241",
@@ -82,6 +79,12 @@
       "@trq212：赞赏 Cursor 团队，期待继续合作",
       "用 Claude 复活一家停业十年的睡眠产品公司",
       "Ask HN：如何戒掉 Claude Code 瘾？"
+    ],
+    "20260831": [
+      "Claude Code 可被「总结网页」请求轻易诱导执行恶意操作",
+      "不再让 Claude Code 在 Git 提交中署名 Co-author",
+      "Reddit 热议：Anthropic 一则公告引发强烈反弹",
+      "用 Fable 5 做量子计算研究"
     ]
   }
 }
