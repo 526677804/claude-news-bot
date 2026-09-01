@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T03:01:10.015087",
+  "updated_at": "2026-09-01T03:02:00.613623",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -601,6 +601,22 @@
     "https://www.reddit.com/r/ClaudeAI/comments/1w2t9x1/all_leaks_and_news_about_fable_opus_and_sometimes/": "20260831",
     "https://www.reddit.com/r/Anthropic/comments/1w2wfke/one_of_the_biggest_disaster_announcements_in_the/": "20260831",
     "https://www.reddit.com/r/ClaudeAI/comments/1w2z3h6/the_complaints_i_see_every_hour_here_and_on/": "20260831",
-    "https://www.reddit.com/r/Anthropic/comments/1w2zah8/nice_product_terrible_service_well_bye_anthropic/": "20260831"
+    "https://www.reddit.com/r/Anthropic/comments/1w2zah8/nice_product_terrible_service_well_bye_anthropic/": "20260831",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.252": "20260901",
+    "https://twitter.com/ClaudeDevs/status/2093742322525810912": "20260901",
+    "https://www.bloomberg.com/news/newsletters/2026-08-31/anthropic-legal-fight-with-pentagon-shows-shifting-politics-of-ai": "20260901",
+    "https://www.cnet.com/tech/services-and-software/anthropic-sued-alleged-false-advertising-claude-max-subscription-usage-limits/": "20260901",
+    "https://www.theguardian.com/business/2026/aug/31/aanthropic-sued-alleged-theft-songs-ai-train-claude": "20260901",
+    "https://www.businessinsider.com/sam-bankman-fried-anthropic-ftx-caroline-ellison-nishad-singh-doj-2026-8": "20260901",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w3g17r/this_claudes_response_made_me_think_about_our/": "20260901",
+    "https://www.reddit.com/r/Anthropic/comments/1w3r4ju/more_drama/": "20260901",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w3oha6/week_5_of_making_my_fishing_game_entirely_with_ai/": "20260901",
+    "https://www.reddit.com/r/Anthropic/comments/1w3gm14/anthropic_is_speedrunning_a_complete_collapse_of/": "20260901",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w3xtsz/i_cant_do_opus_5_anymore_every_time_i_talk_with/": "20260901",
+    "https://www.reddit.com/r/Anthropic/comments/1w3peij/wow_the_claude_limits_drama_just_keeps_escalating/": "20260901",
+    "https://x.com/AnthropicAI/status/2094557124038951170": "20260901",
+    "https://x.com/AnthropicAI/status/2094577944056430865": "20260901",
+    "https://x.com/amorriscode/status/2094581721916375423": "20260901",
+    "https://x.com/ClaudeCodeLog/status/2094515521056072147": "20260901"
   }
 }

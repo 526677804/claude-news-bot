@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:01:10.016085",
+  "updated_at": "2026-09-01T03:02:00.614851",
   "days": {
-    "20260824": [
-      "Anthropic 最强 AI 模型难敌廉价工具，用户增长承压（Financial Times）",
-      "Claude Code 发布 v2.1.241",
-      "经济学家 Tyler Cowen 探访 Anthropic 见闻（Marginal Revolution）",
-      "harness-subagent：在 Claude Code 里调用 Codex 的编排器",
-      "SkillWorks：Claude Code Skill 加载质量评分站",
-      "terminito：Claude Code 状态栏增强",
-      "禁用 Artifacts 与 Chrome MCP Server，每次启动可省 12k+ context",
-      "如何阻止 Claude Code 把每次纠错都写进 spec？",
-      "社区 A/B 实测：ChatGPT Computer Use 体验领先 Claude"
-    ],
     "20260825": [
       "Claude 文本水印如何工作（官方说明）",
       "改进 Fable 5 的生物学安全护栏",
@@ -85,6 +74,15 @@
       "不再让 Claude Code 在 Git 提交中署名 Co-author",
       "Reddit 热议：Anthropic 一则公告引发强烈反弹",
       "用 Fable 5 做量子计算研究"
+    ],
+    "20260901": [
+      "Anthropic 新研究：训练「失调的奖励追求者」",
+      "Anthropic 更新对齐与安全进展：回顾 7 月三起网络安全评估事件",
+      "Claude Code 发布 v2.1.252",
+      "CNET：Anthropic 因 Claude Max 用量限额涉嫌虚假宣传被起诉",
+      "Business Insider：联邦查扣 SBF 关联人士持有的 Anthropic 股权",
+      "用 AI 做钓鱼游戏：第 5 周进度更新",
+      "Claude 一则回复，让人重新思考与手机的关系"
     ]
   }
 }
