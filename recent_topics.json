@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:02:00.614851",
+  "updated_at": "2026-09-02T03:01:01.631606",
   "days": {
-    "20260825": [
-      "Claude 文本水印如何工作（官方说明）",
-      "改进 Fable 5 的生物学安全护栏",
-      "Claude Code 发布 v2.1.243",
-      "Web / 桌面端长回复流式渲染约快 4 倍",
-      "Axios：Anthropic 候选人会面对直白的「钱」相关问题",
-      "Kindle 高亮导出 Skill（突破导出截断）",
-      "llm-anthropic 0.27",
-      "session-migrate：跨 Claude Code / Codex / Pi 迁移会话",
-      "开源权重 GLM-5.3：Ed-o-meter 上性价比压过闭源巨头？",
-      "为何 Anthropic 对外文风一点也不像 Claude？",
-      "Indeed 裁员后，用 Claude 做出求职竞品并已帮 3 人入职"
-    ],
     "20260826": [
       "Claude 聊天与 Cowork 现已共用一套记忆，内容由你决定",
       "Claude Code 发布 v2.1.246",
@@ -83,6 +70,14 @@
       "Business Insider：联邦查扣 SBF 关联人士持有的 Anthropic 股权",
       "用 AI 做钓鱼游戏：第 5 周进度更新",
       "Claude 一则回复，让人重新思考与手机的关系"
+    ],
+    "20260902": [
+      "Anthropic 正式发布 Claude Fable 5.1 与 Mythos 5.1",
+      "Claude Code 发布 v2.1.258",
+      "Anthropic 签署 350 亿美元、获英伟达支持的云计算协议",
+      "@trq212：Fable 5.1 使用建议——低 effort 模式值得一试",
+      "Simon Willison：Fable 5.1 上手——用代码生成动画鹈鹕",
+      "用户因「可疑信号」遭 Anthropic 封号"
     ]
   }
 }
