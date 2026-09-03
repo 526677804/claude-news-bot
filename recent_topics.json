@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:01:01.631606",
+  "updated_at": "2026-09-03T03:02:07.214321",
   "days": {
-    "20260826": [
-      "Claude 聊天与 Cowork 现已共用一套记忆，内容由你决定",
-      "Claude Code 发布 v2.1.246",
-      "Claude Code 发布 v2.1.245",
-      "Business Insider：Anthropic 因安保可能罢工，让旧金山员工居家办公",
-      "华尔街日报：Anthropic 拟向投资者称潜在收入空间超 30 万亿美元",
-      "MulmoTerminal：并行跑多个 Claude Code / Codex，一眼看出谁在等你",
-      "Claude Code Tips：45+ 条从入门到进阶的用法清单",
-      "@trq212：很快会分享如何让 Claude Code 更可 hack",
-      "@amorriscode 转发：别在同一会话里频繁换模型",
-      "社区热议：Opus 5 为何「不如」4.8？啰嗦、不稳成主诉"
-    ],
     "20260827": [
       "Cowork 内置浏览器正式上线",
       "Claude Code 发布 v2.1.247",
@@ -78,6 +66,19 @@
       "@trq212：Fable 5.1 使用建议——低 effort 模式值得一试",
       "Simon Willison：Fable 5.1 上手——用代码生成动画鹈鹕",
       "用户因「可疑信号」遭 Anthropic 封号"
+    ],
+    "20260903": [
+      "Claude 电脑操作现已支持后台运行（Cowork & Claude Code）",
+      "Claude Code 发布 v2.1.259",
+      "Claude Campus Ambassadors 开放申请",
+      "AISLE：在 Mythos 与 Codex「零发现」之后，于 curl 中挖出 6 个 CVE",
+      "SemiAnalysis：Anthropic 3Q26 利润或超 10 亿美元，IPO 财务前瞻",
+      "Claude Code 失控：班加罗尔多年遗产数字化成果被删",
+      "开源 Claude Commerce Agents：购物与商户 Agent 蓝图",
+      "Show HN：Kit——更简洁的 Claude Code 风格编码 Agent",
+      "Simon Willison：Fable 5.1 系统提示词大幅收紧歌词与版权内容",
+      "新命令 `/limit-reset`：每周可重置一次会话限额",
+      "用 Fable 5.1 花约 20 美元做出 Minecraft 模组"
     ]
   }
 }

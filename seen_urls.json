@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T03:01:01.630353",
+  "updated_at": "2026-09-03T03:02:07.213101",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -651,6 +651,29 @@
     "https://x.com/lydiahallie/status/2094853260507254833": "20260902",
     "https://x.com/amorriscode/status/2094889468671213635": "20260902",
     "https://x.com/alexalbert__/status/2094889286990446769": "20260902",
-    "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/": "20260902"
+    "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/": "20260902",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.259": "20260903",
+    "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero": "20260903",
+    "https://www.deccanherald.com/india/karnataka/bengaluru/when-claude-code-went-rogue-years-of-bengaluru-heritage-work-disappeared-4131958": "20260903",
+    "https://github.com/speakeasy-api/kit": "20260903",
+    "https://thezvi.substack.com/p/anthropic-has-some-alignment-problems": "20260903",
+    "https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the": "20260903",
+    "https://www.barrons.com/articles/nvidia-stock-price-anthropic-deal-ai-circular-financing-6be908a3": "20260903",
+    "https://secretspec.dev/blog/claude-code-stores-oauth-tokens-in-plaintext/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5q6dx/show_us_what_youve_created_with_claude/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5ftqe/fable_51_made_a_minecraft_mod_for_20/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w54tww/fable_51_max_gave_me_the_most_reasonable_local/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5mbo4/meta_releases_muse_spark_13_matching_fable_5_w_10/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5fh39/differences_between_fable_5_and_fable_51_on/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5r094/this_is_new_limitreset_resets_your_session_limit/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5c2xe/anthropic_we_want_fable_back_into_the_pro_plan/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w57t43/well_i_almost_got_prompt_injected/": "20260903",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w5jupu/max_20_subscriber_having_worked_with_fable_51/": "20260903",
+    "https://x.com/claudeai/status/2095226833293685100": "20260903",
+    "https://x.com/claudeai/status/2095168559873773970": "20260903",
+    "https://x.com/ClaudeDevs/status/2095233745167282602": "20260903",
+    "https://x.com/ClaudeDevs/status/2095226982644830648": "20260903",
+    "https://x.com/amorriscode/status/2095322901931348450": "20260903",
+    "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/": "20260903"
   }
 }
