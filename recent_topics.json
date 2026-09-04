@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-09-03T03:02:07.214321",
+  "updated_at": "2026-09-04T03:02:24.644303",
   "days": {
-    "20260827": [
-      "Cowork 内置浏览器正式上线",
-      "Claude Code 发布 v2.1.247",
-      "Anthropic 首次向外部研究者开放隐私保护的使用数据",
-      "Admin API 纳入 SDK 与 `ant` CLI",
-      "Anthropic 与 Nscale 签署 450 亿美元算力协议",
-      "Claude 原生接入 Salesforce（Claudeforce）",
-      "JAIPilot：Java 高性能优化的 Codex / Claude Code Harness",
-      "《我怀念旧版 Claude Code》",
-      "Shopify CEO 考虑禁用 Claude Code",
-      "用 Claude Code 做出百人联机 Three.js 坦克游戏"
-    ],
     "20260828": [
       "法官裁定：特朗普政府将 Anthropic 列入黑名单违法",
       "Claude Code 发布 v2.1.248：新增 `--restricted` 受限模式",
@@ -79,6 +67,16 @@
       "Simon Willison：Fable 5.1 系统提示词大幅收紧歌词与版权内容",
       "新命令 `/limit-reset`：每周可重置一次会话限额",
       "用 Fable 5.1 花约 20 美元做出 Minecraft 模组"
+    ],
+    "20260904": [
+      "Claude Code 探索 Function Hooks：更深层次的扩展与定制",
+      "Claude Code 发布 v2.1.260",
+      "`ant apply`：用仓库文件声明 Managed Agent 环境",
+      "五角大楼重申 Anthropic 仍属「供应链风险」",
+      "金融时报：OpenAI 称最新模型已超越 Anthropic",
+      "GitSpawn：不可信仓库可借 git 配置在多款编码 Agent 中执行代码",
+      "Ski：Claude Code 语音编程现已支持 Linux",
+      "Claude Code / API 出现局部故障后已基本恢复"
     ]
   }
 }
