@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T03:02:24.643307",
+  "updated_at": "2026-09-05T03:01:28.169027",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -700,6 +700,25 @@
     "https://x.com/noahzweben/status/2095296592744255774": "20260904",
     "https://x.com/amorriscode/status/2095564279051333822": "20260904",
     "https://x.com/lydiahallie/status/2095542672975077650": "20260904",
-    "https://x.com/ClaudeCodeLog/status/2095283719456145790": "20260904"
+    "https://x.com/ClaudeCodeLog/status/2095283719456145790": "20260904",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.261": "20260905",
+    "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/": "20260905",
+    "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90": "20260905",
+    "https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/": "20260905",
+    "https://github.com/NeoLabHQ/context-engineering-kit": "20260905",
+    "https://artificialanalysis.ai/models/gpt-6-astra": "20260905",
+    "https://bonsai.io/blog/claude-code-pulse/": "20260905",
+    "https://www.reddit.com/r/Anthropic/comments/1w7hc93/astra_hacked_anthropic_and_reset_the_usage_limit/": "20260905",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w7bh9p/fable_51_one_shotted_this/": "20260905",
+    "https://www.reddit.com/r/Anthropic/comments/1w7fbla/new_limits_reset/": "20260905",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w7ffob/we_got_a_limits_reset/": "20260905",
+    "https://www.reddit.com/r/Anthropic/comments/1w7eoup/fable_51_is_burning_through_the_weekly_limit_way/": "20260905",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w7hr8x/claude_got_usage_limit_reset/": "20260905",
+    "https://www.reddit.com/r/Anthropic/comments/1w7fslk/did_antrhopic_just_reset_our_tokens_again/": "20260905",
+    "https://x.com/AnthropicAI/status/2095947707605266436": "20260905",
+    "https://x.com/lydiahallie/status/2095967323412930677": "20260905",
+    "https://x.com/lydiahallie/status/2096024729496994303": "20260905",
+    "https://x.com/lydiahallie/status/2096046163862679590": "20260905",
+    "https://x.com/ClaudeCodeLog/status/2095663722727432688": "20260905"
   }
 }

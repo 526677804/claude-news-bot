@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:02:24.644303",
+  "updated_at": "2026-09-05T03:01:28.170353",
   "days": {
-    "20260828": [
-      "法官裁定：特朗普政府将 Anthropic 列入黑名单违法",
-      "Claude Code 发布 v2.1.248：新增 `--restricted` 受限模式",
-      "Anthropic 启动 Model Hardware Standard (MHS) 研究预览",
-      "Claude 向 1 万名科学家开放 Team 计划",
-      "纽约时报：Meta 预计未来向 Anthropic 投入约 100 亿美元",
-      "100+ 家科技公司联名呼吁防范「流氓 AI」网络安全威胁",
-      "Concord：让 Claude Code、Codex 与 Cursor 互相通信",
-      "Leadcode：Claude Code / Codex / GitHub 按客户隔离账号",
-      "Simon Willison：Claude Code Opus 5 Auto Mode 可被绕过",
-      "Claude 诊断 RTX 4090 多年疑难并构建防护方案",
-      "「人人能造」的隐性代价：Claude Code 降低了构建门槛之后"
-    ],
     "20260829": [
       "Anthropic Fellows 研究：Claude 能否自主对齐其他 AI？",
       "Claude Code 发布 v2.1.251",
@@ -77,6 +64,16 @@
       "GitSpawn：不可信仓库可借 git 配置在多款编码 Agent 中执行代码",
       "Ski：Claude Code 语音编程现已支持 Linux",
       "Claude Code / API 出现局部故障后已基本恢复"
+    ],
+    "20260905": [
+      "Claude Max 计划周限额全员重置",
+      "Claude Code 发布 v2.1.261",
+      "Anthropic：用形式化加速重大数学证明核验",
+      "WIRED：为何无人解释 OpenAI 与 Anthropic 的故障？",
+      "Spotify Portal：Claude Code token 用量砍掉 90%",
+      "Context Engineering Kit：进阶上下文工程 Skills",
+      "Fable 5.1：medium effort 可作默认，切换不再破坏 prompt cache",
+      "Fable 5.1 + Blender MCP：一键生成 WoW 风格区域"
     ]
   }
 }
