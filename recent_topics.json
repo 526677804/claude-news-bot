@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-09-05T03:01:28.170353",
+  "updated_at": "2026-09-06T03:01:49.227236",
   "days": {
-    "20260829": [
-      "Anthropic Fellows 研究：Claude 能否自主对齐其他 AI？",
-      "Claude Code 发布 v2.1.251",
-      "Claude Code 桌面端支持 /resume 恢复终端会话",
-      "@ClaudeDevs：本周按社区反馈密集改进 Claude Code",
-      "Rundown：集成 Claude Code 与 Codex 的 Hacker News 客户端",
-      "用 Fable 当主脑、Sonnet 舰队打下手：完整游戏已上架 Steam",
-      "Claude Tag 最热用例：值班 On-call",
-      "开源 harness 将 Claude Opus 5 在 ARC-AGI-3 上从 30% 拉到 99.95%"
-    ],
     "20260830": [
       "Claude Code：9 月 14 日起标准周限额永久上调 25%",
       "索尼音乐、华纳等起诉 Anthropic，指控「明目张胆」盗用受版权保护的音乐作品",
@@ -74,6 +64,13 @@
       "Context Engineering Kit：进阶上下文工程 Skills",
       "Fable 5.1：medium effort 可作默认，切换不再破坏 prompt cache",
       "Fable 5.1 + Blender MCP：一键生成 WoW 风格区域"
+    ],
+    "20260906": [
+      "Claude Code 发布 v2.1.263",
+      "金融时报：Anthropic IPO 主承销席位或落定摩根士丹利与高盛",
+      "凯文·凯利：Anthropic「差点审查」的 1930 年诗集",
+      "Code Arena 新榜首：Astra 与 Fable 5.1「同级独一档」",
+      "Sub-agents 正在「涌进」我的代码库"
     ]
   }
 }
