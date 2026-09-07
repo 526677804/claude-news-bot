@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T03:01:49.225895",
+  "updated_at": "2026-09-07T03:02:30.129551",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -738,6 +738,23 @@
     "https://x.com/bcherny/status/2096083691944714423": "20260906",
     "https://x.com/amorriscode/status/2096283157058510952": "20260906",
     "https://x.com/amorriscode/status/2096071090183532923": "20260906",
-    "https://x.com/ClaudeCodeLog/status/2095967612597412256": "20260906"
+    "https://x.com/ClaudeCodeLog/status/2095967612597412256": "20260906",
+    "https://www.cnbc.com/2026/09/05/anthropic-ipo-launch-shifts-toward-mid-october-reuters.html": "20260907",
+    "https://news.ycombinator.com/item?id=49573153": "20260907",
+    "https://www.nytimes.com/2026/09/05/books/anthropic-settlement-ai-copyright-books.html": "20260907",
+    "https://news.ycombinator.com/item?id=49587379": "20260907",
+    "https://github.com/rashedInt32/claude-hl": "20260907",
+    "https://github.com/vitaliyhayda/claude-transplant": "20260907",
+    "https://github.com/zaghaghi/toolog": "20260907",
+    "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/": "20260907",
+    "https://www.reddit.com/r/Anthropic/comments/1w92dsa/debate_is_dario_worse_than_altman/": "20260907",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w9dluw/notions_official_mcp_connector_prompt_injects_ai/": "20260907",
+    "https://www.reddit.com/r/Anthropic/comments/1w8w5po/pentagon_says_its_anthropic_ban_is_on_despite/": "20260907",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w9aygp/well_even_claude_know_that_iam_pasted_from_chatgpt/": "20260907",
+    "https://www.reddit.com/r/Anthropic/comments/1w8zzxd/anthropic_should_give_fable_to_pro_users_and_keep/": "20260907",
+    "https://www.reddit.com/r/ClaudeAI/comments/1w91i3b/what_happens_if_you_give_ai_agents_a_place_humans/": "20260907",
+    "https://www.reddit.com/r/Anthropic/comments/1w8gx9o/anthropic_please_dont_make_me_go_to_codex/": "20260907",
+    "https://x.com/lydiahallie/status/2096668098422272007": "20260907",
+    "https://x.com/ClaudeCodeLog/status/2096435610525315378": "20260907"
   }
 }

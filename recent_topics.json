@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-09-06T03:01:49.227236",
+  "updated_at": "2026-09-07T03:02:30.130815",
   "days": {
-    "20260830": [
-      "Claude Code：9 月 14 日起标准周限额永久上调 25%",
-      "索尼音乐、华纳等起诉 Anthropic，指控「明目张胆」盗用受版权保护的音乐作品",
-      "SFGATE 专栏：OpenAI 与 Anthropic 正在「毁掉」旧金山？",
-      "@trq212：赞赏 Cursor 团队，期待继续合作",
-      "用 Claude 复活一家停业十年的睡眠产品公司",
-      "Ask HN：如何戒掉 Claude Code 瘾？"
-    ],
     "20260831": [
       "Claude Code 可被「总结网页」请求轻易诱导执行恶意操作",
       "不再让 Claude Code 在 Git 提交中署名 Co-author",
@@ -71,6 +63,16 @@
       "凯文·凯利：Anthropic「差点审查」的 1930 年诗集",
       "Code Arena 新榜首：Astra 与 Fable 5.1「同级独一档」",
       "Sub-agents 正在「涌进」我的代码库"
+    ],
+    "20260907": [
+      "作者反击：出版商与经纪争夺 Anthropic 15 亿美元和解金",
+      "Anthropic IPO 路演时间表推迟至最早十月中旬",
+      "Claude-hl：给 Claude Code 输出里的 shell 命令上语法高亮",
+      "claude-transplant：在 Claude Desktop 账号间迁移会话",
+      "toolog：Claude Code 工具调用的本地审计轨迹",
+      "Claude Code 核心成员推荐：升级 Fable 5.1 先跑 `/claude-api prompt-audit`",
+      "Notion 官方 MCP 会在任务中途「塞广告」，并要求模型不要解释",
+      "把域名交给 Claude、一个月后的「无人监管」实验回执"
     ]
   }
 }
