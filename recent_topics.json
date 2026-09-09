@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-09-08T03:02:10.599827",
+  "updated_at": "2026-09-09T03:02:27.746613",
   "days": {
-    "20260901": [
-      "Anthropic 新研究：训练「失调的奖励追求者」",
-      "Anthropic 更新对齐与安全进展：回顾 7 月三起网络安全评估事件",
-      "Claude Code 发布 v2.1.252",
-      "CNET：Anthropic 因 Claude Max 用量限额涉嫌虚假宣传被起诉",
-      "Business Insider：联邦查扣 SBF 关联人士持有的 Anthropic 股权",
-      "用 AI 做钓鱼游戏：第 5 周进度更新",
-      "Claude 一则回复，让人重新思考与手机的关系"
-    ],
     "20260902": [
       "Anthropic 正式发布 Claude Fable 5.1 与 Mythos 5.1",
       "Claude Code 发布 v2.1.258",
@@ -76,6 +67,19 @@
       "Agent Arena：Fable 5.1（Max）登顶，净提升约 +15.8%",
       "Claude Code 核心成员提问：你最晚才发现的功能是什么？",
       "Claude Code 工程师访谈：Anthropic 自己怎么用 Claude Code"
+    ],
+    "20260909": [
+      "前 OpenAI 研究员因 AI 安全担忧离开 Anthropic",
+      "Claude Code 发布 v2.1.265",
+      "Claude Code 发布 v2.1.266：修复网关 / 代理回归",
+      "彭博：Anthropic 放弃约 60 亿美元收购 Decart",
+      "The Verge：Max 订阅集体诉讼扩大后再递交",
+      "Claude Tag：用 Claude 做 CI 值班第一响应",
+      "How I Extend Claude Code：steer / glean / statusline",
+      "Rooftop.chat：等 Claude Code 跑完时的虚拟天台",
+      "支撑手机端 Agent 的虚拟机：Claude Code 与 Instinct 对比",
+      "Claude Code 桌面端支持自定义 Output Style",
+      "同题对比：Fable 5.1 vs GPT-6 Astra 画 2D 精灵"
     ]
   }
 }
