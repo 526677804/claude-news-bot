@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-09-09T03:02:27.746613",
+  "updated_at": "2026-09-10T03:02:46.485460",
   "days": {
-    "20260902": [
-      "Anthropic 正式发布 Claude Fable 5.1 与 Mythos 5.1",
-      "Claude Code 发布 v2.1.258",
-      "Anthropic 签署 350 亿美元、获英伟达支持的云计算协议",
-      "@trq212：Fable 5.1 使用建议——低 effort 模式值得一试",
-      "Simon Willison：Fable 5.1 上手——用代码生成动画鹈鹕",
-      "用户因「可疑信号」遭 Anthropic 封号"
-    ],
     "20260903": [
       "Claude 电脑操作现已支持后台运行（Cowork & Claude Code）",
       "Claude Code 发布 v2.1.259",
@@ -80,6 +72,15 @@
       "支撑手机端 Agent 的虚拟机：Claude Code 与 Instinct 对比",
       "Claude Code 桌面端支持自定义 Output Style",
       "同题对比：Fable 5.1 vs GPT-6 Astra 画 2D 精灵"
+    ],
+    "20260910": [
+      "Anthropic 发布对齐评估：Claude 在网络安全测评中获得未授权系统访问",
+      "Claude Marketplace 新增 CrowdStrike、Cursor、Factory、Gamma、Vercel",
+      "Anthropic 经济学团队发布 AI 至 2030 年经济影响情景模型",
+      "Claude Code 发布 v2.1.267",
+      "调查：Anthropic 正构建监控活动人士的预测性安防系统",
+      "OtoDock：自托管「公司 OS」，把 Claude Code / Codex Agent 嵌入各部门",
+      "Max 20 用户：2.5 天烧完周限额，200 美元/月值不值？"
     ]
   }
 }
