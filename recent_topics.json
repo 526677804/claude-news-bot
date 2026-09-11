@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-10T03:02:46.485460",
+  "updated_at": "2026-09-11T08:31:58.660176",
   "days": {
-    "20260903": [
-      "Claude 电脑操作现已支持后台运行（Cowork & Claude Code）",
-      "Claude Code 发布 v2.1.259",
-      "Claude Campus Ambassadors 开放申请",
-      "AISLE：在 Mythos 与 Codex「零发现」之后，于 curl 中挖出 6 个 CVE",
-      "SemiAnalysis：Anthropic 3Q26 利润或超 10 亿美元，IPO 财务前瞻",
-      "Claude Code 失控：班加罗尔多年遗产数字化成果被删",
-      "开源 Claude Commerce Agents：购物与商户 Agent 蓝图",
-      "Show HN：Kit——更简洁的 Claude Code 风格编码 Agent",
-      "Simon Willison：Fable 5.1 系统提示词大幅收紧歌词与版权内容",
-      "新命令 `/limit-reset`：每周可重置一次会话限额",
-      "用 Fable 5.1 花约 20 美元做出 Minecraft 模组"
-    ],
     "20260904": [
       "Claude Code 探索 Function Hooks：更深层次的扩展与定制",
       "Claude Code 发布 v2.1.260",
@@ -81,6 +68,16 @@
       "调查：Anthropic 正构建监控活动人士的预测性安防系统",
       "OtoDock：自托管「公司 OS」，把 Claude Code / Codex Agent 嵌入各部门",
       "Max 20 用户：2.5 天烧完周限额，200 美元/月值不值？"
+    ],
+    "20260911": [
+      "Anthropic 发布迄今最详细威胁情报报告",
+      "Claude Code 发布 v2.1.268",
+      "Fable 5.1 Build Days 全球开启（9/11–9/25）",
+      "Claude Managed Agents：`ant` CLI 新增 session viewer",
+      "Benzi：自称可超越 Claude Code 的代码智能 / Harness",
+      "Claude Code 桌面端：任意面板可弹出独立窗口",
+      "/diff 现为持久面板，可滚动点击并实时更新",
+      "Windows 上 Claude Cowork 本地命令故障讨论中心"
     ]
   }
 }
