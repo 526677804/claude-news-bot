@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T08:31:58.658787",
+  "updated_at": "2026-09-12T03:01:38.734773",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -859,6 +859,26 @@
     "https://x.com/amorriscode/status/2098304833682084109": "20260911",
     "https://x.com/amorriscode/status/2098110513704206653": "20260911",
     "https://x.com/karpathy/status/2098187194024476764": "20260911",
-    "https://x.com/ClaudeCodeLog/status/2098151328975319296": "20260911"
+    "https://x.com/ClaudeCodeLog/status/2098151328975319296": "20260911",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.269": "20260912",
+    "https://www.washingtonpost.com/technology/2026/09/11/rebels-used-anthropics-ai-bot-develop-guided-weapons-report-says/": "20260912",
+    "https://www.wsj.com/politics/national-security/anthropic-says-iran-used-its-american-ai-model-to-target-u-s-navy-warships-67583e05": "20260912",
+    "https://www.al-monitor.com/originals/2026/09/claude-ai-used-missile-influence-projects-uae-iran-yemen-anthropic": "20260912",
+    "https://www.ft.com/content/8310cf56-ce60-4e6e-8254-5bb470e9a880": "20260912",
+    "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/": "20260912",
+    "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdgzue/my_first_ever_pcb_entirely_designed_by_claude/": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdvpma/gpt6_astra_takes_the_1_spot_on_verbench/": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdtdex/she_doesnt_know_about_my_100_ai_companion/": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdysoo/vibecoders_about_to_post_the_claude_deleted_my/": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdfh5b/if_anthropic_cared_to_read_some_average_chats/": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdli7f/claude_basically_broke_their_projects_overnight/": "20260912",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wdyqmu/warning_claude_incognito_chats_with_uploads_can/": "20260912",
+    "https://x.com/ClaudeDevs/status/2098500999656923145": "20260912",
+    "https://x.com/ClaudeDevs/status/2098508880921899197": "20260912",
+    "https://x.com/ClaudeDevs/status/2098519883214643227": "20260912",
+    "https://x.com/trq212/status/2098490139798655427": "20260912",
+    "https://x.com/trq212/status/2098531560643539440": "20260912",
+    "https://simonwillison.net/2026/Sep/11/boris-cherny/": "20260912"
   }
 }

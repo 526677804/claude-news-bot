@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-09-11T08:31:58.660176",
+  "updated_at": "2026-09-12T03:01:38.736165",
   "days": {
-    "20260904": [
-      "Claude Code 探索 Function Hooks：更深层次的扩展与定制",
-      "Claude Code 发布 v2.1.260",
-      "`ant apply`：用仓库文件声明 Managed Agent 环境",
-      "五角大楼重申 Anthropic 仍属「供应链风险」",
-      "金融时报：OpenAI 称最新模型已超越 Anthropic",
-      "GitSpawn：不可信仓库可借 git 配置在多款编码 Agent 中执行代码",
-      "Ski：Claude Code 语音编程现已支持 Linux",
-      "Claude Code / API 出现局部故障后已基本恢复"
-    ],
     "20260905": [
       "Claude Max 计划周限额全员重置",
       "Claude Code 发布 v2.1.261",
@@ -78,6 +68,12 @@
       "Claude Code 桌面端：任意面板可弹出独立窗口",
       "/diff 现为持久面板，可滚动点击并实时更新",
       "Windows 上 Claude Cowork 本地命令故障讨论中心"
+    ],
+    "20260912": [
+      "Claude Code 发布 v2.1.269",
+      "Boris Cherny：Claude 写的生产代码标准应高于人类",
+      "Claude Code 核心成员：别只看评测的 pass/fail",
+      "警告：Incognito 聊天上传的文件仍可被列出与取回"
     ]
   }
 }
