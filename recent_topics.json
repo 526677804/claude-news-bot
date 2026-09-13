@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-09-12T03:01:38.736165",
+  "updated_at": "2026-09-13T03:01:47.277181",
   "days": {
-    "20260905": [
-      "Claude Max 计划周限额全员重置",
-      "Claude Code 发布 v2.1.261",
-      "Anthropic：用形式化加速重大数学证明核验",
-      "WIRED：为何无人解释 OpenAI 与 Anthropic 的故障？",
-      "Spotify Portal：Claude Code token 用量砍掉 90%",
-      "Context Engineering Kit：进阶上下文工程 Skills",
-      "Fable 5.1：medium effort 可作默认，切换不再破坏 prompt cache",
-      "Fable 5.1 + Blender MCP：一键生成 WoW 风格区域"
-    ],
     "20260906": [
       "Claude Code 发布 v2.1.263",
       "金融时报：Anthropic IPO 主承销席位或落定摩根士丹利与高盛",
@@ -74,6 +64,12 @@
       "Boris Cherny：Claude 写的生产代码标准应高于人类",
       "Claude Code 核心成员：别只看评测的 pass/fail",
       "警告：Incognito 聊天上传的文件仍可被列出与取回"
+    ],
+    "20260913": [
+      "Dario Amodei：我们必须放缓前沿（We Must Pace the Frontier）",
+      "Claude Code 发布 v2.1.270",
+      "Claude Code 桌面端：单会话可保持电脑不休眠",
+      "Claude Code 核心成员：若在 2018 年看到今天的 Claude Code，会以为是 AGI"
     ]
   }
 }
