@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-09-13T03:01:47.277181",
+  "updated_at": "2026-09-14T03:01:37.478494",
   "days": {
-    "20260906": [
-      "Claude Code 发布 v2.1.263",
-      "金融时报：Anthropic IPO 主承销席位或落定摩根士丹利与高盛",
-      "凯文·凯利：Anthropic「差点审查」的 1930 年诗集",
-      "Code Arena 新榜首：Astra 与 Fable 5.1「同级独一档」",
-      "Sub-agents 正在「涌进」我的代码库"
-    ],
     "20260907": [
       "作者反击：出版商与经纪争夺 Anthropic 15 亿美元和解金",
       "Anthropic IPO 路演时间表推迟至最早十月中旬",
@@ -70,6 +63,14 @@
       "Claude Code 发布 v2.1.270",
       "Claude Code 桌面端：单会话可保持电脑不休眠",
       "Claude Code 核心成员：若在 2018 年看到今天的 Claude Code，会以为是 AGI"
+    ],
+    "20260914": [
+      "特朗普拒绝 Anthropic / OpenAI / xAI CEO 放缓 AI 的呼吁",
+      "David Sacks：OpenAI 与 Anthropic 放缓前沿无需靠监管",
+      "Anthropic CEO：AI「蜂群」或在 6–12 个月内接管互联网",
+      "Claude Code 核心成员：把 Subagent 设为 Opus，省下大量 Fable 5.1 用量",
+      "Boris Cherny：Fable 破译了有 370 年历史的密码",
+      "用 Claude 从零写操作系统，几天后在真机笔记本上跑起来了"
     ]
   }
 }
