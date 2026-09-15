@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T03:01:37.477270",
+  "updated_at": "2026-09-15T03:02:15.217319",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -928,6 +928,27 @@
     "https://x.com/ClaudeCodeLog/status/2098863587863261431": "20260914",
     "https://x.com/jackclarkSF/status/2098788955030446418": "20260914",
     "https://x.com/johnschulman2/status/2099193668917997880": "20260914",
-    "https://x.com/ch402/status/2099266352460808472": "20260914"
+    "https://x.com/ch402/status/2099266352460808472": "20260914",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.272": "20260915",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.271": "20260915",
+    "https://www.effort.news/irregular": "20260915",
+    "https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/": "20260915",
+    "https://twitter.com/kevinnbass/status/2099626156660043891": "20260915",
+    "https://twitter.com/brianchau57/status/2099580981271318606": "20260915",
+    "https://www.reddit.com/r/Anthropic/comments/1wgj7zo/deepseek_engineer_responds_to_dario_and_compares/": "20260915",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wge6gc/apples_siri_ai_can_be_swapped_out_for_claude/": "20260915",
+    "https://www.reddit.com/r/Anthropic/comments/1wgfuck/the_lads_after_raising_the_usage_cost_by_50/": "20260915",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wgaetp/i_gave_claude_fable_51_and_gpt_6_astra_control_of/": "20260915",
+    "https://www.reddit.com/r/Anthropic/comments/1wg4ygv/trump_doubles_down_on_his_no_ai_slowdown_stance/": "20260915",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wghjmn/claude_keeps_naming_things_after_the_mistakes_i/": "20260915",
+    "https://www.reddit.com/r/Anthropic/comments/1wg1zti/darios_real_problem/": "20260915",
+    "https://x.com/bcherny/status/2099640440740028520": "20260915",
+    "https://x.com/bcherny/status/2099551291601248485": "20260915",
+    "https://x.com/noahzweben/status/2099553517371523329": "20260915",
+    "https://x.com/amorriscode/status/2099642339992219916": "20260915",
+    "https://x.com/trq212/status/2099551141621329994": "20260915",
+    "https://x.com/trq212/status/2099671266068496802": "20260915",
+    "https://x.com/ClaudeCodeLog/status/2099627237012090958": "20260915",
+    "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/": "20260915"
   }
 }

@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-09-14T03:01:37.478494",
+  "updated_at": "2026-09-15T03:02:15.218250",
   "days": {
-    "20260907": [
-      "作者反击：出版商与经纪争夺 Anthropic 15 亿美元和解金",
-      "Anthropic IPO 路演时间表推迟至最早十月中旬",
-      "Claude-hl：给 Claude Code 输出里的 shell 命令上语法高亮",
-      "claude-transplant：在 Claude Desktop 账号间迁移会话",
-      "toolog：Claude Code 工具调用的本地审计轨迹",
-      "Claude Code 核心成员推荐：升级 Fable 5.1 先跑 `/claude-api prompt-audit`",
-      "Notion 官方 MCP 会在任务中途「塞广告」，并要求模型不要解释",
-      "把域名交给 Claude、一个月后的「无人监管」实验回执"
-    ],
     "20260908": [
       "Business Insider 揭秘 Anthropic Labs：Claude Code 从这里「毕业」",
       "Coop：为 Claude Code / Codex 准备的隔离虚拟机环境",
@@ -71,6 +61,17 @@
       "Claude Code 核心成员：把 Subagent 设为 Opus，省下大量 Fable 5.1 用量",
       "Boris Cherny：Fable 破译了有 370 年历史的密码",
       "用 Claude 从零写操作系统，几天后在真机笔记本上跑起来了"
+    ],
+    "20260915": [
+      "Claude Code 发布 v2.1.271",
+      "Claude Code 发布 v2.1.272",
+      "Anthropic 向投资者表示将连续第二季度实现盈利",
+      "同一家公司被指牵涉 OpenAI、Anthropic 与 Meta 相关黑客丑闻",
+      "Claude Mods 正在落地，已有人做出「Claude 里的俄罗斯方块」",
+      "用 Hook 阻止 Claude 把「不要做的事」写进文件名",
+      "Anthropic 内部：Claude 已写约 80% 代码，工程师季度交付量约 8 倍",
+      "Simon Willison：The contagion of fear",
+      "Claude Code 核心成员完成 Latent Space 录制，谈少有公开的技术细节"
     ]
   }
 }
