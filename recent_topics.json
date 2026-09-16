@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:02:15.218250",
+  "updated_at": "2026-09-16T03:02:29.856863",
   "days": {
-    "20260908": [
-      "Business Insider 揭秘 Anthropic Labs：Claude Code 从这里「毕业」",
-      "Coop：为 Claude Code / Codex 准备的隔离虚拟机环境",
-      "Raptor：把 Claude Code 配成攻防安全 Agent",
-      "AI-observibility：本地看板，判断 Claude Code 会话是否「卡住」",
-      "Agent Arena：Fable 5.1（Max）登顶，净提升约 +15.8%",
-      "Claude Code 核心成员提问：你最晚才发现的功能是什么？",
-      "Claude Code 工程师访谈：Anthropic 自己怎么用 Claude Code"
-    ],
     "20260909": [
       "前 OpenAI 研究员因 AI 安全担忧离开 Anthropic",
       "Claude Code 发布 v2.1.265",
@@ -72,6 +63,18 @@
       "Anthropic 内部：Claude 已写约 80% 代码，工程师季度交付量约 8 倍",
       "Simon Willison：The contagion of fear",
       "Claude Code 核心成员完成 Latent Space 录制，谈少有公开的技术细节"
+    ],
+    "20260916": [
+      "Claude 现已支持 Salesforce（Beta）",
+      "Claude Code 发布 v2.1.273",
+      "OpenAI、Anthropic、Google 已就 AI 安全磋商数周",
+      "Anthropic 联合创始人 Jack Clark：AI「紧急关停开关」或需立法强制",
+      "前 Anthropic / METR 高管创办 AIUC，A 轮融资 4000 万美元，给 AI Agent 做安全审计",
+      "Bough：作者为替代工作中 Claude Code 而写的 Agent",
+      "用 Claude 三周写出 CapCut 替代品，GitHub Beta 约 1 万次下载",
+      "Claude Code 核心成员：多数集成场景下 MCP 已优于 CLI",
+      "Claude Opus 5 用 JavaScript 逐帧画出整段动画",
+      "OpenRouter：上周用户在 OpenAI 模型上的花费超过 Anthropic"
     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T03:02:15.217319",
+  "updated_at": "2026-09-16T03:02:29.855578",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -949,6 +949,27 @@
     "https://x.com/trq212/status/2099551141621329994": "20260915",
     "https://x.com/trq212/status/2099671266068496802": "20260915",
     "https://x.com/ClaudeCodeLog/status/2099627237012090958": "20260915",
-    "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/": "20260915"
+    "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/": "20260915",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.273": "20260916",
+    "https://www.bbc.com/news/articles/cqgk5e2j0gg8o": "20260916",
+    "https://twitter.com/kevinnbass/status/2099621874279817638": "20260916",
+    "https://twitter.com/OpenRouter/status/2099898254905549220": "20260916",
+    "https://www.theregister.com/ai-and-ml/2026/09/15/anthropic-and-openai-look-to-uncle-sam-to-make-them-too-big-to-fail/5296403": "20260916",
+    "https://www.nakedcapitalism.com/2026/09/openai-anthropic-ai-freeze-doomers-trump-bannon-sanders.html": "20260916",
+    "https://github.com/andreylukin/bough": "20260916",
+    "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/": "20260916",
+    "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/": "20260916",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wgvklo/claude_opus_5_drew_every_frame_of_this_animation/": "20260916",
+    "https://www.reddit.com/r/Anthropic/comments/1wh3q4m/social_media_is_causing_more_psychosis_than_ai/": "20260916",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wh13y2/new_usage_limits/": "20260916",
+    "https://www.reddit.com/r/Anthropic/comments/1whjvj7/we_dont_need_ai_regulation_leave_safety_to_us/": "20260916",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wgu8g3/i_used_claude_to_write_a_capcut_replacement_and/": "20260916",
+    "https://www.reddit.com/r/Anthropic/comments/1wh4o2j/anyone_else_dealing_with_this/": "20260916",
+    "https://x.com/claudeai/status/2099876514330206578": "20260916",
+    "https://x.com/bcherny/status/2099940918015168953": "20260916",
+    "https://x.com/trq212/status/2099958388230873165": "20260916",
+    "https://x.com/ClaudeDevs/status/2099990995740082287": "20260916",
+    "https://x.com/bcherny/status/2099979415040274487": "20260916",
+    "https://x.com/noahzweben/status/2100055578790003022": "20260916"
   }
 }
