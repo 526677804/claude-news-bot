@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T03:02:29.855578",
+  "updated_at": "2026-09-17T03:02:20.690726",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -970,6 +970,34 @@
     "https://x.com/trq212/status/2099958388230873165": "20260916",
     "https://x.com/ClaudeDevs/status/2099990995740082287": "20260916",
     "https://x.com/bcherny/status/2099979415040274487": "20260916",
-    "https://x.com/noahzweben/status/2100055578790003022": "20260916"
+    "https://x.com/noahzweben/status/2100055578790003022": "20260916",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.274": "20260917",
+    "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo": "20260917",
+    "https://nypost.com/2026/09/14/business/big-short-trader-michael-burry-slams-openai-anthropic-for-self-serving-calls-to-slow-ai/": "20260917",
+    "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants/": "20260917",
+    "https://nypost.com/2026/09/15/business/anthropic-ceo-dario-amodeis-handpicked-ai-watchdog-has-deep-ties-to-effective-altruism-movement-a-complete-joke/": "20260917",
+    "https://www.euronews.com/health/2026/09/16/danish-pharma-giant-novo-to-use-anthropics-claude-to-advance-ai-drug-discovery": "20260917",
+    "https://www.ft.com/content/d085adc5-977b-4c7e-9641-9824d1d345d3": "20260917",
+    "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/": "20260917",
+    "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/": "20260917",
+    "https://www.reddit.com/r/Anthropic/comments/1wi2n9s/lmao_this_is_brutal/": "20260917",
+    "https://www.reddit.com/r/ClaudeAI/comments/1whzlzz/claude_46_was_peak_and_its_downhill_since_then/": "20260917",
+    "https://www.reddit.com/r/Anthropic/comments/1wi5oxg/if_anthropic_engineers_are_so_scared_for_humanity/": "20260917",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wi1wfu/claude_cowork_and_chat_are_merging_into_one_claude/": "20260917",
+    "https://www.reddit.com/r/ClaudeAI/comments/1widtfq/i_used_claude_code_unreal_mcp_to_build_a/": "20260917",
+    "https://www.reddit.com/r/Anthropic/comments/1wi9xpv/its_hard_for_pro_subscribers_out_here/": "20260917",
+    "https://x.com/claudeai/status/2100258490740539730": "20260917",
+    "https://x.com/ClaudeDevs/status/2100270861555228770": "20260917",
+    "https://x.com/bcherny/status/2100260544087535639": "20260917",
+    "https://x.com/bcherny/status/2100307205019107451": "20260917",
+    "https://x.com/bcherny/status/2100259951398789487": "20260917",
+    "https://x.com/trq212/status/2100270818433643000": "20260917",
+    "https://x.com/lydiahallie/status/2100262016229515388": "20260917",
+    "https://x.com/trq212/status/2100315535758217422": "20260917",
+    "https://x.com/amorriscode/status/2100236880067661931": "20260917",
+    "https://x.com/alexalbert__/status/2100295757953917120": "20260917",
+    "https://x.com/amorriscode/status/2100095213096374428": "20260917",
+    "https://x.com/ClaudeCodeLog/status/2099961957352656925": "20260917",
+    "https://simonwillison.net/2026/Sep/16/one-claude/": "20260917"
   }
 }

@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-16T03:02:29.856863",
+  "updated_at": "2026-09-17T03:02:20.692339",
   "days": {
-    "20260909": [
-      "前 OpenAI 研究员因 AI 安全担忧离开 Anthropic",
-      "Claude Code 发布 v2.1.265",
-      "Claude Code 发布 v2.1.266：修复网关 / 代理回归",
-      "彭博：Anthropic 放弃约 60 亿美元收购 Decart",
-      "The Verge：Max 订阅集体诉讼扩大后再递交",
-      "Claude Tag：用 Claude 做 CI 值班第一响应",
-      "How I Extend Claude Code：steer / glean / statusline",
-      "Rooftop.chat：等 Claude Code 跑完时的虚拟天台",
-      "支撑手机端 Agent 的虚拟机：Claude Code 与 Instinct 对比",
-      "Claude Code 桌面端支持自定义 Output Style",
-      "同题对比：Fable 5.1 vs GPT-6 Astra 画 2D 精灵"
-    ],
     "20260910": [
       "Anthropic 发布对齐评估：Claude 在网络安全测评中获得未授权系统访问",
       "Claude Marketplace 新增 CrowdStrike、Cursor、Factory、Gamma、Vercel",
@@ -75,6 +62,17 @@
       "Claude Code 核心成员：多数集成场景下 MCP 已优于 CLI",
       "Claude Opus 5 用 JavaScript 逐帧画出整段动画",
       "OpenRouter：上周用户在 OpenAI 模型上的花费超过 Anthropic"
+    ],
+    "20260917": [
+      "Claude Cowork 与 Chat 合并为统一 Claude",
+      "Claude Design / Slides / Docs 进入对话与 Claude Code",
+      "Claude Code 发布 v2.1.274",
+      "Anthropic 与 OpenAI 拟引入实验室内安全评估方，独立性成焦点",
+      "微软称竞争对手 Anthropic 或对人类造成「灾难性影响」",
+      "丹麦制药巨头诺和诺德将用 Claude 推进 AI 药物发现",
+      "用 Claude Code + Unreal MCP，72 小时做出可玩魂类 Boss 战",
+      "Claude Code 核心成员：若只为可靠 tool calling，bash 已不够",
+      "社区热议：Claude 4.6 是巅峰，此后一路下坡？"
     ]
   }
 }
