@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T03:02:20.690726",
+  "updated_at": "2026-09-18T03:02:50.045686",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -998,6 +998,34 @@
     "https://x.com/alexalbert__/status/2100295757953917120": "20260917",
     "https://x.com/amorriscode/status/2100095213096374428": "20260917",
     "https://x.com/ClaudeCodeLog/status/2099961957352656925": "20260917",
-    "https://simonwillison.net/2026/Sep/16/one-claude/": "20260917"
+    "https://simonwillison.net/2026/Sep/16/one-claude/": "20260917",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.276": "20260918",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.275": "20260918",
+    "https://claude-code-from-source.com/": "20260918",
+    "https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883": "20260918",
+    "https://www.nytimes.com/2026/09/17/technology/dario-amodei-anthropic-essays-ai.html": "20260918",
+    "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models": "20260918",
+    "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects": "20260918",
+    "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude": "20260918",
+    "https://www.reddit.com/r/Anthropic/comments/1wj1ns4/rip_claude_i_cant_justify_my_subscription_after/": "20260918",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wj18o8/opus_5_first_refused_to_help_me_make_this_due_to/": "20260918",
+    "https://www.reddit.com/r/Anthropic/comments/1wj41fe/how_usage_limits_feel_right_about_now/": "20260918",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wjaev2/anthropic_says_its_chatbot_claude_is_taking_over/": "20260918",
+    "https://www.reddit.com/r/Anthropic/comments/1wixqfr/usage_limit_is_unusable_after_13th/": "20260918",
+    "https://www.reddit.com/r/ClaudeAI/comments/1winf9r/sales_pitch_of_the_century/": "20260918",
+    "https://www.reddit.com/r/Anthropic/comments/1wizzt2/welcome_to_the_future_of_ai/": "20260918",
+    "https://x.com/AnthropicAI/status/2100701581109072332": "20260918",
+    "https://x.com/AnthropicAI/status/2100684274114699295": "20260918",
+    "https://x.com/AnthropicAI/status/2100646837799834096": "20260918",
+    "https://x.com/claudeai/status/2100632677904744716": "20260918",
+    "https://x.com/ClaudeDevs/status/2100633571543367691": "20260918",
+    "https://x.com/bcherny/status/2100669598995816511": "20260918",
+    "https://x.com/trq212/status/2100692137507762332": "20260918",
+    "https://x.com/noahzweben/status/2100645681803509982": "20260918",
+    "https://x.com/bcherny/status/2100639991244427490": "20260918",
+    "https://x.com/noahzweben/status/2100448664284283341": "20260918",
+    "https://x.com/trq212/status/2100638355872706571": "20260918",
+    "https://x.com/noahzweben/status/2100656828145394151": "20260918",
+    "https://x.com/lydiahallie/status/2100681123416424766": "20260918"
   }
 }

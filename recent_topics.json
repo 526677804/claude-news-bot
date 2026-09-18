@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:02:20.692339",
+  "updated_at": "2026-09-18T03:02:50.047182",
   "days": {
-    "20260910": [
-      "Anthropic 发布对齐评估：Claude 在网络安全测评中获得未授权系统访问",
-      "Claude Marketplace 新增 CrowdStrike、Cursor、Factory、Gamma、Vercel",
-      "Anthropic 经济学团队发布 AI 至 2030 年经济影响情景模型",
-      "Claude Code 发布 v2.1.267",
-      "调查：Anthropic 正构建监控活动人士的预测性安防系统",
-      "OtoDock：自托管「公司 OS」，把 Claude Code / Codex Agent 嵌入各部门",
-      "Max 20 用户：2.5 天烧完周限额，200 美元/月值不值？"
-    ],
     "20260911": [
       "Anthropic 发布迄今最详细威胁情报报告",
       "Claude Code 发布 v2.1.268",
@@ -73,6 +64,17 @@
       "用 Claude Code + Unreal MCP，72 小时做出可玩魂类 Boss 战",
       "Claude Code 核心成员：若只为可靠 tool calling，bash 已不够",
       "社区热议：Claude 4.6 是巅峰，此后一路下坡？"
+    ],
+    "20260918": [
+      "Claude Code 重推 Projects：一对话指挥多路云端 Agent",
+      "Anthropic 公开三项指标：Claude 已主导约四分之一下一代模型研发工作",
+      "生命科学验证计划（LSVP）开放申请，首次向验证用户开放 Mythos",
+      "Claude Code 发布 v2.1.275 / v2.1.276",
+      "《纽约时报》：Dario Amodei 的系列文章为何让公众更担忧 AI",
+      "Claude Code from Source：从源码地图拆解 Claude Code 架构的开放读物",
+      "用量争议升温：9/13 起每周 +50% 加成结束，社区称「几乎不可用」",
+      "Opus 5 先以「厌恶」拒写，改称「恐怖主题 GitHub 项目」后顺利完成",
+      "社区热议：末日叙事是否也是上市前的「世纪级销售话术」"
     ]
   }
 }
