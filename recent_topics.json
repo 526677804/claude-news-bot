@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-09-18T03:02:50.047182",
+  "updated_at": "2026-09-19T03:01:30.181281",
   "days": {
-    "20260911": [
-      "Anthropic 发布迄今最详细威胁情报报告",
-      "Claude Code 发布 v2.1.268",
-      "Fable 5.1 Build Days 全球开启（9/11–9/25）",
-      "Claude Managed Agents：`ant` CLI 新增 session viewer",
-      "Benzi：自称可超越 Claude Code 的代码智能 / Harness",
-      "Claude Code 桌面端：任意面板可弹出独立窗口",
-      "/diff 现为持久面板，可滚动点击并实时更新",
-      "Windows 上 Claude Cowork 本地命令故障讨论中心"
-    ],
     "20260912": [
       "Claude Code 发布 v2.1.269",
       "Boris Cherny：Claude 写的生产代码标准应高于人类",
@@ -75,6 +65,14 @@
       "用量争议升温：9/13 起每周 +50% 加成结束，社区称「几乎不可用」",
       "Opus 5 先以「厌恶」拒写，改称「恐怖主题 GitHub 项目」后顺利完成",
       "社区热议：末日叙事是否也是上市前的「世纪级销售话术」"
+    ],
+    "20260919": [
+      "Claude Code v2.1.277：无 CLAUDE.md 时自动读取 AGENTS.md",
+      "Anthropic 官宣与 Accenture 合作，嵌入式评估前沿 AI",
+      "Anthropic 悄然搭建生物实验室，加码 AI 药物研发",
+      "Anthropic 拟将 IPO 计划推迟至 11 月",
+      "《卫报》：OpenAI 遭「道德黑客」渗透，过程中借助了 Claude",
+      "@claudeai 精选：近期用 Claude 做出的有趣项目合集"
     ]
   }
 }

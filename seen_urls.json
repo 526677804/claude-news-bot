@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T03:02:50.045686",
+  "updated_at": "2026-09-19T03:01:30.180227",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -1026,6 +1026,25 @@
     "https://x.com/noahzweben/status/2100448664284283341": "20260918",
     "https://x.com/trq212/status/2100638355872706571": "20260918",
     "https://x.com/noahzweben/status/2100656828145394151": "20260918",
-    "https://x.com/lydiahallie/status/2100681123416424766": "20260918"
+    "https://x.com/lydiahallie/status/2100681123416424766": "20260918",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.277": "20260919",
+    "https://code.claude.com/docs/en/changelog": "20260919",
+    "https://twitter.com/trq212/status/2101009392611278961": "20260919",
+    "https://www.reuters.com/world/anthropic-quietly-sets-up-biology-lab-it-ramps-ai-drug-program-2026-09-18/": "20260919",
+    "https://www.theguardian.com/technology/2026/sep/18/openai-hacked-anthropic-claude-chatbot": "20260919",
+    "https://www.wsj.com/tech/ai/anthropic-shifts-planned-ipo-to-november-8874dffc": "20260919",
+    "https://www.cnbc.com/2026/09/18/anthropic-openai-small-ai-data-center-deals.html": "20260919",
+    "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/": "20260919",
+    "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/": "20260919",
+    "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/": "20260919",
+    "https://x.com/AnthropicAI/status/2101039819870937247": "20260919",
+    "https://x.com/claudeai/status/2101017902316982783": "20260919",
+    "https://x.com/ClaudeDevs/status/2101010592542945673": "20260919",
+    "https://x.com/bcherny/status/2101014069608395196": "20260919",
+    "https://x.com/trq212/status/2101009392611278961": "20260919",
+    "https://x.com/amorriscode/status/2101132039441551587": "20260919",
+    "https://x.com/amorriscode/status/2101014040957043075": "20260919",
+    "https://x.com/bcherny/status/2100682621093347571": "20260919",
+    "https://simonwillison.net/2026/Sep/18/thariq-shihipar/": "20260919"
   }
 }
