@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T03:01:30.180227",
+  "updated_at": "2026-09-20T03:02:17.432980",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -1045,6 +1045,23 @@
     "https://x.com/amorriscode/status/2101132039441551587": "20260919",
     "https://x.com/amorriscode/status/2101014040957043075": "20260919",
     "https://x.com/bcherny/status/2100682621093347571": "20260919",
-    "https://simonwillison.net/2026/Sep/18/thariq-shihipar/": "20260919"
+    "https://simonwillison.net/2026/Sep/18/thariq-shihipar/": "20260919",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.278": "20260920",
+    "https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b": "20260920",
+    "https://nypost.com/2026/09/19/us-news/openai-anthropic-oversold-security-breaches-to-pressure-feds-into-protecting-turf-insiders/": "20260920",
+    "https://www.independent.co.uk/news/lawsuit-anthropic-google-openai-lawyers-b3052942.html": "20260920",
+    "https://thenewstack.io/claude-exploits-openai-forum/": "20260920",
+    "https://thehill.com/policy/technology/6099571-lawsuit-accuses-anthropic-openai-spacexai-google-of-ai-pacing-collusion/": "20260920",
+    "https://www.reddit.com/r/Anthropic/comments/1wkqza8/why_we_cant_use_fable_for_100_of_our_limits/": "20260920",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wkqszd/asked_claude_to_waste_my_remaining_usage_before/": "20260920",
+    "https://www.reddit.com/r/Anthropic/comments/1wkuacd/gave_up_on_claude_and_chatgpt_wasnt_any_better/": "20260920",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wl2w73/gave_sonnet_5_opus_5_astra_and_fable_51_the_same/": "20260920",
+    "https://www.reddit.com/r/Anthropic/comments/1wkox1u/anthropic_quietly_sets_up_biology_lab_as_it_ramps/": "20260920",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wkvqxc/what_is_the_best_way_to_use_llmss_in_2026_i_feel/": "20260920",
+    "https://www.reddit.com/r/Anthropic/comments/1wk9xz2/anthropic_openai_spacexai_google_sued_over_call/": "20260920",
+    "https://x.com/amorriscode/status/2101337993906974906": "20260920",
+    "https://x.com/ClaudeCodeLog/status/2101013750715240488": "20260920",
+    "https://x.com/amorriscode/status/2101128256883929105": "20260920",
+    "https://x.com/lydiahallie/status/2100980869645410565": "20260920"
   }
 }

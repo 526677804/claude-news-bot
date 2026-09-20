@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-09-19T03:01:30.181281",
+  "updated_at": "2026-09-20T03:02:17.434582",
   "days": {
-    "20260912": [
-      "Claude Code 发布 v2.1.269",
-      "Boris Cherny：Claude 写的生产代码标准应高于人类",
-      "Claude Code 核心成员：别只看评测的 pass/fail",
-      "警告：Incognito 聊天上传的文件仍可被列出与取回"
-    ],
     "20260913": [
       "Dario Amodei：我们必须放缓前沿（We Must Pace the Frontier）",
       "Claude Code 发布 v2.1.270",
@@ -73,6 +67,14 @@
       "Anthropic 拟将 IPO 计划推迟至 11 月",
       "《卫报》：OpenAI 遭「道德黑客」渗透，过程中借助了 Claude",
       "@claudeai 精选：近期用 Claude 做出的有趣项目合集"
+    ],
+    "20260920": [
+      "Claude Code 发布 v2.1.278：Auto Mode 默认改用服务端分类器",
+      "诉讼指控 Anthropic、OpenAI 等就「放缓 AI」达成非法协议",
+      "《纽约邮报》：知情人士称 OpenAI、Anthropic 夸大 AI 安全事件以推动监管",
+      "Claude Code 核心成员 @amorriscode：约束成就 Instinct",
+      "同题「夜灯塔」SVG：Sonnet 5 / Opus 5 / Astra / Fable 5.1 画风对照",
+      "周限额重置前，让 Claude「花光」剩余额度"
     ]
   }
 }
