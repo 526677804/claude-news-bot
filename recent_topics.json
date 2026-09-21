@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-09-20T03:02:17.434582",
+  "updated_at": "2026-09-21T03:02:23.566345",
   "days": {
-    "20260913": [
-      "Dario Amodei：我们必须放缓前沿（We Must Pace the Frontier）",
-      "Claude Code 发布 v2.1.270",
-      "Claude Code 桌面端：单会话可保持电脑不休眠",
-      "Claude Code 核心成员：若在 2018 年看到今天的 Claude Code，会以为是 AGI"
-    ],
     "20260914": [
       "特朗普拒绝 Anthropic / OpenAI / xAI CEO 放缓 AI 的呼吁",
       "David Sacks：OpenAI 与 Anthropic 放缓前沿无需靠监管",
@@ -75,6 +69,10 @@
       "Claude Code 核心成员 @amorriscode：约束成就 Instinct",
       "同题「夜灯塔」SVG：Sonnet 5 / Opus 5 / Astra / Fable 5.1 画风对照",
       "周限额重置前，让 Claude「花光」剩余额度"
+    ],
+    "20260921": [
+      "Anthropic 拟将 Claude Code 现行周限额下调约 17%",
+      "编排 Claude Code Agents：Chief of Staff 模式"
     ]
   }
 }

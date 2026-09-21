@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T03:02:17.432980",
+  "updated_at": "2026-09-21T03:02:23.564864",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -1062,6 +1062,15 @@
     "https://x.com/amorriscode/status/2101337993906974906": "20260920",
     "https://x.com/ClaudeCodeLog/status/2101013750715240488": "20260920",
     "https://x.com/amorriscode/status/2101128256883929105": "20260920",
-    "https://x.com/lydiahallie/status/2100980869645410565": "20260920"
+    "https://x.com/lydiahallie/status/2100980869645410565": "20260920",
+    "https://asyncdot.com/blog/chief-of-staff-pattern-orchestrating-claude-code-sessions/": "20260921",
+    "https://www.politico.com/news/2026/09/18/anthropic-openai-spacexai-google-sued-over-calls-to-pace-ai-development-01085023": "20260921",
+    "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/": "20260921",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wlj3gu/something_is_wrong_with_usage_this_week/": "20260921",
+    "https://www.reddit.com/r/Anthropic/comments/1wlmknz/anthropic_selects_accenture_as_first_embedded/": "20260921",
+    "https://www.reddit.com/r/Anthropic/comments/1wlrist/inside_the_israeli_security_firm_tied_to_openai/": "20260921",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wlrjox/tried_to_prompt_my_way_out_of_opus_5/": "20260921",
+    "https://www.reddit.com/r/Anthropic/comments/1wliep9/claude_sucks_for_anything_writing_heavy_or_that/": "20260921",
+    "https://x.com/trq212/status/2101844435353145452": "20260921"
   }
 }
