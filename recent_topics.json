@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-09-21T03:02:23.566345",
+  "updated_at": "2026-09-22T03:01:53.160503",
   "days": {
-    "20260914": [
-      "特朗普拒绝 Anthropic / OpenAI / xAI CEO 放缓 AI 的呼吁",
-      "David Sacks：OpenAI 与 Anthropic 放缓前沿无需靠监管",
-      "Anthropic CEO：AI「蜂群」或在 6–12 个月内接管互联网",
-      "Claude Code 核心成员：把 Subagent 设为 Opus，省下大量 Fable 5.1 用量",
-      "Boris Cherny：Fable 破译了有 370 年历史的密码",
-      "用 Claude 从零写操作系统，几天后在真机笔记本上跑起来了"
-    ],
     "20260915": [
       "Claude Code 发布 v2.1.271",
       "Claude Code 发布 v2.1.272",
@@ -73,6 +65,15 @@
     "20260921": [
       "Anthropic 拟将 Claude Code 现行周限额下调约 17%",
       "编排 Claude Code Agents：Chief of Staff 模式"
+    ],
+    "20260922": [
+      "Claude Code Desktop：Mac 端 Computer Use 现已支持后台运行",
+      "Politico：总统想放开 AI，然后遇到了 Anthropic",
+      "投资者警告：Anthropic 上市后营收可持续性存疑",
+      "《金融时报》：Anthropic 估值冲向 2 万亿美元并非天方夜谭",
+      "Web Radar：用 Claude 打造的气象雷达，现已上线网页版",
+      "9 月 22 日 Claude 多模型错误率升高：事件已恢复",
+      "Claude Code 核心成员 @trq212：我现在一天要打好几次「大图少字」"
     ]
   }
 }
