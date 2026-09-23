@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-09-22T03:01:53.160503",
+  "updated_at": "2026-09-23T03:02:00.300646",
   "days": {
-    "20260915": [
-      "Claude Code 发布 v2.1.271",
-      "Claude Code 发布 v2.1.272",
-      "Anthropic 向投资者表示将连续第二季度实现盈利",
-      "同一家公司被指牵涉 OpenAI、Anthropic 与 Meta 相关黑客丑闻",
-      "Claude Mods 正在落地，已有人做出「Claude 里的俄罗斯方块」",
-      "用 Hook 阻止 Claude 把「不要做的事」写进文件名",
-      "Anthropic 内部：Claude 已写约 80% 代码，工程师季度交付量约 8 倍",
-      "Simon Willison：The contagion of fear",
-      "Claude Code 核心成员完成 Latent Space 录制，谈少有公开的技术细节"
-    ],
     "20260916": [
       "Claude 现已支持 Salesforce（Beta）",
       "Claude Code 发布 v2.1.273",
@@ -74,6 +63,15 @@
       "Web Radar：用 Claude 打造的气象雷达，现已上线网页版",
       "9 月 22 日 Claude 多模型错误率升高：事件已恢复",
       "Claude Code 核心成员 @trq212：我现在一天要打好几次「大图少字」"
+    ],
+    "20260923": [
+      "Claude Opus 5.5 正式发布：Claude 5.5 系列首发模型",
+      "Claude Code 发布 v2.1.280：默认 Opus 换新，全屏鼠标与大量稳定性修复",
+      "jev-router：按任务把 Claude Code 路由到最便宜的模型",
+      "Gobag：为 Claude Code 做语义化会话归档",
+      "Tell HN：Claude Code 未经确认就替我签了合同",
+      "@bcherny：用 Opus 5.5 + Lean 形式化验证 Claude Agent SDK",
+      "Simon Willison：Opus 5.5、GPT-6 Sol / Luna，以及新一轮价格战"
     ]
   }
 }
