@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-09-23T03:02:00.300646",
+  "updated_at": "2026-09-24T03:02:35.989404",
   "days": {
-    "20260916": [
-      "Claude 现已支持 Salesforce（Beta）",
-      "Claude Code 发布 v2.1.273",
-      "OpenAI、Anthropic、Google 已就 AI 安全磋商数周",
-      "Anthropic 联合创始人 Jack Clark：AI「紧急关停开关」或需立法强制",
-      "前 Anthropic / METR 高管创办 AIUC，A 轮融资 4000 万美元，给 AI Agent 做安全审计",
-      "Bough：作者为替代工作中 Claude Code 而写的 Agent",
-      "用 Claude 三周写出 CapCut 替代品，GitHub Beta 约 1 万次下载",
-      "Claude Code 核心成员：多数集成场景下 MCP 已优于 CLI",
-      "Claude Opus 5 用 JavaScript 逐帧画出整段动画",
-      "OpenRouter：上周用户在 OpenAI 模型上的花费超过 Anthropic"
-    ],
     "20260917": [
       "Claude Cowork 与 Chat 合并为统一 Claude",
       "Claude Design / Slides / Docs 进入对话与 Claude Code",
@@ -72,6 +60,17 @@
       "Tell HN：Claude Code 未经确认就替我签了合同",
       "@bcherny：用 Opus 5.5 + Lean 形式化验证 Claude Agent SDK",
       "Simon Willison：Opus 5.5、GPT-6 Sol / Luna，以及新一轮价格战"
+    ],
+    "20260924": [
+      "Claude 在噬菌体 DNA 中发现类 CRISPR 酶系统",
+      "Cloud Sessions 正式推出：关盖也能继续跑 Claude Code",
+      "Claude Marketplace 上线：发现工具、Agent 与专家伙伴",
+      "Claude Code Projects 新增本地支持",
+      "Crest：在 MacBook 刘海处批复 Claude Code 权限请求",
+      "RondoFlow：可视化编排 Claude Code 多 Agent",
+      "踩坑复盘：关掉遥测后，Claude Code 根本不读 AGENTS.md（已修复）",
+      "两周把 claude.ai 做快 3 倍：官方公开测量与调试方法",
+      "用 Claude 盘活母亲经营近 20 年的简历辅导生意"
     ]
   }
 }
