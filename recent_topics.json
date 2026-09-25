@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:02:35.989404",
+  "updated_at": "2026-09-25T03:01:08.108065",
   "days": {
-    "20260917": [
-      "Claude Cowork 与 Chat 合并为统一 Claude",
-      "Claude Design / Slides / Docs 进入对话与 Claude Code",
-      "Claude Code 发布 v2.1.274",
-      "Anthropic 与 OpenAI 拟引入实验室内安全评估方，独立性成焦点",
-      "微软称竞争对手 Anthropic 或对人类造成「灾难性影响」",
-      "丹麦制药巨头诺和诺德将用 Claude 推进 AI 药物发现",
-      "用 Claude Code + Unreal MCP，72 小时做出可玩魂类 Boss 战",
-      "Claude Code 核心成员：若只为可靠 tool calling，bash 已不够",
-      "社区热议：Claude 4.6 是巅峰，此后一路下坡？"
-    ],
     "20260918": [
       "Claude Code 重推 Projects：一对话指挥多路云端 Agent",
       "Anthropic 公开三项指标：Claude 已主导约四分之一下一代模型研发工作",
@@ -71,6 +60,18 @@
       "踩坑复盘：关掉遥测后，Claude Code 根本不读 AGENTS.md（已修复）",
       "两周把 claude.ai 做快 3 倍：官方公开测量与调试方法",
       "用 Claude 盘活母亲经营近 20 年的简历辅导生意"
+    ],
+    "20260925": [
+      "Claude Code 发布 v2.1.282：宽屏排版、遥测透明化与大量会话稳定性修复",
+      "安全护栏拦截请求将恢复计费（低误报类别）",
+      "扩大对科研人员的支持：面向科学家的 Claude 团队套餐开放 1 万个席位",
+      "彭博：Anthropic 与 Akamai 达成约 120 亿美元 AI 算力协议",
+      "Axios：特朗普阵营就 AI「末日叙事」对 Anthropic CEO 开辟新战线",
+      "Amodei 在联合国安理会警告 AI 风险",
+      "jev-effort：按步骤调节推理 effort，且尽量不打断 prompt cache",
+      "社区观察：Pro 方案或重新纳入部分 Fable 5 用量",
+      "@trq212：考虑取消 Plan Mode，把 Shift+Tab 改成调节 effort",
+      "@trq212：分享 Claude 产出的底线——愿意同步公开对应 prompt"
     ]
   }
 }
