@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-09-25T03:01:08.108065",
+  "updated_at": "2026-09-26T03:02:13.303280",
   "days": {
-    "20260918": [
-      "Claude Code 重推 Projects：一对话指挥多路云端 Agent",
-      "Anthropic 公开三项指标：Claude 已主导约四分之一下一代模型研发工作",
-      "生命科学验证计划（LSVP）开放申请，首次向验证用户开放 Mythos",
-      "Claude Code 发布 v2.1.275 / v2.1.276",
-      "《纽约时报》：Dario Amodei 的系列文章为何让公众更担忧 AI",
-      "Claude Code from Source：从源码地图拆解 Claude Code 架构的开放读物",
-      "用量争议升温：9/13 起每周 +50% 加成结束，社区称「几乎不可用」",
-      "Opus 5 先以「厌恶」拒写，改称「恐怖主题 GitHub 项目」后顺利完成",
-      "社区热议：末日叙事是否也是上市前的「世纪级销售话术」"
-    ],
     "20260919": [
       "Claude Code v2.1.277：无 CLAUDE.md 时自动读取 AGENTS.md",
       "Anthropic 官宣与 Accenture 合作，嵌入式评估前沿 AI",
@@ -72,6 +61,19 @@
       "社区观察：Pro 方案或重新纳入部分 Fable 5 用量",
       "@trq212：考虑取消 Plan Mode，把 Shift+Tab 改成调节 effort",
       "@trq212：分享 Claude 产出的底线——愿意同步公开对应 prompt"
+    ],
+    "20260926": [
+      "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险",
+      "Claude Code 发布 v2.1.283",
+      "触达 5 小时限额时改为优雅收尾，不再半路截断",
+      "Situation Report：Claude 助力刚果（金）埃博拉疫情响应",
+      "Anthropic 创始人团队寻求 IPO 前投票控制权",
+      "Akamai 云协议细节披露：七年 116 亿美元，附带认股权证",
+      "Jevmem：为 Claude Code 自动沉淀项目记忆",
+      "Claude 插件提交门户上线",
+      "@trq212：effort 到底是什么？为何不一直开满？",
+      "@bcherny：Slack Tag 每天写掉我一半以上的 PR",
+      "用 Opus 5.5 做出可玩的宝可梦对战 Demo"
     ]
   }
 }
