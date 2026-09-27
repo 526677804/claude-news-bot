@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-09-26T03:02:13.303280",
+  "updated_at": "2026-09-27T03:01:44.613381",
   "days": {
-    "20260919": [
-      "Claude Code v2.1.277：无 CLAUDE.md 时自动读取 AGENTS.md",
-      "Anthropic 官宣与 Accenture 合作，嵌入式评估前沿 AI",
-      "Anthropic 悄然搭建生物实验室，加码 AI 药物研发",
-      "Anthropic 拟将 IPO 计划推迟至 11 月",
-      "《卫报》：OpenAI 遭「道德黑客」渗透，过程中借助了 Claude",
-      "@claudeai 精选：近期用 Claude 做出的有趣项目合集"
-    ],
     "20260920": [
       "Claude Code 发布 v2.1.278：Auto Mode 默认改用服务端分类器",
       "诉讼指控 Anthropic、OpenAI 等就「放缓 AI」达成非法协议",
@@ -74,6 +66,13 @@
       "@trq212：effort 到底是什么？为何不一直开满？",
       "@bcherny：Slack Tag 每天写掉我一半以上的 PR",
       "用 Opus 5.5 做出可玩的宝可梦对战 Demo"
+    ],
+    "20260927": [
+      "Show HN：用 Claude Code Skill 复盘你的国际象棋对局",
+      "Logo 设计 Skill：让 Claude 少出「AI 味」方案",
+      "@lydiahallie：`/claude-api prompt-audit` 新增别名 `/checkup prompt-audit`",
+      "Opus 5.5（High）登顶 Text Arena，得分 1509",
+      "@trq212 征集 Computer / Browser Use 失败案例"
     ]
   }
 }
