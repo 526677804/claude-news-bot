@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-09-27T03:01:44.613381",
+  "updated_at": "2026-09-28T03:02:03.139142",
   "days": {
-    "20260920": [
-      "Claude Code 发布 v2.1.278：Auto Mode 默认改用服务端分类器",
-      "诉讼指控 Anthropic、OpenAI 等就「放缓 AI」达成非法协议",
-      "《纽约邮报》：知情人士称 OpenAI、Anthropic 夸大 AI 安全事件以推动监管",
-      "Claude Code 核心成员 @amorriscode：约束成就 Instinct",
-      "同题「夜灯塔」SVG：Sonnet 5 / Opus 5 / Astra / Fable 5.1 画风对照",
-      "周限额重置前，让 Claude「花光」剩余额度"
-    ],
     "20260921": [
       "Anthropic 拟将 Claude Code 现行周限额下调约 17%",
       "编排 Claude Code Agents：Chief of Staff 模式"
@@ -73,6 +65,17 @@
       "@lydiahallie：`/claude-api prompt-audit` 新增别名 `/checkup prompt-audit`",
       "Opus 5.5（High）登顶 Text Arena，得分 1509",
       "@trq212 征集 Computer / Browser Use 失败案例"
+    ],
+    "20260928": [
+      "Anthropic CEO Dario Amodei 将与特朗普共进白宫晚宴",
+      "Dario Amodei 登上 SNL《周末新闻》被调侃",
+      "Google、OpenAI、Anthropic 着手组建前沿 AI 标准机构 SAFA",
+      "美联社：Anthropic 与 OpenAI 敲响 AI 安全警钟，并试图主导监管规则",
+      "LiveNerf：实时追踪 Opus 5.5 是否被「降智」",
+      "Pokémon Claude Red：Opus 5.5 用代码重制整部《宝可梦 红》",
+      "Opus 5.5 官方提示词指南要点速读",
+      "@trq212：最怕我们只是变得更懒，吃掉了 Agent 带来的效率红利",
+      "@trq212：用 Claude Code 做视频一周年回顾"
     ]
   }
 }
