@@ -1,10 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:02:03.139142",
+  "updated_at": "2026-09-29T03:02:22.651525",
   "days": {
-    "20260921": [
-      "Anthropic 拟将 Claude Code 现行周限额下调约 17%",
-      "编排 Claude Code Agents：Chief of Staff 模式"
-    ],
     "20260922": [
       "Claude Code Desktop：Mac 端 Computer Use 现已支持后台运行",
       "Politico：总统想放开 AI，然后遇到了 Anthropic",
@@ -76,6 +72,16 @@
       "Opus 5.5 官方提示词指南要点速读",
       "@trq212：最怕我们只是变得更懒，吃掉了 Agent 带来的效率红利",
       "@trq212：用 Claude Code 做视频一周年回顾"
+    ],
+    "20260929": [
+      "Claude Sonnet 5.5 正式发布：Claude 5.5 系列第二款模型",
+      "Claude Code 发布 v2.1.284：默认 Sonnet 切换为 5.5，auto mode 新增「这次允许，下次再问」",
+      "官方指南：让 Claude 帮你构建评测（evals）并持续爬坡优化",
+      "路透社：Anthropic IPO 招股书曝光，AI 愿景宏大，成本飙升",
+      "彭博社：澳大利亚参议院要求 OpenAI、Anthropic CEO 出席 AI 问询",
+      "Axios：Domyn CEO 公开指责 OpenAI、Anthropic 在安全问题上「撒谎」",
+      "@trq212：如今已经很难简单地「给你看我的 prompt」了",
+      "@lydiahallie：Claude Code Projects 主会话默认 low effort，征集调高的理由"
     ]
   }
 }
