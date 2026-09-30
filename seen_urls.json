@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T03:02:22.649571",
+  "updated_at": "2026-09-30T03:01:49.940882",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -1280,6 +1280,27 @@
     "https://x.com/amorriscode/status/2104684362428187013": "20260929",
     "https://x.com/amorriscode/status/2104739912230838748": "20260929",
     "https://x.com/ClaudeCodeLog/status/2104637503609229584": "20260929",
-    "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/": "20260929"
+    "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/": "20260929",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.285": "20260930",
+    "https://www.reddit.com/r/stocks/comments/1wtdg4w/anthropic_ipo_leak_is_insane/": "20260930",
+    "https://www.ft.com/content/c7685a7e-7745-4cbc-8053-4958d0ea449b": "20260930",
+    "https://www.coderabbit.ai/blog/sonnet-5-5-model-review": "20260930",
+    "https://artificialanalysis.ai/models/claude-sonnet-5-5": "20260930",
+    "https://www.cnbc.com/2026/09/29/anthropic-warns-ai-existential-risks-ipo-filing-reuters.html": "20260930",
+    "https://www.publishersweekly.com/pw/by-topic/digital/copyright/article/101364-authors-guild-calls-on-publishers-to-share-the-anthropic-wealth.html": "20260930",
+    "https://www.theverge.com/ai-artificial-intelligence/1001838/anthropic-ipo-prospectus-ai-safety-threat": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wtoi3e/open_ais_internal_benchmarks_show_gpt61_sol/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wtlrnu/is_opus_55_entering_a_nerfed_phase_livenerf/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wtagdd/sonnet_55_did_this_opus_55_quality_with_half_price/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wtk12a/excuse_me/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wtk9kd/anthropic_says_a_chinese_ai_model_anyone_can/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wt9cdl/opus_55_vs_sonnet_55_3d_steampunk_whale_modeling/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wt90cb/anthropic_lost_how_much_the_free_ride_will_be/": "20260930",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wtkr74/opus_55_still_leads_on_aa_intelligence_but_gpt61/": "20260930",
+    "https://x.com/AnthropicAI/status/2104982629884063840": "20260930",
+    "https://x.com/bcherny/status/2104769987068285110": "20260930",
+    "https://x.com/trq212/status/2105065127892734076": "20260930",
+    "https://x.com/trq212/status/2104983034152063339": "20260930",
+    "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/": "20260930"
   }
 }
