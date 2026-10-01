@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-09-30T03:01:49.942798",
+  "updated_at": "2026-10-01T03:01:17.607482",
   "days": {
-    "20260923": [
-      "Claude Opus 5.5 正式发布：Claude 5.5 系列首发模型",
-      "Claude Code 发布 v2.1.280：默认 Opus 换新，全屏鼠标与大量稳定性修复",
-      "jev-router：按任务把 Claude Code 路由到最便宜的模型",
-      "Gobag：为 Claude Code 做语义化会话归档",
-      "Tell HN：Claude Code 未经确认就替我签了合同",
-      "@bcherny：用 Opus 5.5 + Lean 形式化验证 Claude Agent SDK",
-      "Simon Willison：Opus 5.5、GPT-6 Sol / Luna，以及新一轮价格战"
-    ],
     "20260924": [
       "Claude 在噬菌体 DNA 中发现类 CRISPR 酶系统",
       "Cloud Sessions 正式推出：关盖也能继续跑 Claude Code",
@@ -81,6 +72,18 @@
       "Simon Willison 引述 Anthropic 前沿红队：可下载的开源模型已能自主写出可用攻击",
       "@trq212 做客 Latent Space 播客：从 Harness 工程聊到如何跟上前沿节奏",
       "Artificial Analysis 对比：Opus 5.5 智能指数仍居首，GPT-6.1 Sol 改写成本前沿"
+    ],
+    "20261001": [
+      "美国 FTC 对 Anthropic、OpenAI 等 AI 巨头展开调查",
+      "Claude Code 发布 v2.1.286：多条权限请求显示「第几条/共几条」",
+      "Claude 开发者新站点上线",
+      "Claude Founder House 将亮相旧金山科技周和斯德哥尔摩",
+      "IPO 招股书细节续出：严重依赖科技大厂，去年亏损超 400 亿美元",
+      "《纽约时报》：宗教学者与 Anthropic 会面，所闻令他们震惊",
+      "Show HN：不必再在 Slack 和 Claude Code CLI 之间来回搬运上下文",
+      "@trq212：创作的乐趣别外包给 AI",
+      "Gemini 4 发布，r/ClaudeAI 热议：Opus 5.5 终于迎来对手？",
+      "趣闻：Opus 5.5 用用户的敷衍回复给文件命名"
     ]
   }
 }

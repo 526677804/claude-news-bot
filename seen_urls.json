@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T03:01:49.940882",
+  "updated_at": "2026-10-01T03:01:17.605225",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -1301,6 +1301,26 @@
     "https://x.com/bcherny/status/2104769987068285110": "20260930",
     "https://x.com/trq212/status/2105065127892734076": "20260930",
     "https://x.com/trq212/status/2104983034152063339": "20260930",
-    "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/": "20260930"
+    "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/": "20260930",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.286": "20261001",
+    "https://daringfireball.net/linked/2026/09/30/reuters-anthropic-ipo-prospectus": "20261001",
+    "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/": "20261001",
+    "https://www.reuters.com/world/anthropic-ipo-prospectus-lays-bare-deep-dependence-big-tech-partners-2026-09-29/": "20261001",
+    "https://mashable.com/tech/anthropic-lost-42-billion-in-2025": "20261001",
+    "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html": "20261001",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wuc5vu/i_was_tired_of_relaying_context_between_slack_and/": "20261001",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wujje8/show_us_what_youve_created_with_claude/": "20261001",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wufk1u/gemini_4_is_out_the_competition_has_woken_up/": "20261001",
+    "https://www.reddit.com/r/Anthropic/comments/1wugstr/did_opus_55_enter_a_nerfed_phase_livenerf/": "20261001",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wu4rv6/opus_55_naming_files_after_all_my_responses_are/": "20261001",
+    "https://www.reddit.com/r/Anthropic/comments/1wugeni/dario_speaks_outside_the_white_house/": "20261001",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wuh8vh/is_claude_a_freak/": "20261001",
+    "https://www.reddit.com/r/Anthropic/comments/1wucllc/its_a_dangerous_gamble/": "20261001",
+    "https://x.com/claudeai/status/2105370680485417401": "20261001",
+    "https://x.com/ClaudeDevs/status/2105391694741119047": "20261001",
+    "https://x.com/trq212/status/2105392665860956645": "20261001",
+    "https://x.com/trq212/status/2105333496768319969": "20261001",
+    "https://x.com/bcherny/status/2105448431972217045": "20261001",
+    "https://x.com/ClaudeCodeLog/status/2105020331064713388": "20261001"
   }
 }
