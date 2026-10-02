@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:01:17.607482",
+  "updated_at": "2026-10-02T03:00:45.293940",
   "days": {
-    "20260924": [
-      "Claude 在噬菌体 DNA 中发现类 CRISPR 酶系统",
-      "Cloud Sessions 正式推出：关盖也能继续跑 Claude Code",
-      "Claude Marketplace 上线：发现工具、Agent 与专家伙伴",
-      "Claude Code Projects 新增本地支持",
-      "Crest：在 MacBook 刘海处批复 Claude Code 权限请求",
-      "RondoFlow：可视化编排 Claude Code 多 Agent",
-      "踩坑复盘：关掉遥测后，Claude Code 根本不读 AGENTS.md（已修复）",
-      "两周把 claude.ai 做快 3 倍：官方公开测量与调试方法",
-      "用 Claude 盘活母亲经营近 20 年的简历辅导生意"
-    ],
     "20260925": [
       "Claude Code 发布 v2.1.282：宽屏排版、遥测透明化与大量会话稳定性修复",
       "安全护栏拦截请求将恢复计费（低误报类别）",
@@ -84,6 +73,17 @@
       "@trq212：创作的乐趣别外包给 AI",
       "Gemini 4 发布，r/ClaudeAI 热议：Opus 5.5 终于迎来对手？",
       "趣闻：Opus 5.5 用用户的敷衍回复给文件命名"
+    ],
+    "20261002": [
+      "Claude Code 推出 Mods：插件可以深度改造 Claude Code 了（v2.1.287）",
+      "限时两周：在 Claude App 里做设计、演示文稿或文档，用量额度减半计算",
+      "Anthropic 官博：巴克莱银行（Barclays）规模化部署 Claude",
+      "Anthropic Science Blog 客座文章：AI 与科学之间的「阻抗失配」",
+      "路透社：博通将向 Anthropic 提供最高 420 亿美元贷款，用于租赁其芯片",
+      "彭博社：Anthropic 据称瞄准感恩节前完成超大规模 IPO",
+      "省额度实用技巧：不必所有任务都用 Fable，把它设为 /advisor",
+      "用 Claude Code 做出一款 DAW（类 Ableton），再把 Claude 装进去",
+      "@trq212：下一篇文章写给企业管理者，征集「希望领导层懂的 Agent 认知」"
     ]
   }
 }
