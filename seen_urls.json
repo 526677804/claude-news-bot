@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T03:00:45.291715",
+  "updated_at": "2026-10-03T03:00:53.208108",
   "urls": {
     "https://www.anthropic.com/news/claude-opus-5": "20260804",
     "https://www.anthropic.com/news/redeploying-fable-5": "20260804",
@@ -1349,6 +1349,28 @@
     "https://x.com/amorriscode/status/2105732963317244373": "20261002",
     "https://x.com/trq212/status/2105849295580889208": "20261002",
     "https://x.com/amorriscode/status/2105831586843533783": "20261002",
-    "https://x.com/ClaudeCodeLog/status/2105377563698696459": "20261002"
+    "https://x.com/ClaudeCodeLog/status/2105377563698696459": "20261002",
+    "https://www.anthropic.com/news/claude-frontier-academy": "20261003",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.288": "20261003",
+    "https://fortune.com/2026/10/01/yann-lecun-anthropic-ceo-dario-amodei-deluded-crazy-cybersecurity/": "20261003",
+    "https://www.thelettersfromleo.com/p/nyt-anthropic-nearly-walked-out-on": "20261003",
+    "https://claude.dev/blog/getting-started-with-claude-code-mods/": "20261003",
+    "https://code.claude.com/docs/en/plugins/mods/overview": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wvyagq/confirmed_opus_55_has_been_nerded/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wvwipe/evidence_opus_55_today_vs_launch_regression_with/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ww0u3i/team_recently_started_using_claude_sprints_get/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wvsiey/open_machine_ceo_allie_k_miller_says_she_takes/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ww9nq3/i_use_claude_daily_but_i_know_im_only_using_a/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ww2cn3/i_built_claude_fables_a_claude_code_mod_that/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wvkhzo/hey_opus_55_can_you_build_me_a_247_live_streaming/": "20261003",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ww6pgx/interesting_specs_of_claude/": "20261003",
+    "https://x.com/claudeai/status/2106125468365918268": "20261003",
+    "https://x.com/ClaudeDevs/status/2106118517447876618": "20261003",
+    "https://x.com/ClaudeDevs/status/2106138612215808023": "20261003",
+    "https://x.com/lydiahallie/status/2106127556491821499": "20261003",
+    "https://x.com/trq212/status/2106119299484221762": "20261003",
+    "https://x.com/lydiahallie/status/2106066888501645655": "20261003",
+    "https://x.com/noahzweben/status/2106124987375771879": "20261003",
+    "https://x.com/ClaudeCodeLog/status/2105721911036481778": "20261003"
   }
 }

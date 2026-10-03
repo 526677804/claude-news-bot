@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-10-02T03:00:45.293940",
+  "updated_at": "2026-10-03T03:00:53.210241",
   "days": {
-    "20260925": [
-      "Claude Code 发布 v2.1.282：宽屏排版、遥测透明化与大量会话稳定性修复",
-      "安全护栏拦截请求将恢复计费（低误报类别）",
-      "扩大对科研人员的支持：面向科学家的 Claude 团队套餐开放 1 万个席位",
-      "彭博：Anthropic 与 Akamai 达成约 120 亿美元 AI 算力协议",
-      "Axios：特朗普阵营就 AI「末日叙事」对 Anthropic CEO 开辟新战线",
-      "Amodei 在联合国安理会警告 AI 风险",
-      "jev-effort：按步骤调节推理 effort，且尽量不打断 prompt cache",
-      "社区观察：Pro 方案或重新纳入部分 Fable 5 用量",
-      "@trq212：考虑取消 Plan Mode，把 Shift+Tab 改成调节 effort",
-      "@trq212：分享 Claude 产出的底线——愿意同步公开对应 prompt"
-    ],
     "20260926": [
       "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险",
       "Claude Code 发布 v2.1.283",
@@ -84,6 +72,17 @@
       "省额度实用技巧：不必所有任务都用 Fable，把它设为 /advisor",
       "用 Claude Code 做出一款 DAW（类 Ableton），再把 Claude 装进去",
       "@trq212：下一篇文章写给企业管理者，征集「希望领导层懂的 Agent 认知」"
+    ],
+    "20261003": [
+      "Claude Code 新增官方插件「You should Know」：自动帮你捞出容易错过的关键信息",
+      "Claude Code 发布 v2.1.288：Mods 可读取选中文本，云端会话内置 gh api",
+      "Anthropic 官博发布「Claude Frontier Academy」",
+      "Claude Tag 支持群组私信（Group DMs）",
+      "《财富》：「AI 教父」Yann LeCun 称 Anthropic CEO「妄想」，不懂网络安全",
+      "Claude Fables：把 Claude 正在做的事变成提示框上方的小动画",
+      "同一 prompt 对比发布日：用户称 Opus 5.5 在 Godot 任务上出现退化",
+      "团队用上 Claude 后，一个 Sprint 几天就清空了",
+      "用 Opus 5.5 搭一个 24 小时不停播的 AI 新闻台"
     ]
   }
 }
