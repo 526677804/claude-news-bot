@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-10-03T03:00:53.210241",
+  "updated_at": "2026-10-04T03:00:43.039156",
   "days": {
-    "20260926": [
-      "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险",
-      "Claude Code 发布 v2.1.283",
-      "触达 5 小时限额时改为优雅收尾，不再半路截断",
-      "Situation Report：Claude 助力刚果（金）埃博拉疫情响应",
-      "Anthropic 创始人团队寻求 IPO 前投票控制权",
-      "Akamai 云协议细节披露：七年 116 亿美元，附带认股权证",
-      "Jevmem：为 Claude Code 自动沉淀项目记忆",
-      "Claude 插件提交门户上线",
-      "@trq212：effort 到底是什么？为何不一直开满？",
-      "@bcherny：Slack Tag 每天写掉我一半以上的 PR",
-      "用 Opus 5.5 做出可玩的宝可梦对战 Demo"
-    ],
     "20260927": [
       "Show HN：用 Claude Code Skill 复盘你的国际象棋对局",
       "Logo 设计 Skill：让 Claude 少出「AI 味」方案",
@@ -83,6 +70,15 @@
       "同一 prompt 对比发布日：用户称 Opus 5.5 在 Godot 任务上出现退化",
       "团队用上 Claude 后，一个 Sprint 几天就清空了",
       "用 Opus 5.5 搭一个 24 小时不停播的 AI 新闻台"
+    ],
+    "20261004": [
+      "Claude Code 发布 v2.1.289：修复 Mods 场景下的权限规则失效问题",
+      "《每日电讯报》：Anthropic 曾试图说服教皇，AI 可能是有意识的存在",
+      "Papermorph：把 PDF 变成可交互动画网页书的 Skill",
+      "Show HN：jpm，每一行代码都由 Claude Code 编写的 Rust 版 JavaScript 包管理器",
+      "用户反馈：Fable 5.1 被标为「默认（推荐）」模型，取代 Opus 5.5",
+      "106 张近乎纯黑的 OLED 壁纸：全部由 Claude 用真实科学数据和代码绘制",
+      "GPT 6 Astra 对战 Claude Opus：24 小时《星际争霸》直播"
     ]
   }
 }
