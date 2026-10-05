@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-10-04T03:00:43.039156",
+  "updated_at": "2026-10-05T03:01:30.836768",
   "days": {
-    "20260927": [
-      "Show HN：用 Claude Code Skill 复盘你的国际象棋对局",
-      "Logo 设计 Skill：让 Claude 少出「AI 味」方案",
-      "@lydiahallie：`/claude-api prompt-audit` 新增别名 `/checkup prompt-audit`",
-      "Opus 5.5（High）登顶 Text Arena，得分 1509",
-      "@trq212 征集 Computer / Browser Use 失败案例"
-    ],
     "20260928": [
       "Anthropic CEO Dario Amodei 将与特朗普共进白宫晚宴",
       "Dario Amodei 登上 SNL《周末新闻》被调侃",
@@ -79,6 +72,16 @@
       "用户反馈：Fable 5.1 被标为「默认（推荐）」模型，取代 Opus 5.5",
       "106 张近乎纯黑的 OLED 壁纸：全部由 Claude 用真实科学数据和代码绘制",
       "GPT 6 Astra 对战 Claude Opus：24 小时《星际争霸》直播"
+    ],
+    "20261005": [
+      "TechSpot：佛州女子把 Claude 当日记本，Anthropic 将其中一条内容报告给警方",
+      "BleepingComputer：Anthropic 邀请 Claude 用户共享语音数据，用于模型训练",
+      "Graphify：把整个代码库变成可查询的知识图谱",
+      "Caveman：让 Agent 用“原始人说话”，号称省 65% Token",
+      "gstack：照搬 Garry Tan 的 Claude Code 配置",
+      "Claude 存储/记忆全景图更新：哪些在本地、哪些在云端，10 月 6 日有变化",
+      "热议：Anthropic 需要一款比 Haiku 更便宜的模型",
+      "不会写代码，也用 Claude 搭了一套自动备餐 + 买菜工作流"
     ]
   }
 }
