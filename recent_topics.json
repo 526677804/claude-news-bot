@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-05T03:01:30.836768",
+  "updated_at": "2026-10-06T03:02:26.046018",
   "days": {
-    "20260928": [
-      "Anthropic CEO Dario Amodei 将与特朗普共进白宫晚宴",
-      "Dario Amodei 登上 SNL《周末新闻》被调侃",
-      "Google、OpenAI、Anthropic 着手组建前沿 AI 标准机构 SAFA",
-      "美联社：Anthropic 与 OpenAI 敲响 AI 安全警钟，并试图主导监管规则",
-      "LiveNerf：实时追踪 Opus 5.5 是否被「降智」",
-      "Pokémon Claude Red：Opus 5.5 用代码重制整部《宝可梦 红》",
-      "Opus 5.5 官方提示词指南要点速读",
-      "@trq212：最怕我们只是变得更懒，吃掉了 Agent 带来的效率红利",
-      "@trq212：用 Claude Code 做视频一周年回顾"
-    ],
     "20260929": [
       "Claude Sonnet 5.5 正式发布：Claude 5.5 系列第二款模型",
       "Claude Code 发布 v2.1.284：默认 Sonnet 切换为 5.5，auto mode 新增「这次允许，下次再问」",
@@ -82,6 +71,16 @@
       "Claude 存储/记忆全景图更新：哪些在本地、哪些在云端，10 月 6 日有变化",
       "热议：Anthropic 需要一款比 Haiku 更便宜的模型",
       "不会写代码，也用 Claude 搭了一套自动备餐 + 买菜工作流"
+    ],
+    "20261006": [
+      "Claude Cowork 不再支持本地会话：从今天起任务改在云端运行",
+      "Claude Code 发布 v2.1.290：给 Mods 和插件 Hook 提供更多上下文",
+      "BBC：五角大楼将 Anthropic 列入黑名单后，已停止使用其 AI 工具",
+      "SemiAnalysis：Anthropic 订阅的性价比是 OpenAI 的 5 倍以上",
+      "TechSpot：一位工程师说 Claude Code 让他的工作变得「令人心力交瘁」",
+      "@trq212：正在做一个 Skill，让 Claude Code 生成更好的 HTML 计划",
+      "Anthropic 更新了官方 Agent Skills 编写指南，社区整理出 6 条要点",
+      "动效设计师：通过 invideo Editor MCP 让 Claude 做动画，两三条提示词就出片"
     ]
   }
 }
