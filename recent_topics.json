@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:02:26.046018",
+  "updated_at": "2026-10-07T03:00:53.306853",
   "days": {
-    "20260929": [
-      "Claude Sonnet 5.5 正式发布：Claude 5.5 系列第二款模型",
-      "Claude Code 发布 v2.1.284：默认 Sonnet 切换为 5.5，auto mode 新增「这次允许，下次再问」",
-      "官方指南：让 Claude 帮你构建评测（evals）并持续爬坡优化",
-      "路透社：Anthropic IPO 招股书曝光，AI 愿景宏大，成本飙升",
-      "彭博社：澳大利亚参议院要求 OpenAI、Anthropic CEO 出席 AI 问询",
-      "Axios：Domyn CEO 公开指责 OpenAI、Anthropic 在安全问题上「撒谎」",
-      "@trq212：如今已经很难简单地「给你看我的 prompt」了",
-      "@lydiahallie：Claude Code Projects 主会话默认 low effort，征集调高的理由"
-    ],
     "20260930": [
       "Claude Code 发布 v2.1.285：可一键禁用 WebFetch，命令行直通桌面端",
       "Anthropic 启动新调研：你希望 AI 扮演什么角色？",
@@ -81,6 +71,19 @@
       "@trq212：正在做一个 Skill，让 Claude Code 生成更好的 HTML 计划",
       "Anthropic 更新了官方 Agent Skills 编写指南，社区整理出 6 条要点",
       "动效设计师：通过 invideo Editor MCP 让 Claude 做动画，两三条提示词就出片"
+    ],
+    "20261007": [
+      "Claude 进驻 Google Docs、Sheets 和 Slides，Workspace 文件也能在 Claude 中直接打开",
+      "Claude Code 发布 v2.1.292：子 Agent 可指定 effort 等级，插件安装支持直接指定市场",
+      "Anthropic 扩大网络安全验证计划：认证安全从业者可使用 Claude Mythos 等最强模型",
+      "官方发布 Claude Code 云端会话实战指南：7 种适合的工作流",
+      "Claude Startups 计划扩大：一年免费 Claude Team + API 额度",
+      "FT：华尔街银行为博通与 Anthropic 启动创纪录的 600 亿美元芯片融资",
+      "《纽约》杂志：OpenAI、Anthropic、DeepMind 离职研究员「离职访谈」",
+      "VelaTerm：为 Claude Code 等编码 Agent 打造的终端与工作区",
+      "Claude Code 的「建议消息」功能：真正的客户其实是模型？",
+      "56% 的 Claude Code 用量花在了「重读对话」上",
+      "@bcherny：跟 Claude 说话就像跟同事说话，提示词没有秘诀"
     ]
   }
 }
