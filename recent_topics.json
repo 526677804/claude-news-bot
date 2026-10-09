@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-10-08T03:02:44.026415",
+  "updated_at": "2026-10-09T03:01:15.006061",
   "days": {
-    "20261001": [
-      "美国 FTC 对 Anthropic、OpenAI 等 AI 巨头展开调查",
-      "Claude Code 发布 v2.1.286：多条权限请求显示「第几条/共几条」",
-      "Claude 开发者新站点上线",
-      "Claude Founder House 将亮相旧金山科技周和斯德哥尔摩",
-      "IPO 招股书细节续出：严重依赖科技大厂，去年亏损超 400 亿美元",
-      "《纽约时报》：宗教学者与 Anthropic 会面，所闻令他们震惊",
-      "Show HN：不必再在 Slack 和 Claude Code CLI 之间来回搬运上下文",
-      "@trq212：创作的乐趣别外包给 AI",
-      "Gemini 4 发布，r/ClaudeAI 热议：Opus 5.5 终于迎来对手？",
-      "趣闻：Opus 5.5 用用户的敷衍回复给文件命名"
-    ],
     "20261002": [
       "Claude Code 推出 Mods：插件可以深度改造 Claude Code 了（v2.1.287）",
       "限时两周：在 Claude App 里做设计、演示文稿或文档，用量额度减半计算",
@@ -88,6 +76,17 @@
       "HN 热议：据报道 Meta 和微软正采取措施减少员工使用 Claude",
       "用户自述：借助 Claude Code，可能发现了一颗此前无人知晓的行星",
       "实战博客：用 Claude Code 子 Agent 让 Pro 额度撑得更久"
+    ],
+    "20261009": [
+      "Claude Dashboards 与 Claude Motion 今日开启 Beta：一句话把数据变成实时看板、把想法变成动画讲解",
+      "Claude Code 连发 v2.1.294 / v2.1.295：Hook 可靠性大幅加强",
+      "Anthropic 启动「Cyber Mission」：守护关键基础设施与开源软件",
+      "Anthropic 向 Genesis Mission 投入 1.5 亿美元，加码科学研究",
+      "Anthropic 修改使用政策：禁止虐待、辱骂 Claude，以及干预选举",
+      "《华尔街日报》：AI 价格战升温，OpenAI 正在追赶 Anthropic",
+      "官方教程：用 Claude Managed Agents 搭建自动化流程",
+      "@trq212：最常见的失败，是在自己不熟悉的领域里用 AI",
+      "一条提示词，Opus 5.5 给 20 年前的老手机做出了 3D 射击游戏"
     ]
   }
 }
