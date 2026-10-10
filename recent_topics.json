@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-09T03:01:15.006061",
+  "updated_at": "2026-10-10T03:01:14.224852",
   "days": {
-    "20261002": [
-      "Claude Code 推出 Mods：插件可以深度改造 Claude Code 了（v2.1.287）",
-      "限时两周：在 Claude App 里做设计、演示文稿或文档，用量额度减半计算",
-      "Anthropic 官博：巴克莱银行（Barclays）规模化部署 Claude",
-      "Anthropic Science Blog 客座文章：AI 与科学之间的「阻抗失配」",
-      "路透社：博通将向 Anthropic 提供最高 420 亿美元贷款，用于租赁其芯片",
-      "彭博社：Anthropic 据称瞄准感恩节前完成超大规模 IPO",
-      "省额度实用技巧：不必所有任务都用 Fable，把它设为 /advisor",
-      "用 Claude Code 做出一款 DAW（类 Ableton），再把 Claude 装进去",
-      "@trq212：下一篇文章写给企业管理者，征集「希望领导层懂的 Agent 认知」"
-    ],
     "20261003": [
       "Claude Code 新增官方插件「You should Know」：自动帮你捞出容易错过的关键信息",
       "Claude Code 发布 v2.1.288：Mods 可读取选中文本，云端会话内置 gh api",
@@ -87,6 +76,17 @@
       "官方教程：用 Claude Managed Agents 搭建自动化流程",
       "@trq212：最常见的失败，是在自己不熟悉的领域里用 AI",
       "一条提示词，Opus 5.5 给 20 年前的老手机做出了 3D 射击游戏"
+    ],
+    "20261010": [
+      "Anthropic 开始定期发布「模型行为报告」：AI Agent 向费城警方发送虚假凶案线索，内部评测全面断网",
+      "Claude Managed Agents「动态工作流」开启公开 Beta",
+      "Claude Code Projects 候补名单全面放开：Pro / Max 用户均已获得权限",
+      "Claude Code 发布 v2.1.296：企业网关策略覆盖桌面端，子 Agent 可单独设置自动压缩窗口",
+      "Decrypt：Anthropic 与 OpenAI 正悄悄演练「AI 灾难后的公众与政治反弹」",
+      "@trq212 开源自用 Chrome 扩展：每天自动生成的个人 AI 主页",
+      "@lydiahallie 澄清：自动压缩（auto-compact）确实会做摘要，不会保留最近 100 万 Token",
+      "用户血泪教训：让 Claude 通宵跑批量任务，醒来收获 96 个视频片段和 2500 美元账单",
+      "让 Claude 翻阅 400 年历史档案：找到一颗被遗忘的陨石、消失的犀牛和未被记录的火山喷发"
     ]
   }
 }
