@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:01:14.224852",
+  "updated_at": "2026-10-11T03:00:55.541706",
   "days": {
-    "20261003": [
-      "Claude Code 新增官方插件「You should Know」：自动帮你捞出容易错过的关键信息",
-      "Claude Code 发布 v2.1.288：Mods 可读取选中文本，云端会话内置 gh api",
-      "Anthropic 官博发布「Claude Frontier Academy」",
-      "Claude Tag 支持群组私信（Group DMs）",
-      "《财富》：「AI 教父」Yann LeCun 称 Anthropic CEO「妄想」，不懂网络安全",
-      "Claude Fables：把 Claude 正在做的事变成提示框上方的小动画",
-      "同一 prompt 对比发布日：用户称 Opus 5.5 在 Godot 任务上出现退化",
-      "团队用上 Claude 后，一个 Sprint 几天就清空了",
-      "用 Opus 5.5 搭一个 24 小时不停播的 AI 新闻台"
-    ],
     "20261004": [
       "Claude Code 发布 v2.1.289：修复 Mods 场景下的权限规则失效问题",
       "《每日电讯报》：Anthropic 曾试图说服教皇，AI 可能是有意识的存在",
@@ -87,6 +76,12 @@
       "@lydiahallie 澄清：自动压缩（auto-compact）确实会做摘要，不会保留最近 100 万 Token",
       "用户血泪教训：让 Claude 通宵跑批量任务，醒来收获 96 个视频片段和 2500 美元账单",
       "让 Claude 翻阅 400 年历史档案：找到一颗被遗忘的陨石、消失的犀牛和未被记录的火山喷发"
+    ],
+    "20261011": [
+      "用\"视频通话\"看子 Agent 干活：开源 VS Code 扩展把 Claude Code 会话变成实时视频会议",
+      "Show HN：Littleguys，把 Claude Code、Codex 和 OpenClaw Agent 放进菜单栏",
+      "九年级学生借助 Claude 证明几何猜想：小斜方截半二十面体（rhombicosidodecahedron）无法穿过自身的复制品",
+      "13 年老游戏开发者用 Claude 搭建 3D 资产生成管线"
     ]
   }
 }
