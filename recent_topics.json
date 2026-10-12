@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-10-11T03:00:55.541706",
+  "updated_at": "2026-10-12T03:02:39.718741",
   "days": {
-    "20261004": [
-      "Claude Code 发布 v2.1.289：修复 Mods 场景下的权限规则失效问题",
-      "《每日电讯报》：Anthropic 曾试图说服教皇，AI 可能是有意识的存在",
-      "Papermorph：把 PDF 变成可交互动画网页书的 Skill",
-      "Show HN：jpm，每一行代码都由 Claude Code 编写的 Rust 版 JavaScript 包管理器",
-      "用户反馈：Fable 5.1 被标为「默认（推荐）」模型，取代 Opus 5.5",
-      "106 张近乎纯黑的 OLED 壁纸：全部由 Claude 用真实科学数据和代码绘制",
-      "GPT 6 Astra 对战 Claude Opus：24 小时《星际争霸》直播"
-    ],
     "20261005": [
       "TechSpot：佛州女子把 Claude 当日记本，Anthropic 将其中一条内容报告给警方",
       "BleepingComputer：Anthropic 邀请 Claude 用户共享语音数据，用于模型训练",
@@ -82,6 +73,13 @@
       "Show HN：Littleguys，把 Claude Code、Codex 和 OpenClaw Agent 放进菜单栏",
       "九年级学生借助 Claude 证明几何猜想：小斜方截半二十面体（rhombicosidodecahedron）无法穿过自身的复制品",
       "13 年老游戏开发者用 Claude 搭建 3D 资产生成管线"
+    ],
+    "20261012": [
+      "Phoronix：Linus Torvalds 正借助 Claude Code 推进一项重大 Linux 内核改进",
+      "免费 Minecraft 模组：描述你想要的建筑，Claude 直接帮你盖出来",
+      "@trq212（Claude Code 核心团队）：认同陶哲轩的观点，不应接受\"不透明\"的超级智能",
+      "用户实测：Opus 5.5 在反编译与移植上表现惊人",
+      "新版 Projects 将扩展到 Chat 和 Cowork，老用户担心项目文件夹被强制升级"
     ]
   }
 }
