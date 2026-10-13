@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-10-12T03:02:39.718741",
+  "updated_at": "2026-10-13T03:01:26.146502",
   "days": {
-    "20261005": [
-      "TechSpot：佛州女子把 Claude 当日记本，Anthropic 将其中一条内容报告给警方",
-      "BleepingComputer：Anthropic 邀请 Claude 用户共享语音数据，用于模型训练",
-      "Graphify：把整个代码库变成可查询的知识图谱",
-      "Caveman：让 Agent 用“原始人说话”，号称省 65% Token",
-      "gstack：照搬 Garry Tan 的 Claude Code 配置",
-      "Claude 存储/记忆全景图更新：哪些在本地、哪些在云端，10 月 6 日有变化",
-      "热议：Anthropic 需要一款比 Haiku 更便宜的模型",
-      "不会写代码，也用 Claude 搭了一套自动备餐 + 买菜工作流"
-    ],
     "20261006": [
       "Claude Cowork 不再支持本地会话：从今天起任务改在云端运行",
       "Claude Code 发布 v2.1.290：给 Mods 和插件 Hook 提供更多上下文",
@@ -80,6 +70,14 @@
       "@trq212（Claude Code 核心团队）：认同陶哲轩的观点，不应接受\"不透明\"的超级智能",
       "用户实测：Opus 5.5 在反编译与移植上表现惊人",
       "新版 Projects 将扩展到 Chat 和 Cowork，老用户担心项目文件夹被强制升级"
+    ],
+    "20261013": [
+      "Anthropic 官方：过去几个月显著削弱了针对 Claude 的「蒸馏攻击」效果，并公开具体做法",
+      "CNBC：研究机构称 Anthropic IPO 是对「投资者轻信程度」的空前考验",
+      "claude-migrate：切换账号后找回 Claude Code 桌面端会话",
+      "@amorriscode（Claude Code 核心团队）：不需要给 Agent 设定各种「人设」，聪明的通才才是王道",
+      "用户吐槽：Claude Code 「自己拦自己」，正常开发白白耗掉 5 小时",
+      "Meta 称新模型 Muse Wonder 跑分超过 Claude Opus 5.5 和 GPT-6 Astra"
     ]
   }
 }
