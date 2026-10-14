@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-10-13T03:01:26.146502",
+  "updated_at": "2026-10-14T03:01:16.437029",
   "days": {
-    "20261006": [
-      "Claude Cowork 不再支持本地会话：从今天起任务改在云端运行",
-      "Claude Code 发布 v2.1.290：给 Mods 和插件 Hook 提供更多上下文",
-      "BBC：五角大楼将 Anthropic 列入黑名单后，已停止使用其 AI 工具",
-      "SemiAnalysis：Anthropic 订阅的性价比是 OpenAI 的 5 倍以上",
-      "TechSpot：一位工程师说 Claude Code 让他的工作变得「令人心力交瘁」",
-      "@trq212：正在做一个 Skill，让 Claude Code 生成更好的 HTML 计划",
-      "Anthropic 更新了官方 Agent Skills 编写指南，社区整理出 6 条要点",
-      "动效设计师：通过 invideo Editor MCP 让 Claude 做动画，两三条提示词就出片"
-    ],
     "20261007": [
       "Claude 进驻 Google Docs、Sheets 和 Slides，Workspace 文件也能在 Claude 中直接打开",
       "Claude Code 发布 v2.1.292：子 Agent 可指定 effort 等级，插件安装支持直接指定市场",
@@ -78,6 +68,17 @@
       "@amorriscode（Claude Code 核心团队）：不需要给 Agent 设定各种「人设」，聪明的通才才是王道",
       "用户吐槽：Claude Code 「自己拦自己」，正常开发白白耗掉 5 小时",
       "Meta 称新模型 Muse Wonder 跑分超过 Claude Opus 5.5 和 GPT-6 Astra"
+    ],
+    "20261014": [
+      "Anthropic 工程博客：我们为什么要自研源代码管理系统",
+      "Claude Code 发布 v2.1.299：新增 @ 文件引用开关，终端支持空闲时自动压缩",
+      "Anthropic 发布研究预警：难以关停的小模型可能在数月内具备自我复制能力",
+      "Claude Code 黑客松回归，首次来到日本",
+      "City AM：AI Agent 热潮下，Anthropic 开出 14.5 万英镑年薪招聘伦敦私人助理",
+      "answer-me-with-html：让 Claude Code 用图解页面代替大段文字回答",
+      "Simon Willison：GPT-6 Astra 出性能分析报告，Opus 5.5 写优化代码",
+      "用户反映：5 小时额度和每周额度好像都被\"削\"了？",
+      "热帖「We're cooked」：一年没亲手写代码，每天 30 分钟提示词搞定工作"
     ]
   }
 }
