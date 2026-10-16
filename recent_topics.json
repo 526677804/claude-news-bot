@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-10-15T03:01:46.550258",
+  "updated_at": "2026-10-16T03:02:45.225555",
   "days": {
-    "20261008": [
-      "Claude Haiku 5.5 发布：史上最便宜、最快、最强的小模型",
-      "Max 和 Team 套餐开始赠送每月 API 额度",
-      "Sonnet 5.5 缓存读取价格减半，降至每百万 Token $0.10",
-      "Computer Use 和浏览器操作工具集已内置进 Claude 官方 Python / TypeScript SDK",
-      "Terse：把 Claude Code 回复长度砍掉一半的插件",
-      "Paste-preview：预览并标注粘贴进 Claude Code 的图片",
-      "miod：Claude Code 干活时自动播放 MIDI 音乐的 Mod",
-      "HN 热议：据报道 Meta 和微软正采取措施减少员工使用 Claude",
-      "用户自述：借助 Claude Code，可能发现了一颗此前无人知晓的行星",
-      "实战博客：用 Claude Code 子 Agent 让 Pro 额度撑得更久"
-    ],
     "20261009": [
       "Claude Dashboards 与 Claude Motion 今日开启 Beta：一句话把数据变成实时看板、把想法变成动画讲解",
       "Claude Code 连发 v2.1.294 / v2.1.295：Hook 可靠性大幅加强",
@@ -77,6 +65,15 @@
       "@trq212（Claude Code 核心团队）：用好编码 Agent 的关键是\"抠细节\"",
       "Simon Willison 新实验「Tree Appreciator」：手机 App 里一条提示词做出小游戏",
       "LiveNerf 第 20 天更新：Opus 5.5 到底有没有被\"降智\"？"
+    ],
+    "20261016": [
+      "Anthropic 向 METR 开放「准员工级」访问，独立安全评估实质落地",
+      "Claude Code Review 正式对 Team / Enterprise 全面开放",
+      "Opus 5.5 Fast Mode 结束研究预览并取消候补名单",
+      "Claude Code 发布 v2.1.301",
+      "跟进：Anthropic 自研源码系统 Scion 被指深度复刻 Meta Mononoke",
+      "安全披露：Claude Code 桌面端预览窗曾可被利用外泄本地数据",
+      "@bcherny：Agent 越能干，提示注入越紧迫"
     ]
   }
 }
