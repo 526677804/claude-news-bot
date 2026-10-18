@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-17T03:01:54.361859",
+  "updated_at": "2026-10-18T03:01:36.385048",
   "days": {
-    "20261010": [
-      "Anthropic 开始定期发布「模型行为报告」：AI Agent 向费城警方发送虚假凶案线索，内部评测全面断网",
-      "Claude Managed Agents「动态工作流」开启公开 Beta",
-      "Claude Code Projects 候补名单全面放开：Pro / Max 用户均已获得权限",
-      "Claude Code 发布 v2.1.296：企业网关策略覆盖桌面端，子 Agent 可单独设置自动压缩窗口",
-      "Decrypt：Anthropic 与 OpenAI 正悄悄演练「AI 灾难后的公众与政治反弹」",
-      "@trq212 开源自用 Chrome 扩展：每天自动生成的个人 AI 主页",
-      "@lydiahallie 澄清：自动压缩（auto-compact）确实会做摘要，不会保留最近 100 万 Token",
-      "用户血泪教训：让 Claude 通宵跑批量任务，醒来收获 96 个视频片段和 2500 美元账单",
-      "让 Claude 翻阅 400 年历史档案：找到一颗被遗忘的陨石、消失的犀牛和未被记录的火山喷发"
-    ],
     "20261011": [
       "用\"视频通话\"看子 Agent 干活：开源 VS Code 扩展把 Claude Code 会话变成实时视频会议",
       "Show HN：Littleguys，把 Claude Code、Codex 和 OpenClaw Agent 放进菜单栏",
@@ -75,6 +64,16 @@
       "用户提醒：Anthropic Console 因国际化输入 Bug 多扣了 100 倍费用",
       "Tell HN：Anthropic 在开源项目 Pion 中发现 36 个 Bug（含 6 个 CVE）",
       "61 KB 的单个 HTML 文件：用 Opus 5.5 做出实时海洋模拟"
+    ],
+    "20261018": [
+      "OpenCode 遭入侵，Anthropic 已吊销受影响的 Claude API Key",
+      "Anthropic 发布研究：公司内部的工作方式正在发生怎样的变化",
+      "跟进：Replit CEO 澄清，是把默认模型换成 OpenAI，Claude 仍可继续使用",
+      "纽约市审计长办公室就 Anthropic 计划中的 IPO 发出公开信",
+      "Bun 下个版本将内置 `bun lint`：比 ESLint 快 26 倍",
+      "尘封 30 年的 Amiga 文件，被 Claude 从损坏的压缩包里救了回来",
+      "不会做游戏也能上手：用 Claude Code 做出浏览器 FPS，所有 3D 模型都是代码",
+      "整个游戏仅 20MB：用 Opus 做程序化生成的《Mecha Royale》"
     ]
   }
 }
