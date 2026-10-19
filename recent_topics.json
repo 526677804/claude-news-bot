@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-10-18T03:01:36.385048",
+  "updated_at": "2026-10-19T03:01:50.851347",
   "days": {
-    "20261011": [
-      "用\"视频通话\"看子 Agent 干活：开源 VS Code 扩展把 Claude Code 会话变成实时视频会议",
-      "Show HN：Littleguys，把 Claude Code、Codex 和 OpenClaw Agent 放进菜单栏",
-      "九年级学生借助 Claude 证明几何猜想：小斜方截半二十面体（rhombicosidodecahedron）无法穿过自身的复制品",
-      "13 年老游戏开发者用 Claude 搭建 3D 资产生成管线"
-    ],
     "20261012": [
       "Phoronix：Linus Torvalds 正借助 Claude Code 推进一项重大 Linux 内核改进",
       "免费 Minecraft 模组：描述你想要的建筑，Claude 直接帮你盖出来",
@@ -74,6 +68,16 @@
       "尘封 30 年的 Amiga 文件，被 Claude 从损坏的压缩包里救了回来",
       "不会做游戏也能上手：用 Claude Code 做出浏览器 FPS，所有 3D 模型都是代码",
       "整个游戏仅 20MB：用 Opus 做程序化生成的《Mecha Royale》"
+    ],
+    "20261019": [
+      "Anthropic 拿出 5% 股份成立「Anthropic 公益基金」",
+      "Anthropic 研究：Claude 破解 25 年前 NSA 密码学谜题（ECDSA 曲线来源）",
+      "Claude Code 发布 v2.1.303",
+      "Tom's Hardware：Anthropic 提议的 AI 安全法案，门槛是 50 人死亡或 10 亿美元损失",
+      "FT：Anthropic 在最新一轮芯片融资中向黑石提供两位数收益率",
+      "Pi-cowboy：把 Codex、Claude Code、OpenCode 当作子 Agent 来调度",
+      "AI 正在用 Rust “克隆” Adobe、Office、Outlook、ElevenLabs",
+      "@trq212（Claude Code 核心团队）：比起打游戏，现在更想 vibe coding 游戏"
     ]
   }
 }
