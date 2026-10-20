@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-10-19T03:01:50.851347",
+  "updated_at": "2026-10-20T03:01:40.939937",
   "days": {
-    "20261012": [
-      "Phoronix：Linus Torvalds 正借助 Claude Code 推进一项重大 Linux 内核改进",
-      "免费 Minecraft 模组：描述你想要的建筑，Claude 直接帮你盖出来",
-      "@trq212（Claude Code 核心团队）：认同陶哲轩的观点，不应接受\"不透明\"的超级智能",
-      "用户实测：Opus 5.5 在反编译与移植上表现惊人",
-      "新版 Projects 将扩展到 Chat 和 Cowork，老用户担心项目文件夹被强制升级"
-    ],
     "20261013": [
       "Anthropic 官方：过去几个月显著削弱了针对 Claude 的「蒸馏攻击」效果，并公开具体做法",
       "CNBC：研究机构称 Anthropic IPO 是对「投资者轻信程度」的空前考验",
@@ -78,6 +71,16 @@
       "Pi-cowboy：把 Codex、Claude Code、OpenCode 当作子 Agent 来调度",
       "AI 正在用 Rust “克隆” Adobe、Office、Outlook、ElevenLabs",
       "@trq212（Claude Code 核心团队）：比起打游戏，现在更想 vibe coding 游戏"
+    ],
+    "20261020": [
+      "Anthropic 推出 OSS Scanner：用最强模型为关键开源项目免费定期扫描漏洞",
+      "Claude Code 发布 v2.1.304：插件 Hook 被跳过时会留痕，权限审批可强制由人来决定",
+      "TechCrunch：Anthropic 据报正与 Nscale 洽谈又一笔 450 亿美元算力交易",
+      "华尔街日报：一个鲜为人知的信托，正笼罩着 Anthropic 的 IPO",
+      "路透社：营收增速放缓，投资者下调对 Anthropic IPO 估值的预期",
+      "Tmux + Claude Code 实战指南：会话管理、send-keys 与能力上限",
+      "@trq212（Claude Code 核心团队）：用 Agent 多线程干活的人，不妨慢下来",
+      "用户热帖：「我对 Opus 5.5 很满意，别再升级了」"
     ]
   }
 }
