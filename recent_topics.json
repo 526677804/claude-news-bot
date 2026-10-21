@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-10-20T03:01:40.939937",
+  "updated_at": "2026-10-21T03:04:26.004261",
   "days": {
-    "20261013": [
-      "Anthropic 官方：过去几个月显著削弱了针对 Claude 的「蒸馏攻击」效果，并公开具体做法",
-      "CNBC：研究机构称 Anthropic IPO 是对「投资者轻信程度」的空前考验",
-      "claude-migrate：切换账号后找回 Claude Code 桌面端会话",
-      "@amorriscode（Claude Code 核心团队）：不需要给 Agent 设定各种「人设」，聪明的通才才是王道",
-      "用户吐槽：Claude Code 「自己拦自己」，正常开发白白耗掉 5 小时",
-      "Meta 称新模型 Muse Wonder 跑分超过 Claude Opus 5.5 和 GPT-6 Astra"
-    ],
     "20261014": [
       "Anthropic 工程博客：我们为什么要自研源代码管理系统",
       "Claude Code 发布 v2.1.299：新增 @ 文件引用开关，终端支持空闲时自动压缩",
@@ -81,6 +73,19 @@
       "Tmux + Claude Code 实战指南：会话管理、send-keys 与能力上限",
       "@trq212（Claude Code 核心团队）：用 Agent 多线程干活的人，不妨慢下来",
       "用户热帖：「我对 Opus 5.5 很满意，别再升级了」"
+    ],
+    "20261021": [
+      "Claude 设计出针对蝎子神经毒素的蛋白结合物，实验室验证 17 款有效",
+      "Claude Code 发布 v2.1.305",
+      "路透社：Anthropic 2026 上半年净亏损超 800 亿美元",
+      "TechCrunch：Eric Schmidt 据报持股约达 Dario Amodei 的一半",
+      "CBC：加拿大主要新闻出版商起诉 Anthropic 版权侵权",
+      "Lights-on software factory：面向 Claude Code 的「常亮软件工厂」样板",
+      "SIwithin：在围栏与美元预算内无人值守跑 Claude Code",
+      "社区开源：自己组一套「Agent 俱乐部」，不买可爱壳子",
+      "@noahzweben（Claude Code 核心团队）：有「现场存在感」的主动 Agent 才是未来",
+      "用户反馈：Opus 5.5 因学校禁令，拒绝代写论文示例段落",
+      "@DarioAmodei：回应 AI 安全法案批评，称赞调查性工作"
     ]
   }
 }
