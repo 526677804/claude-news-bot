@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-21T03:04:26.004261",
+  "updated_at": "2026-10-22T03:01:49.282294",
   "days": {
-    "20261014": [
-      "Anthropic 工程博客：我们为什么要自研源代码管理系统",
-      "Claude Code 发布 v2.1.299：新增 @ 文件引用开关，终端支持空闲时自动压缩",
-      "Anthropic 发布研究预警：难以关停的小模型可能在数月内具备自我复制能力",
-      "Claude Code 黑客松回归，首次来到日本",
-      "City AM：AI Agent 热潮下，Anthropic 开出 14.5 万英镑年薪招聘伦敦私人助理",
-      "answer-me-with-html：让 Claude Code 用图解页面代替大段文字回答",
-      "Simon Willison：GPT-6 Astra 出性能分析报告，Opus 5.5 写优化代码",
-      "用户反映：5 小时额度和每周额度好像都被\"削\"了？",
-      "热帖「We're cooked」：一年没亲手写代码，每天 30 分钟提示词搞定工作"
-    ],
     "20261015": [
       "Claude Code 桌面端大更新：多会话并行体验全面升级",
       "Claude Code 发布 v2.1.300",
@@ -86,6 +75,17 @@
       "@noahzweben（Claude Code 核心团队）：有「现场存在感」的主动 Agent 才是未来",
       "用户反馈：Opus 5.5 因学校禁令，拒绝代写论文示例段落",
       "@DarioAmodei：回应 AI 安全法案批评，称赞调查性工作"
+    ],
+    "20261022": [
+      "Anthropic 开放 Claude Duet 研究预览：Claude 化身\"主动型 Agent\"",
+      "Claude API 发布 2026-10-21 版本：2023 年以来首个正式 API 版本",
+      "Claude Code 发布 v2.1.307：一键迁移 API 版本，安全拦截事件可观测",
+      "Claude Security 支持持续扫描：代码一变，漏洞结果跟着更新",
+      "Nexus-CLI：纯 Go 实现的 DeepSeek 桥接工具，支持 Claude Code 与 Ollama",
+      "Archestra 1.4：为 Claude Code 和 Codex 提供自托管运行时",
+      "@lydiahallie（Claude Code 核心团队）提醒：上月的免费额度重置即将过期",
+      "用 Claude Code 替换三星电视主屏：去掉广告，只留时钟、常用 App 和游戏机入口",
+      "Anthropic 公益章程引发 HN 热议，年度公益报告同日发布"
     ]
   }
 }
