@@ -131,7 +131,8 @@ def handle(msg, cfg, state, in_group):
     low = text.lower()
 
     if any(w in low for w in HELP_WORDS):
-        reply(mid, '@我 并说「记一下」：马上整理群里最近的讨论进需求池并回群通报；说「状态」：看最近一次运行。每天 18:30 也会自动整理一次，手动和定时共用一份进度，不会重复记录。')
+        reply(mid, f'我目前只负责「{cfg["chat_name"]}」的内测反馈收录。在那个群里 @我 说「记一下」，或在这里对我说「记一下」，'
+                   f'都会马上整理该群最近的讨论进需求池并回群通报；说「状态」看最近一次运行。每天 18:30 也会自动整理一次，手动和定时共用一份进度，不会重复记录。')
         return
     if any(w in low for w in STATUS_WORDS):
         reply(mid, latest_run_status())
@@ -149,7 +150,8 @@ def handle(msg, cfg, state, in_group):
         return
     state['last_dispatch_at'] = now
     log(f'已派发（{sender}：{text[:40]}）')
-    reply(mid, '收到，正在整理最近的讨论，整理完在群里通报（约 2–3 分钟）。')
+    where = '在群里通报' if in_group else f'发到「{cfg["chat_name"]}」群里'
+    reply(mid, f'收到，正在整理「{cfg["chat_name"]}」最近的讨论，整理完{where}（约 2–3 分钟）。')
 
 
 def poll(cfg, state):
