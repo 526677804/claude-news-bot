@@ -33,6 +33,7 @@ def parse_args():
                    help='读需求池用的身份；默认与 --as 相同')
     p.add_argument('--no-images', action='store_true', help='不下载图片 / 文件')
     p.add_argument('--allow-no-base', action='store_true', help='需求池读取失败时继续（仅用于 dry-run）')
+    p.add_argument('--ignore-processed', action='store_true', help='不按 processed_ids 过滤，重新处理窗口内全部消息（配合 --since 重跑）')
     return p.parse_args()
 
 
@@ -162,7 +163,7 @@ def main():
     print(f'📥 拉取 {cfg["chat_name"]} 自 {start_iso} 起的消息（来源：{since_source}，身份：{a.identity}）')
 
     raw = fetch_messages(cfg, a.identity, start_iso, run_dir, not a.no_images)
-    processed = set(state.get('processed_ids') or [])
+    processed = set() if a.ignore_processed else set(state.get('processed_ids') or [])
     bot_id = cfg.get('bot_open_id')
 
     messages = []

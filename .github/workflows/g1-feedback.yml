@@ -15,6 +15,10 @@ on:
         description: '只拉取 + AI 提取，不写需求池、不回群、不改水位（产物见 artifact）'
         type: boolean
         default: false
+      ignore_processed:
+        description: '重新处理窗口内已处理过的消息（配合 since 重跑；真写会产生重复记录，一般只和 dry_run 搭配）'
+        type: boolean
+        default: false
 
 permissions:
   contents: write   # 运行后把水位 g1_feedback/state.json 写回仓库
@@ -60,6 +64,7 @@ jobs:
           args=(--run runs/current --as bot)
           if [ -n "${{ github.event.inputs.since }}" ]; then args+=(--since "${{ github.event.inputs.since }}"); fi
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then args+=(--allow-no-base); fi
+          if [ "${{ github.event.inputs.ignore_processed }}" = "true" ]; then args+=(--ignore-processed); fi
           python3 fetch.py "${args[@]}"
 
       - name: AI 提取
