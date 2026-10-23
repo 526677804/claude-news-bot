@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-22T03:01:49.282294",
+  "updated_at": "2026-10-23T03:02:41.361861",
   "days": {
-    "20261015": [
-      "Claude Code 桌面端大更新：多会话并行体验全面升级",
-      "Claude Code 发布 v2.1.300",
-      "Claude Platform 支持导出 OpenTelemetry 链路追踪（公开 Beta）",
-      "Anthropic 设立新加坡办公室，并与新加坡政府签署 AI 安全合作备忘录",
-      "FT：Anthropic 第三季度营收跃升至 168 亿美元",
-      "用 Claude Code 打造求职 MCP Server：让 Claude 直接搜索并投递职位",
-      "@trq212（Claude Code 核心团队）：用好编码 Agent 的关键是\"抠细节\"",
-      "Simon Willison 新实验「Tree Appreciator」：手机 App 里一条提示词做出小游戏",
-      "LiveNerf 第 20 天更新：Opus 5.5 到底有没有被\"降智\"？"
-    ],
     "20261016": [
       "Anthropic 向 METR 开放「准员工级」访问，独立安全评估实质落地",
       "Claude Code Review 正式对 Team / Enterprise 全面开放",
@@ -86,6 +75,19 @@
       "@lydiahallie（Claude Code 核心团队）提醒：上月的免费额度重置即将过期",
       "用 Claude Code 替换三星电视主屏：去掉广告，只留时钟、常用 App 和游戏机入口",
       "Anthropic 公益章程引发 HN 热议，年度公益报告同日发布"
+    ],
+    "20261023": [
+      "Anthropic 将 Agent Skills 捐赠给 Agentic AI 基金会，与 MCP 同归一家",
+      "下周起，Claude 网页版、桌面端和移动端默认开启 Auto 模式",
+      "Claude 模型登陆 Google Cloud（由 Anthropic 托管）正式 GA",
+      "Claude Code 发布 v2.1.309：集中修复沙箱安全问题",
+      "跟进：消息称 Anthropic 最快本周五公开递交 IPO 申请",
+      "彭博社：DeepSeek 融资 150 亿美元，向 OpenAI 和 Anthropic 发起挑战",
+      "The Verge：OpenAI、Anthropic、英伟达游说支出创季度新高",
+      "agent-usage-guard：保护你用量窗口的 Claude Code 插件",
+      "@AnthropicAI：用 Claude 大规模做软件形式化验证",
+      "深度观察：《我在 Anthropic 内部看到了什么》——向递归自我改进迈进",
+      "社区热议：「Anthropic 需要一个不擅长跑分的模型」"
     ]
   }
 }
