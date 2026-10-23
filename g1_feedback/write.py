@@ -182,7 +182,7 @@ def main():
     last_time = inp.get('run', {}).get('last_message_time') or state.get('last_message_time') or ''
     if last_time:
         state['last_message_time'] = last_time
-    state['processed_ids'] = (list(state.get('processed_ids') or []) + msg_ids)[-PROCESSED_KEEP:]
+    state['processed_ids'] = list(dict.fromkeys(list(state.get('processed_ids') or []) + msg_ids))[-PROCESSED_KEEP:]
     state['last_run_at'] = now_cst().strftime('%Y-%m-%d %H:%M:%S')
     state['last_run'] = {'created': len(created), 'updated': len(updated), 'messages': len(msg_ids), 'run_dir': os.path.basename(run_dir)}
     save_state(state)
