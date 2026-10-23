@@ -1,0 +1,14 @@
+{
+  "product": "G1",
+  "chat_id": "oc_610c48d9357cdf69c5d909eb565e4635",
+  "chat_name": "G1 - 联创团队",
+  "bot_open_id": "ou_8a6bce975808eb913104928d79959b5c",
+  "admin_open_id": "ou_ec49eba4f8ac4c6d7d799e04929c65e6",
+  "base_token": "QjOWbpMI6aKhAwswk26cFoe9nOP",
+  "table_id": "tblbAE33j5E6I77C",
+  "pool_url": "https://a9ihi0un9c.feishu.cn/wiki/AFw6wE6HUimR9Ak2LdYcWadcnJZ",
+  "initial_since": "2026-10-22T00:00:00+08:00",
+  "post_to_group": true,
+  "max_lines_in_post": 10,
+  "existing_records_limit": 300
+}

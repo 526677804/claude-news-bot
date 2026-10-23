@@ -1,5 +1,8 @@
 # Claude Code 每日资讯工作流
 
+> 本仓库还承载第二条管线：**G1 内测反馈收录**（`g1_feedback/`，工作流 `.github/workflows/g1-feedback.yml`），
+> 每天把飞书内测群里的产品讨论整理进需求池并回群通报，复用同一套 lark-cli bot 身份与 Cursor SDK。见 [g1_feedback/README.md](g1_feedback/README.md)。
+
 ## 📋 项目概述
 
 一个自动化的 Claude Code 相关资讯采集和推送工作流，每天定时从多个信息源采集最新资讯，经过 AI 深度整理后，推送到飞书群。

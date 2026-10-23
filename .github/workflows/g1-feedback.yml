@@ -1,0 +1,113 @@
+name: G1 内测反馈收录
+
+on:
+  schedule:
+    # 每天北京时间 18:30（UTC 10:30）。GitHub 的 scheduled 事件在高峰期可能延迟到一两小时后，
+    # 对晚间汇总可以接受；要精准触发可像日报一样用妙搭定时器调 workflow_dispatch。
+    - cron: '30 10 * * *'
+  workflow_dispatch:
+    inputs:
+      since:
+        description: '起始时间（北京时间，YYYY-MM-DD 或 YYYY-MM-DD HH:MM）；留空用水位'
+        required: false
+        default: ''
+      dry_run:
+        description: '只拉取 + AI 提取，不写需求池、不回群、不改水位（产物见 artifact）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # 运行后把水位 g1_feedback/state.json 写回仓库
+
+concurrency:
+  group: g1-feedback
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: g1_feedback
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装 Cursor SDK
+        run: pip install cursor-sdk
+
+      - name: 安装并配置 lark-cli（bot 身份，无需扫码）
+        env:
+          LARK_APP_ID: ${{ secrets.LARK_APP_ID }}
+          LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
+        run: |
+          npm install -g @larksuite/cli
+          printf '%s' "$LARK_APP_SECRET" | lark-cli config init --app-id "$LARK_APP_ID" --app-secret-stdin
+
+      - name: 拉取群消息与现有记录
+        id: fetch
+        run: |
+          args=(--run runs/current --as bot)
+          if [ -n "${{ github.event.inputs.since }}" ]; then args+=(--since "${{ github.event.inputs.since }}"); fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then args+=(--allow-no-base); fi
+          python3 fetch.py "${args[@]}"
+
+      - name: AI 提取
+        if: steps.fetch.outputs.has_messages == 'true'
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: python3 extract.py --run runs/current
+
+      - name: 写入需求池并生成回群消息
+        id: write
+        if: steps.fetch.outputs.has_messages == 'true'
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python3 write.py --run runs/current --as bot --dry-run
+          else
+            python3 write.py --run runs/current --as bot
+          fi
+
+      - name: 回群
+        if: steps.write.outputs.has_post == 'true' && github.event.inputs.dry_run != 'true'
+        run: python3 post.py --run runs/current
+
+      - name: 写回水位
+        if: steps.fetch.outputs.has_messages == 'true' && github.event.inputs.dry_run != 'true'
+        working-directory: .
+        run: |
+          git add g1_feedback/state.json
+          if ! git diff --cached --quiet; then
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -m "chore(g1): 更新内测反馈水位 [skip ci]"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: 失败告警（私信管理员）
+        if: failure()
+        run: python3 post.py --alert "GitHub Actions 运行失败：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: 归档本次产物
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: g1-feedback-${{ github.run_id }}
+          path: |
+            g1_feedback/runs/current/input.json
+            g1_feedback/runs/current/output.json
+            g1_feedback/runs/current/post.md
+            g1_feedback/runs/current/summary.json
+          if-no-files-found: ignore
+          retention-days: 30
