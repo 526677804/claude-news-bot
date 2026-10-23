@@ -14,8 +14,11 @@ import sys
 from common import LarkError, lark, load_config, now_cst
 
 
-def send_markdown(cfg, chat_id, text, idem_key):
-    args = ['im', '+messages-send', '--chat-id', chat_id, '--markdown', text]
+def send_markdown(cfg, chat_id, text, idem_key, reply_to=None):
+    if reply_to:
+        args = ['im', '+messages-reply', '--message-id', reply_to, '--markdown', text]
+    else:
+        args = ['im', '+messages-send', '--chat-id', chat_id, '--markdown', text]
     if idem_key:
         args += ['--idempotency-key', idem_key[:50]]
     return lark(args, 'bot')
@@ -33,6 +36,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--run')
     p.add_argument('--alert', help='只给管理员发这段告警文本')
+    p.add_argument('--reply-to', help='以回复这条消息（om_xxx）的方式发到群里，而不是新发一条')
     a = p.parse_args()
     cfg = load_config()
 
@@ -55,10 +59,19 @@ def main():
     if not cfg.get('post_to_group', True):
         print('ℹ️ 配置 post_to_group=false，跳过回群')
         return
+    idem = f'g1fb-{os.environ.get("GITHUB_RUN_ID") or os.path.basename(run_dir)}'
     try:
-        data = send_markdown(cfg, cfg['chat_id'], text, f'g1fb-{os.path.basename(run_dir)}')
+        data = send_markdown(cfg, cfg['chat_id'], text, idem, reply_to=a.reply_to or None)
         print(f'✅ 已回群：message_id={data.get("message_id")}')
     except LarkError as e:
+        if a.reply_to:
+            print(f'⚠️ 回复触发消息失败（{e}），改为直接发群')
+            try:
+                data = send_markdown(cfg, cfg['chat_id'], text, idem + '-f')
+                print(f'✅ 已回群：message_id={data.get("message_id")}')
+                return
+            except LarkError as e2:
+                e = e2
         print(f'❌ 回群失败：{e}')
         alert_admin(cfg, f'回群失败：{e}\n运行目录：{os.path.basename(run_dir)}')
         sys.exit(1)

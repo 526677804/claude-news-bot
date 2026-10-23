@@ -17,6 +17,26 @@
 
 工作流失败（任一步非 0）会私信管理员一条带运行链接的告警。每次运行的 input / output / post 以 artifact 保留 30 天。
 
+## 手动触发（群里 @机器人）
+
+除了每天 18:30，群里任何人 **@畅涛's Homunculus 记一下**（或「整理」「记录」）就会立刻跑一次；管理员在机器人私聊里直接发「记一下」也行；发「状态」看最近一次运行，「帮助」看用法。
+
+- 实现：`listener.py` 常驻在负责人的 Mac 上（launchd，每 45 秒轮询群消息），发现触发消息后回一句「收到」，并用 `gh workflow run` 派发同一条 Actions 管线（`manual=true`，`reply_to=触发消息`），结果以回复触发消息的方式回群；没有新内容也会回一句「没有需要记录的」。
+- 不会重复：手动和定时跑的是同一条管线、同一份水位（`state.json`，每次运行后写回仓库），且工作流设了 `concurrency: g1-feedback`，两次运行只会排队不会并行；后一次会看到前一次推进过的水位。3 分钟内连续 @ 只派发一次。
+- Mac 睡眠时 @ 不会立即响应；醒来后 2 小时内的触发会补跑，更早的忽略（反正每日定时会兜底）。
+- 安装 / 重启监听器（Mac 上执行一次）：
+
+```bash
+# 检出必须在 ~/Documents 之外（macOS 不允许后台进程读 Documents）
+git clone https://github.com/526677804/claude-news-bot.git ~/.local/share/claude-news-bot
+cp ~/.local/share/claude-news-bot/g1_feedback/com.changtao.g1-feedback-listener.plist ~/Library/LaunchAgents/
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.changtao.g1-feedback-listener.plist
+tail -f ~/.local/share/claude-news-bot/g1_feedback/runs/listener.log
+# 停止：launchctl bootout gui/$(id -u)/com.changtao.g1-feedback-listener
+```
+
+监听器每次启动会先 `git pull`，所以改了 `config.json` / `listener.py` 推到仓库后，`launchctl kickstart -k gui/$(id -u)/com.changtao.g1-feedback-listener` 重启一下即可生效。依赖本机已登录的 `lark-cli`（bot 身份）和 `gh`。
+
 ## 需求池字段
 
 智能体填：需求 / 问题、为了解决什么、类型（新需求 / 体验问题 / Bug / 疑问 / 流程 / 信号）、涉及模块、产品（G1 / G2 / 其他）、提出者、附议者、提出时间、原文链接、讨论摘要、初步建议（直接做 / 需探讨 / 待确认）、来源 message_id（去重用）。

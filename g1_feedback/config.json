@@ -10,5 +10,7 @@
   "initial_since": "2026-10-22T00:00:00+08:00",
   "post_to_group": true,
   "max_lines_in_post": 10,
-  "existing_records_limit": 300
+  "existing_records_limit": 300,
+  "admin_dm_chat_id": "oc_0f9c4d5ed0a25a561a35c67331756550",
+  "bot_name": "畅涛's Homunculus"
 }

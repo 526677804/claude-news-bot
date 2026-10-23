@@ -19,6 +19,14 @@ on:
         description: '重新处理窗口内已处理过的消息（配合 since 重跑；真写会产生重复记录，一般只和 dry_run 搭配）'
         type: boolean
         default: false
+      manual:
+        description: '手动触发（群里 @机器人）：即使没有新内容也回一句，让触发的人知道跑完了'
+        type: boolean
+        default: false
+      reply_to:
+        description: '触发消息的 message_id；有则以回复该消息的方式回群'
+        required: false
+        default: ''
 
 permissions:
   contents: write   # 运行后把水位 g1_feedback/state.json 写回仓库
@@ -77,15 +85,17 @@ jobs:
         id: write
         if: steps.fetch.outputs.has_messages == 'true'
         run: |
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            python3 write.py --run runs/current --as bot --dry-run
-          else
-            python3 write.py --run runs/current --as bot
-          fi
+          args=(--run runs/current --as bot)
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
+          if [ "${{ github.event.inputs.manual }}" = "true" ]; then args+=(--manual); fi
+          python3 write.py "${args[@]}"
 
       - name: 回群
         if: steps.write.outputs.has_post == 'true' && github.event.inputs.dry_run != 'true'
-        run: python3 post.py --run runs/current
+        run: |
+          args=(--run runs/current)
+          if [ -n "${{ github.event.inputs.reply_to }}" ]; then args+=(--reply-to "${{ github.event.inputs.reply_to }}"); fi
+          python3 post.py "${args[@]}"
 
       - name: 写回水位
         if: steps.fetch.outputs.has_messages == 'true' && github.event.inputs.dry_run != 'true'

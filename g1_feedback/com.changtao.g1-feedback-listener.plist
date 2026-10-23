@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.changtao.g1-feedback-listener</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/changtao/.local/share/claude-news-bot/g1_feedback/run_listener.sh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/changtao/.local/share/claude-news-bot/g1_feedback</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/changtao/.local/node/bin:/Users/changtao/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/changtao</string>
+    <key>LANG</key>
+    <string>en_US.UTF-8</string>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+    <key>LARKSUITE_CLI_NO_UPDATE_NOTIFIER</key>
+    <string>1</string>
+    <key>LARKSUITE_CLI_NO_SKILLS_NOTIFIER</key>
+    <string>1</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>30</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/changtao/.local/share/claude-news-bot/g1_feedback/runs/listener.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/changtao/.local/share/claude-news-bot/g1_feedback/runs/listener.log</string>
+</dict>
+</plist>
