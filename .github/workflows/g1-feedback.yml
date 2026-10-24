@@ -2,8 +2,9 @@ name: G1 内测反馈收录
 
 on:
   schedule:
-    # 每天北京时间 18:30（UTC 10:30）。GitHub 的 scheduled 事件在高峰期可能延迟到一两小时后，
-    # 对晚间汇总可以接受；要精准触发可像日报一样用妙搭定时器调 workflow_dispatch。
+    # 备份触发：每天北京时间 18:30（UTC 10:30）。实测 GitHub 的 scheduled 事件高峰期会晚 4–5 小时
+    # （2026-10-23 的任务 23:17 才跑），所以准点派发由本机监听器 g1_feedback/listener.py 负责，
+    # 这里只兜底。两次运行共用水位，重复触发不会重复记录。
     - cron: '30 10 * * *'
   workflow_dispatch:
     inputs:

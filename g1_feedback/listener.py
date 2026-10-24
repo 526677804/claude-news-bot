@@ -115,13 +115,30 @@ def latest_run_status():
         return f'查询失败：{e}'
 
 
-def dispatch(reply_to=None):
-    args = ['gh', 'workflow', 'run', WORKFLOW, '-R', REPO, '-f', 'manual=true']
+def dispatch(reply_to=None, manual=True):
+    args = ['gh', 'workflow', 'run', WORKFLOW, '-R', REPO, '-f', f'manual={"true" if manual else "false"}']
     if reply_to:
         args += ['-f', f'reply_to={reply_to}']
     out = subprocess.run(args, capture_output=True, text=True, timeout=60)
     if out.returncode != 0:
         raise RuntimeError((out.stderr or out.stdout).strip()[:300])
+
+
+def daily_dispatch_if_due(cfg, state):
+    """到了每日时间点（默认 18:30）就由本机准点派发一次；GitHub 自己的 cron 高峰期会晚几小时，只当备份。"""
+    daily = cfg.get('daily_time') or '18:30'
+    now = datetime.now(CST)
+    today = now.strftime('%Y-%m-%d')
+    if state.get('last_daily_date') == today or now.strftime('%H:%M') < daily:
+        return
+    try:
+        dispatch(manual=False)
+        log(f'每日 {daily} 定时已由本机派发')
+    except Exception as e:  # noqa: BLE001
+        log(f'每日定时派发失败（GitHub cron 会兜底）：{e}')
+    state['last_daily_date'] = today
+    state['last_dispatch_at'] = time.time()
+    save_state(state)
 
 
 def handle(msg, cfg, state, in_group):
@@ -151,7 +168,7 @@ def handle(msg, cfg, state, in_group):
     state['last_dispatch_at'] = now
     log(f'已派发（{sender}：{text[:40]}）')
     where = '在群里通报' if in_group else f'发到「{cfg["chat_name"]}」群里'
-    reply(mid, f'收到，正在整理「{cfg["chat_name"]}」最近的讨论，整理完{where}（约 2–3 分钟）。')
+    reply(mid, f'收到，正在整理「{cfg["chat_name"]}」最近的讨论（约 2–3 分钟）。有新记录才{where}，没有就不打扰。')
 
 
 def poll(cfg, state):
@@ -203,6 +220,7 @@ def main():
     while True:
         try:
             poll(cfg, state)
+            daily_dispatch_if_due(cfg, state)
         except Exception as e:  # noqa: BLE001
             log(f'轮询异常：{e!r}')
         if a.once:

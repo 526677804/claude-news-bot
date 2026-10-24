@@ -3,7 +3,7 @@
 把飞书群「G1 - 联创团队」里和产品相关的讨论，自动整理成需求池（飞书多维表格）里的记录，并回群通报。
 
 - 需求池：https://a9ihi0un9c.feishu.cn/wiki/AFw6wE6HUimR9Ak2LdYcWadcnJZ （知识库「内部业务 / 游戏」下）
-- 调度：`.github/workflows/g1-feedback.yml`，每天北京时间 18:30（GitHub cron 可能延迟一两小时）；也可手动 `workflow_dispatch`
+- 调度：每天北京时间 18:30，由本机监听器准点派发 `.github/workflows/g1-feedback.yml`；工作流自带的 GitHub cron 作备份（可能延迟数小时）；也可手动 `workflow_dispatch` 或群里 @机器人
 - 身份：全链路机器人「畅涛's Homunculus」（`--as bot`），只依赖仓库 Secrets 里的 `LARK_APP_ID` / `LARK_APP_SECRET`；AI 提取用 `CURSOR_API_KEY`
 
 ## 四步
@@ -21,7 +21,9 @@
 
 除了每天 18:30，群里任何人 **@畅涛's Homunculus 记一下**（或「整理」「记录」）就会立刻跑一次；管理员在机器人私聊里直接发「记一下」也行；发「状态」看最近一次运行，「帮助」看用法。
 
-- 实现：`listener.py` 常驻在负责人的 Mac 上（launchd，每 45 秒轮询群消息），发现触发消息后回一句「收到」，并用 `gh workflow run` 派发同一条 Actions 管线（`manual=true`，`reply_to=触发消息`），结果以回复触发消息的方式回群；没有新内容也会回一句「没有需要记录的」。
+- 实现：`listener.py` 常驻在负责人的 Mac 上（launchd，每 45 秒轮询群消息），发现触发消息后回一句「收到」，并用 `gh workflow run` 派发同一条 Actions 管线（`manual=true`，`reply_to=触发消息`），结果以回复触发消息的方式回群。
+- **只有新增了记录才回群**：只追加到已有记录、或什么都没提取到，都静默处理（追加照样写进需求池），不发群消息。
+- 每日 18:30 也由这个监听器准点派发（`config.json` 的 `daily_time`）；GitHub 自己的 cron 只作备份——实测高峰期会晚 4–5 小时才跑（2026-10-23 的 18:30 任务 23:17 才执行）。两边跑的是同一条管线、同一份水位，重复触发只会「没有新内容」而不会重复记录。
 - 不会重复：手动和定时跑的是同一条管线、同一份水位（`state.json`，每次运行后写回仓库），且工作流设了 `concurrency: g1-feedback`，两次运行只会排队不会并行；后一次会看到前一次推进过的水位。3 分钟内连续 @ 只派发一次。
 - Mac 睡眠时 @ 不会立即响应；醒来后 2 小时内的触发会补跑，更早的忽略（反正每日定时会兜底）。
 - 安装 / 重启监听器（Mac 上执行一次）：

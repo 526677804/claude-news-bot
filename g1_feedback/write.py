@@ -26,7 +26,7 @@ def parse_args():
     p.add_argument('--run', required=True)
     p.add_argument('--as', dest='identity', default=os.environ.get('LARK_AS', 'bot'), choices=['bot', 'user'])
     p.add_argument('--dry-run', action='store_true', help='只打印将写入的内容，不写需求池、不改水位')
-    p.add_argument('--manual', action='store_true', help='手动触发：没有新内容时也生成一句简短回复')
+    p.add_argument('--manual', action='store_true', help='手动触发（目前只用于日志标记；没有新增一样不回群）')
     return p.parse_args()
 
 
@@ -189,24 +189,17 @@ def main():
     save_state(state)
     print(f'💾 水位更新：last_message_time={state["last_message_time"]}，processed_ids={len(state["processed_ids"])}')
 
+    # 只有真的新增了记录才回群；只有追加、或什么都没有，都不打扰群（追加已静默写入需求池）
     post_path = os.path.join(run_dir, 'post.md')
-    if created or updated:
+    if created:
         post = build_post(cfg, created, updated, day_label)
         with open(post_path, 'w', encoding='utf-8') as f:
             f.write(post)
         print('--- post.md ---\n' + post)
         github_output(has_post='true' if cfg.get('post_to_group', True) else 'false')
-    elif a.manual:
-        since = (inp.get('run', {}).get('since') or '')[:16].replace('T', ' ')
-        n = len(msg_ids)
-        text = (f'📝 手动整理完成：自 {since} 起看了 {n} 条消息，没有新的需求 / 问题需要记录'
-                if n else '📝 手动整理完成：这段时间群里没有新消息')
-        if out.get('skipped_reason'):
-            text += f'（{out["skipped_reason"][:80]}）'
-        with open(post_path, 'w', encoding='utf-8') as f:
-            f.write(text)
-        print('--- post.md ---\n' + text)
-        github_output(has_post='true' if cfg.get('post_to_group', True) else 'false')
+    elif updated:
+        print(f'ℹ️ 无新增，仅追加 {len(updated)} 条到已有记录，不回群')
+        github_output(has_post='false')
     else:
         print(f'ℹ️ 无新增、无追加（{out.get("skipped_reason")}），不回群')
         github_output(has_post='false')
