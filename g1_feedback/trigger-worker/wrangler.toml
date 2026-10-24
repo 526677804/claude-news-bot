@@ -3,13 +3,17 @@ main = "src/index.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
 
-# 每天北京时间 18:30 = UTC 10:30
+# 定时（UTC）。每天北京时间 18:30 = UTC 10:30。
+# 要把日报等其他仓库的定时也放进来：这里加一条 cron，再在 SCHEDULES 里写它对应的 repo / workflow，
+# 并确保 GITHUB_TOKEN 这个 PAT 的 Repository access 包含那个仓库。
 [triggers]
 crons = ["30 10 * * *"]
 
 [vars]
 GITHUB_REPO = "526677804/claude-news-bot"
 WORKFLOW_FILE = "g1-feedback.yml"
+# cron 表达式 → 要派发的工作流；没列出的 cron 默认派发上面的 G1 管线
+SCHEDULES = '{"30 10 * * *": {"repo": "526677804/claude-news-bot", "workflow": "g1-feedback.yml", "inputs": {"manual": "false"}}}'
 GROUP_CHAT_ID = "oc_610c48d9357cdf69c5d909eb565e4635"
 ADMIN_DM_CHAT_ID = "oc_0f9c4d5ed0a25a561a35c67331756550"
 BOT_OPEN_ID = "ou_8a6bce975808eb913104928d79959b5c"

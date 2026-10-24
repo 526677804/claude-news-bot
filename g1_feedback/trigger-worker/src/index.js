@@ -17,7 +17,16 @@ const IGNORE_WORDS = ['状态', 'status', '帮助', 'help'];
 
 export default {
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(dispatch(env, { manual: 'false' }, 'cron'));
+    // 一个 Worker 可以挂多条定时：按触发的 cron 表达式查 SCHEDULES（见 wrangler.toml），
+    // 没匹配到的默认跑 G1 自己的管线。日报等其他仓库的定时也可以加进来共用。
+    let schedules = {};
+    try {
+      schedules = JSON.parse(env.SCHEDULES || '{}');
+    } catch {
+      schedules = {};
+    }
+    const job = schedules[event.cron] || { repo: env.GITHUB_REPO, workflow: env.WORKFLOW_FILE, inputs: { manual: 'false' } };
+    ctx.waitUntil(dispatch(env, job.inputs || {}, `cron ${event.cron}`, job.repo, job.workflow));
   },
 
   async fetch(request, env, ctx) {
@@ -105,8 +114,8 @@ function extractText(content) {
   }
 }
 
-async function dispatch(env, inputs, reason) {
-  const url = `https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/${env.WORKFLOW_FILE}/dispatches`;
+async function dispatch(env, inputs, reason, repo = env.GITHUB_REPO, workflow = env.WORKFLOW_FILE) {
+  const url = `https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`;
   const res = await fetch(url, {
     method: 'POST',
     headers: {
