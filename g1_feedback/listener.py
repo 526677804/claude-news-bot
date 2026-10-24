@@ -201,6 +201,11 @@ def poll(cfg, state):
                 continue
             if in_group and not mentions_bot(m, cfg):
                 continue
+            if not in_group:
+                # 私聊里还跑着别的流程（如发版通报批阅），只有以口令开头的消息才算触发
+                t = strip_mentions(m.get('content') if isinstance(m.get('content'), str) else '').lower()
+                if not any(t.startswith(w) for w in TRIGGER_WORDS + STATUS_WORDS + HELP_WORDS):
+                    continue
             created = parse_time(m.get('create_time') or '')
             handled.add(mid)
             state['handled_ids'] = list(handled)
