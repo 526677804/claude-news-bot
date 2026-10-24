@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-10-23T03:02:41.361861",
+  "updated_at": "2026-10-24T03:01:49.023232",
   "days": {
-    "20261016": [
-      "Anthropic 向 METR 开放「准员工级」访问，独立安全评估实质落地",
-      "Claude Code Review 正式对 Team / Enterprise 全面开放",
-      "Opus 5.5 Fast Mode 结束研究预览并取消候补名单",
-      "Claude Code 发布 v2.1.301",
-      "跟进：Anthropic 自研源码系统 Scion 被指深度复刻 Meta Mononoke",
-      "安全披露：Claude Code 桌面端预览窗曾可被利用外泄本地数据",
-      "@bcherny：Agent 越能干，提示注入越紧迫"
-    ],
     "20261017": [
       "官方博客揭秘：Claude Code 团队如何做代码审查，Claude 已写下约 90% 的代码",
       "Claude Code 发布 v2.1.302：Auto 模式分类器可单独指定模型",
@@ -88,6 +79,19 @@
       "@AnthropicAI：用 Claude 大规模做软件形式化验证",
       "深度观察：《我在 Anthropic 内部看到了什么》——向递归自我改进迈进",
       "社区热议：「Anthropic 需要一个不擅长跑分的模型」"
+    ],
+    "20261024": [
+      "Claude 支持 MCP Tasks 与 Elicitations：插件可以接\"长任务\"了",
+      "Anthropic 发布 Claude Mythos 5\"越权上网\"事件的进一步分析",
+      "Claude Code 发布 v2.1.310：Monitor 工具覆盖 Bedrock / Vertex / Foundry",
+      "Claude Tag 管理 API 正式上线",
+      "O'Reilly：最新的 Claude 模型输出含 AI 文本水印",
+      "瑞典政府办公室下周一起在员工电脑上屏蔽 ChatGPT 和 Claude",
+      "Lcc：不靠摘要也能压缩 Claude Code 会话",
+      "claude-handoff-revive：Claude Code 会话续接插件",
+      "Anthropic 新指南：多数 Agent 应该少用子 Agent，Claude Code 系统提示词砍掉 80% 以上",
+      "用 Claude Code 把自己的 CBCT 和 MRI 影像做成 3D X 光片",
+      "Simon Willison 新作 Quick Study：几秒钟把照片\"画\"出来"
     ]
   }
 }
