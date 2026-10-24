@@ -126,7 +126,9 @@ def dispatch(reply_to=None, manual=True):
 
 def daily_dispatch_if_due(cfg, state):
     """到了每日时间点（默认 18:30）就由本机准点派发一次；GitHub 自己的 cron 高峰期会晚几小时，只当备份。"""
-    daily = cfg.get('daily_time') or '18:30'
+    daily = cfg.get('daily_time')  # 为空表示每日定时不由本机派发（已交给妙搭触发器）
+    if not daily:
+        return
     now = datetime.now(CST)
     today = now.strftime('%Y-%m-%d')
     if state.get('last_daily_date') == today or now.strftime('%H:%M') < daily:

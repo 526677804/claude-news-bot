@@ -3,7 +3,7 @@
 把飞书群「G1 - 联创团队」里和产品相关的讨论，自动整理成需求池（飞书多维表格）里的记录，并回群通报。
 
 - 需求池：https://a9ihi0un9c.feishu.cn/wiki/AFw6wE6HUimR9Ak2LdYcWadcnJZ （知识库「内部业务 / 游戏」下）
-- 调度：每天北京时间 18:30，由本机监听器准点派发 `.github/workflows/g1-feedback.yml`；工作流自带的 GitHub cron 作备份（可能延迟数小时）；也可手动 `workflow_dispatch` 或群里 @机器人
+- 调度：每天北京时间 18:30，由妙搭应用「资讯推送定时触发器」（`app_17bkc5gs27u`）的 cron 触发器 `g1FeedbackGithubTrigger` 调 `workflow_dispatch`——与日报、AI 一千零一夜同一套（handler 在该应用 `server/modules/github-trigger/github-trigger.automation.ts`，复用 `GITHUB_TRIGGER_TOKEN`）；工作流自带的 GitHub cron 作备份（可能延迟数小时）；也可手动 `workflow_dispatch` 或群里 @机器人
 - 身份：全链路机器人「畅涛's Homunculus」（`--as bot`），只依赖仓库 Secrets 里的 `LARK_APP_ID` / `LARK_APP_SECRET`；AI 提取用 `CURSOR_API_KEY`
 
 ## 四步
@@ -23,7 +23,8 @@
 
 - 实现：`listener.py` 常驻在负责人的 Mac 上（launchd，每 45 秒轮询群消息），发现触发消息后回一句「收到」，并用 `gh workflow run` 派发同一条 Actions 管线（`manual=true`，`reply_to=触发消息`），结果以回复触发消息的方式回群。
 - **只有新增了记录才回群**：只追加到已有记录、或什么都没提取到，都静默处理（追加照样写进需求池），不发群消息。
-- 每日 18:30 也由这个监听器准点派发（`config.json` 的 `daily_time`）；GitHub 自己的 cron 只作备份——实测高峰期会晚 4–5 小时才跑（2026-10-23 的 18:30 任务 23:17 才执行）。两边跑的是同一条管线、同一份水位，重复触发只会「没有新内容」而不会重复记录。
+- 每日 18:30 由妙搭触发器准点派发（见上）；`config.json` 的 `daily_time` 留空即表示本机不再派发每日任务（填 `18:30` 可切回本机派发）。GitHub 自己的 cron 只作备份——实测高峰期会晚 4–5 小时才跑（2026-10-23 的 18:30 任务 23:17 才执行）。多处触发跑的都是同一条管线、同一份水位，重复触发只会「没有新内容」而不会重复记录。
+- 要让 @ 触发也不依赖 Mac：`trigger-worker/` 是现成的 Cloudflare Worker（接飞书事件订阅 → 调 `workflow_dispatch`，并可兼做 18:30 定时），部署步骤见该目录内注释；部署后把本机监听器 `launchctl bootout` 掉即可。
 - 不会重复：手动和定时跑的是同一条管线、同一份水位（`state.json`，每次运行后写回仓库），且工作流设了 `concurrency: g1-feedback`，两次运行只会排队不会并行；后一次会看到前一次推进过的水位。3 分钟内连续 @ 只派发一次。
 - Mac 睡眠时 @ 不会立即响应；醒来后 2 小时内的触发会补跑，更早的忽略（反正每日定时会兜底）。
 - 安装 / 重启监听器（Mac 上执行一次）：
