@@ -1,0 +1,18 @@
+name = "g1-feedback-trigger"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+# 每天北京时间 18:30 = UTC 10:30
+[triggers]
+crons = ["30 10 * * *"]
+
+[vars]
+GITHUB_REPO = "526677804/claude-news-bot"
+WORKFLOW_FILE = "g1-feedback.yml"
+GROUP_CHAT_ID = "oc_610c48d9357cdf69c5d909eb565e4635"
+ADMIN_DM_CHAT_ID = "oc_0f9c4d5ed0a25a561a35c67331756550"
+BOT_OPEN_ID = "ou_8a6bce975808eb913104928d79959b5c"
+
+[observability]
+enabled = true
