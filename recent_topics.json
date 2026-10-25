@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-10-24T03:01:49.023232",
+  "updated_at": "2026-10-25T03:01:39.079157",
   "days": {
-    "20261017": [
-      "官方博客揭秘：Claude Code 团队如何做代码审查，Claude 已写下约 90% 的代码",
-      "Claude Code 发布 v2.1.302：Auto 模式分类器可单独指定模型",
-      "Claude Code 响应提速：每轮对话改为 gzip 压缩后发送",
-      "STEM Fellows 项目新成果：Claude Mythos 5 设计出更高效的量子电路",
-      "TechCrunch：Replit CEO 称已停止与 Anthropic 合作",
-      "FT：Anthropic 6 月获评\"垃圾级\"中的最高一档信用评级",
-      "免费 Windows 小组件：桌面上实时看 Claude 用量，像素版 Clawd 会对会话做出反应",
-      "用户提醒：Anthropic Console 因国际化输入 Bug 多扣了 100 倍费用",
-      "Tell HN：Anthropic 在开源项目 Pion 中发现 36 个 Bug（含 6 个 CVE）",
-      "61 KB 的单个 HTML 文件：用 Opus 5.5 做出实时海洋模拟"
-    ],
     "20261018": [
       "OpenCode 遭入侵，Anthropic 已吊销受影响的 Claude API Key",
       "Anthropic 发布研究：公司内部的工作方式正在发生怎样的变化",
@@ -92,6 +80,14 @@
       "Anthropic 新指南：多数 Agent 应该少用子 Agent，Claude Code 系统提示词砍掉 80% 以上",
       "用 Claude Code 把自己的 CBCT 和 MRI 影像做成 3D X 光片",
       "Simon Willison 新作 Quick Study：几秒钟把照片\"画\"出来"
+    ],
+    "20261025": [
+      "Claude Code 两位核心工程师 Shihipar（@trq212）与 Morris（@amorriscode）相继离开 Anthropic",
+      "FT：Anthropic 达成协议，将在欧洲成立咨询公司",
+      "METR 评审 Anthropic 风险报告中的「高风险场景下的模型失准」章节",
+      "HN 热议：有人指称 Claude Code 会在对外 HTTP 请求里悄悄带上用户邮箱",
+      "拆解 Claude Code，做成一门免费的「Harness 工程」课程",
+      "Claude 逆向了《网络创世纪》的游戏文件，搭起私服还陪玩家一起玩"
     ]
   }
 }
