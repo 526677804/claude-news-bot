@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-10-25T03:01:39.079157",
+  "updated_at": "2026-10-26T03:03:19.016404",
   "days": {
-    "20261018": [
-      "OpenCode 遭入侵，Anthropic 已吊销受影响的 Claude API Key",
-      "Anthropic 发布研究：公司内部的工作方式正在发生怎样的变化",
-      "跟进：Replit CEO 澄清，是把默认模型换成 OpenAI，Claude 仍可继续使用",
-      "纽约市审计长办公室就 Anthropic 计划中的 IPO 发出公开信",
-      "Bun 下个版本将内置 `bun lint`：比 ESLint 快 26 倍",
-      "尘封 30 年的 Amiga 文件，被 Claude 从损坏的压缩包里救了回来",
-      "不会做游戏也能上手：用 Claude Code 做出浏览器 FPS，所有 3D 模型都是代码",
-      "整个游戏仅 20MB：用 Opus 做程序化生成的《Mecha Royale》"
-    ],
     "20261019": [
       "Anthropic 拿出 5% 股份成立「Anthropic 公益基金」",
       "Anthropic 研究：Claude 破解 25 年前 NSA 密码学谜题（ECDSA 曲线来源）",
@@ -88,6 +78,13 @@
       "HN 热议：有人指称 Claude Code 会在对外 HTTP 请求里悄悄带上用户邮箱",
       "拆解 Claude Code，做成一门免费的「Harness 工程」课程",
       "Claude 逆向了《网络创世纪》的游戏文件，搭起私服还陪玩家一起玩"
+    ],
+    "20261026": [
+      "Anthropic 被指用猫王音乐训练 AI 模型，遭版权起诉",
+      "Perch：管理多个 Claude Code 会话的 Mac 应用",
+      "几个月内大模型降价高达 80%，为什么？",
+      "开发者反馈：要求给出评分理由时，Claude 会间歇性拒绝做评测",
+      "用户发现：Claude 似乎对「逆向电视」加了安全限制"
     ]
   }
 }
