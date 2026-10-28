@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-10-27T03:01:59.008799",
+  "updated_at": "2026-10-28T03:02:43.212030",
   "days": {
-    "20261020": [
-      "Anthropic 推出 OSS Scanner：用最强模型为关键开源项目免费定期扫描漏洞",
-      "Claude Code 发布 v2.1.304：插件 Hook 被跳过时会留痕，权限审批可强制由人来决定",
-      "TechCrunch：Anthropic 据报正与 Nscale 洽谈又一笔 450 亿美元算力交易",
-      "华尔街日报：一个鲜为人知的信托，正笼罩着 Anthropic 的 IPO",
-      "路透社：营收增速放缓，投资者下调对 Anthropic IPO 估值的预期",
-      "Tmux + Claude Code 实战指南：会话管理、send-keys 与能力上限",
-      "@trq212（Claude Code 核心团队）：用 Agent 多线程干活的人，不妨慢下来",
-      "用户热帖：「我对 Opus 5.5 很满意，别再升级了」"
-    ],
     "20261021": [
       "Claude 设计出针对蝎子神经毒素的蛋白结合物，实验室验证 17 款有效",
       "Claude Code 发布 v2.1.305",
@@ -85,6 +75,16 @@
       "《华盛顿邮报》：网络安全初创公司 Cathedral 的研究人员\"进入\"了 Anthropic 内部",
       "@lydiahallie（Claude Code 核心团队）转发：`--dangerously-skip-permissions` 并不会放行一切",
       "用户吐槽：突然被要求提交政府证件验证年龄"
+    ],
+    "20261028": [
+      "Anthropic 扩大与美国总务管理局（GSA）合作：各级政府用 Claude 打六折",
+      "Anthropic 入局新药研发：与 6 家药企深度合作，并自建药物发现项目",
+      "Claude Code 发布 v2.1.312",
+      "TechCrunch 解读 S-1：IPO 最大赢家是亚马逊，不是风投",
+      "《华尔街日报》：博通 CEO 亲自出面，敲定与 Anthropic 的 630 亿美元债务交易",
+      "《斯坦福日报》：Anthropic 用非法获取的斯坦福教授著作训练 Claude",
+      "用户热帖：Claude Code 用量单日暴涨 8 倍，服务出错也照扣额度",
+      "@lydiahallie（Claude Code 核心团队）：插件与连接器的界面正在重做，征集反馈"
     ]
   }
 }
