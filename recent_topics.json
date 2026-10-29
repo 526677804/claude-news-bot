@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-10-28T03:02:43.212030",
+  "updated_at": "2026-10-29T03:01:29.152097",
   "days": {
-    "20261021": [
-      "Claude 设计出针对蝎子神经毒素的蛋白结合物，实验室验证 17 款有效",
-      "Claude Code 发布 v2.1.305",
-      "路透社：Anthropic 2026 上半年净亏损超 800 亿美元",
-      "TechCrunch：Eric Schmidt 据报持股约达 Dario Amodei 的一半",
-      "CBC：加拿大主要新闻出版商起诉 Anthropic 版权侵权",
-      "Lights-on software factory：面向 Claude Code 的「常亮软件工厂」样板",
-      "SIwithin：在围栏与美元预算内无人值守跑 Claude Code",
-      "社区开源：自己组一套「Agent 俱乐部」，不买可爱壳子",
-      "@noahzweben（Claude Code 核心团队）：有「现场存在感」的主动 Agent 才是未来",
-      "用户反馈：Opus 5.5 因学校禁令，拒绝代写论文示例段落",
-      "@DarioAmodei：回应 AI 安全法案批评，称赞调查性工作"
-    ],
     "20261022": [
       "Anthropic 开放 Claude Duet 研究预览：Claude 化身\"主动型 Agent\"",
       "Claude API 发布 2026-10-21 版本：2023 年以来首个正式 API 版本",
@@ -85,6 +72,16 @@
       "《斯坦福日报》：Anthropic 用非法获取的斯坦福教授著作训练 Claude",
       "用户热帖：Claude Code 用量单日暴涨 8 倍，服务出错也照扣额度",
       "@lydiahallie（Claude Code 核心团队）：插件与连接器的界面正在重做，征集反馈"
+    ],
+    "20261029": [
+      "Anthropic 推出新工具：让企业看清 AI 支出到底买到了什么",
+      "Christopher Stubbs 加入 Anthropic 长期利益信托（LTBT）",
+      "Claude for Legal 上线现成 Artifact 模板库",
+      "彭博社：银行搁置一笔与 Anthropic 相关的得州数据中心债券发行",
+      "CleanCode：让 Claude Code 与 Codex 在同一张画布上协作",
+      "@bcherny（Claude Code 核心团队）：犹他州政府 Claude Code 试点数据出炉",
+      "ultrathink 回归 Claude Code CLI",
+      "@lydiahallie：动态工作流不一定要上百个子 Agent"
     ]
   }
 }
