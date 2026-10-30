@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-10-29T03:01:29.152097",
+  "updated_at": "2026-10-30T03:01:39.322634",
   "days": {
-    "20261022": [
-      "Anthropic 开放 Claude Duet 研究预览：Claude 化身\"主动型 Agent\"",
-      "Claude API 发布 2026-10-21 版本：2023 年以来首个正式 API 版本",
-      "Claude Code 发布 v2.1.307：一键迁移 API 版本，安全拦截事件可观测",
-      "Claude Security 支持持续扫描：代码一变，漏洞结果跟着更新",
-      "Nexus-CLI：纯 Go 实现的 DeepSeek 桥接工具，支持 Claude Code 与 Ollama",
-      "Archestra 1.4：为 Claude Code 和 Codex 提供自托管运行时",
-      "@lydiahallie（Claude Code 核心团队）提醒：上月的免费额度重置即将过期",
-      "用 Claude Code 替换三星电视主屏：去掉广告，只留时钟、常用 App 和游戏机入口",
-      "Anthropic 公益章程引发 HN 热议，年度公益报告同日发布"
-    ],
     "20261023": [
       "Anthropic 将 Agent Skills 捐赠给 Agentic AI 基金会，与 MCP 同归一家",
       "下周起，Claude 网页版、桌面端和移动端默认开启 Auto 模式",
@@ -82,6 +71,17 @@
       "@bcherny（Claude Code 核心团队）：犹他州政府 Claude Code 试点数据出炉",
       "ultrathink 回归 Claude Code CLI",
       "@lydiahallie：动态工作流不一定要上百个子 Agent"
+    ],
+    "20261030": [
+      "Claude Code 发布 v2.1.314：新增\"禁止写出工作目录\"硬性开关",
+      "Claude API 单次请求上限从 32 MB 提高到 128 MB",
+      "Anthropic 训练 Claude 主动标记潜在滥用：「自我评估」技术",
+      "AI for Science 计划扩容：从支持单个团队扩展到顶尖科研机构",
+      "彭博社：Anthropic 已成为 SpaceX 最大单一客户，超过 NASA 和五角大楼",
+      "The Register：Anthropic 工程师宣称「编程面试已死」",
+      "HN 热帖（562 赞）：Claude Code 会定期把每个后台 Agent 的会话记录发送给模型",
+      "@trq212（原 Claude Code 核心团队）：小心编码 Agent 带来的「虚假忙碌」",
+      "用 Claude 把全球法律放进 Git"
     ]
   }
 }
