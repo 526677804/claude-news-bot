@@ -21,7 +21,7 @@ on:
         type: boolean
         default: false
       manual:
-        description: '手动触发（群里 @机器人）：即使没有新内容也回一句，让触发的人知道跑完了'
+        description: '手动触发（群里 @机器人 或管理员私聊）；同时带 reply_to（群里 @ 触发）时，无论结果都回复触发消息'
         type: boolean
         default: false
       reply_to:
@@ -72,11 +72,18 @@ jobs:
           printf '%s' "$LARK_APP_SECRET" | lark-cli config init --app-id "$LARK_APP_ID" --app-secret-stdin
 
       - name: 回执「收到」（手动触发）
-        if: github.event.inputs.manual == 'true' && github.event.inputs.ack_to != ''
+        if: github.event.inputs.manual == 'true' && github.event.inputs.ack_to != '' && github.event.inputs.dry_run != 'true'
         continue-on-error: true
+        env:
+          ACK_TO: ${{ github.event.inputs.ack_to }}
+          REPLY_TO: ${{ github.event.inputs.reply_to }}
         run: |
-          lark-cli im +messages-reply --as bot --message-id "${{ github.event.inputs.ack_to }}" \
-            --text "收到，正在整理「G1 - 联创团队」最近的讨论（约 2–3 分钟）。有新记录才回群，没有就不打扰。" >/dev/null
+          if [ -n "$REPLY_TO" ]; then
+            text="收到，正在整理「G1 - 联创团队」最近的讨论（约 2–3 分钟），整理完回结果。"
+          else
+            text="收到，正在整理「G1 - 联创团队」最近的讨论（约 2–3 分钟）。有新记录才回群，没有就不打扰。"
+          fi
+          lark-cli im +messages-reply --as bot --message-id "$ACK_TO" --text "$text" >/dev/null
 
       - name: 拉取群消息与现有记录
         id: fetch
@@ -96,18 +103,31 @@ jobs:
       - name: 写入需求池并生成回群消息
         id: write
         if: steps.fetch.outputs.has_messages == 'true'
+        env:
+          REPLY_TO: ${{ github.event.inputs.reply_to }}
         run: |
           args=(--run runs/current --as bot)
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
           if [ "${{ github.event.inputs.manual }}" = "true" ]; then args+=(--manual); fi
+          if [ "${{ github.event.inputs.manual }}" = "true" ] && [ -n "$REPLY_TO" ]; then args+=(--reply-trigger); fi
           python3 write.py "${args[@]}"
 
       - name: 回群
+        id: post
         if: steps.write.outputs.has_post == 'true' && github.event.inputs.dry_run != 'true'
         run: |
           args=(--run runs/current)
           if [ -n "${{ github.event.inputs.reply_to }}" ]; then args+=(--reply-to "${{ github.event.inputs.reply_to }}"); fi
           python3 post.py "${args[@]}"
+
+      - name: 回复触发消息（没有新消息）
+        if: github.event.inputs.manual == 'true' && github.event.inputs.reply_to != '' && steps.fetch.outputs.has_messages != 'true' && github.event.inputs.dry_run != 'true'
+        continue-on-error: true
+        env:
+          REPLY_TO: ${{ github.event.inputs.reply_to }}
+        run: |
+          lark-cli im +messages-reply --as bot --message-id "$REPLY_TO" \
+            --text "已整理：上次整理之后没有新的讨论。" >/dev/null
 
       - name: 写回水位
         if: steps.fetch.outputs.has_messages == 'true' && github.event.inputs.dry_run != 'true'
@@ -125,6 +145,15 @@ jobs:
       - name: 失败告警（私信管理员）
         if: failure()
         run: python3 post.py --alert "GitHub Actions 运行失败：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: 失败时回复触发消息（群里 @ 触发、结果还没回过）
+        if: failure() && github.event.inputs.manual == 'true' && github.event.inputs.reply_to != '' && github.event.inputs.dry_run != 'true' && steps.post.outcome != 'success'
+        continue-on-error: true
+        env:
+          REPLY_TO: ${{ github.event.inputs.reply_to }}
+        run: |
+          lark-cli im +messages-reply --as bot --message-id "$REPLY_TO" \
+            --text "这次整理出错了，已通知管理员。" >/dev/null
 
       - name: 归档本次产物
         if: always()

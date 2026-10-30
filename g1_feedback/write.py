@@ -5,9 +5,9 @@
 - 新记录：+record-batch-create，之后逐条 +record-get 拿「编号」
 - 追加：+record-get 读当前 讨论摘要 / 附议者 / 来源 message_id，合并后 +record-upsert --record-id
 - 水位：state.json 的 last_message_time + processed_ids（最近 500 条）
-- 回群消息：post.md（Markdown，含 @提出者）；没有任何新增 / 追加时不生成
+- 回群消息：post.md（Markdown）。有新增时是含 @提出者 的汇总；群里 @ 触发（--reply-trigger）没有新增时是一句结果（只追加时附需求池链接）；其余情况不生成
 
-用法：python3 write.py --run <dir> [--as bot|user] [--dry-run]
+用法：python3 write.py --run <dir> [--as bot|user] [--dry-run] [--reply-trigger]
 """
 
 import argparse
@@ -26,7 +26,9 @@ def parse_args():
     p.add_argument('--run', required=True)
     p.add_argument('--as', dest='identity', default=os.environ.get('LARK_AS', 'bot'), choices=['bot', 'user'])
     p.add_argument('--dry-run', action='store_true', help='只打印将写入的内容，不写需求池、不改水位')
-    p.add_argument('--manual', action='store_true', help='手动触发（目前只用于日志标记；没有新增一样不回群）')
+    p.add_argument('--manual', action='store_true', help='手动触发（目前只用于日志标记）')
+    p.add_argument('--reply-trigger', action='store_true',
+                   help='群里 @ 触发：没有新增时也生成一句结果（并入了哪条 / 没提取到），回复触发消息')
     return p.parse_args()
 
 
@@ -77,6 +79,7 @@ def apply_update(cfg, identity, u, stamp):
     if not cur:
         raise LarkError({'message': f'记录不存在：{u["record_id"]}'}, ['base', '+record-get'])
     cells = {}
+    added = []
     if u.get('append_discussion'):
         old = cur.get('讨论摘要') or ''
         line = f'[{stamp}] {u["append_discussion"].strip()}'
@@ -85,15 +88,16 @@ def apply_update(cfg, identity, u, stamp):
     if u.get('add_supporters'):
         old_ids = [x.get('id') for x in (cur.get('附议者') or []) if isinstance(x, dict)]
         merged = [s for s in dict.fromkeys(old_ids + list(u['add_supporters'])) if s and s not in proposer]
+        added = [s for s in merged if s not in old_ids]
         cells['附议者'] = [{'id': s} for s in merged]
     if u.get('add_message_ids'):
         old_ids = [s.strip() for s in (cur.get('来源 message_id') or '').split(',') if s.strip()]
         cells['来源 message_id'] = ','.join(dict.fromkeys(old_ids + list(u['add_message_ids'])))
     if not cells:
-        return cur
+        return cur, added
     lark(['base', '+record-upsert', '--base-token', cfg['base_token'], '--table-id', cfg['table_id'],
           '--record-id', u['record_id'], '--json', __import__('json').dumps(cells, ensure_ascii=False)], identity)
-    return cur
+    return cur, added
 
 
 def first(v):
@@ -101,7 +105,7 @@ def first(v):
 
 
 def build_post(cfg, created, updated, day_label):
-    """created: [(编号, 记录 dict)]; updated: [(编号, 需求, update dict)]"""
+    """created: [(编号, 记录 dict)]; updated: [(编号, 需求, update dict, 新附议者 id 列表)]"""
     n, m = len(created), len(updated)
     head = f'📝 {cfg["product"]} 内测反馈 · {day_label} 自动收录 {n} 条' + (f'，追加 {m} 条' if m else '')
     lines = [head, '']
@@ -120,11 +124,38 @@ def build_post(cfg, created, updated, day_label):
         lines.append(f'…… 另有 {rest} 条见需求池')
     if updated:
         lines.append('')
-        lines.append('追加到已有记录：' + '；'.join(f'{c or ""} {t}'.strip() for c, t, _ in updated[:limit]))
+        lines.append('追加到已有记录：' + '；'.join(f'{c or ""} {t}'.strip() for c, t, *_ in updated[:limit]))
     lines.append('')
     lines.append(f'📋 需求池：{cfg["pool_url"]}')
     lines.append(cfg.get('post_footer') or '每天 18:30 自动整理一次群里与产品相关的讨论；理解有偏差的直接回这条消息说一声，筛选、结论和进度在需求池里维护。')
     return '\n'.join(lines)
+
+
+def build_brief(cfg, updated, names, skipped_reason):
+    """群里 @ 触发、没有新增时回复触发消息的一句结果。names: {open_id: 姓名}"""
+    if not updated:
+        reason = str(skipped_reason or '').strip().rstrip('。.')
+        if len(reason) > 60:
+            reason = reason[:60].rstrip('。.，, ') + '…'
+        return '已整理：这段讨论里没有需要记进需求池的内容' + (f'（{reason}）' if reason else '') + '。'
+    limit = int(cfg.get('max_lines_in_post', 10))
+    parts = []
+    for code, title, _, added in updated[:limit]:
+        label = (code or '') + (f'「{title}」' if title else '') or '已有记录'
+        who = '、'.join(names[s] for s in added if s in names)
+        parts.append(label + (f'（附议 +{who}）' if who else ''))
+    more = f'等 {len(updated)} 条' if len(updated) > limit else ''
+    return f'已整理：没有新增记录，讨论已并入 {"、".join(parts)}{more}。\n📋 需求池：{cfg["pool_url"]}'
+
+
+def compose_post(cfg, reply_trigger, inp, out, created, updated, day_label):
+    """有新增发汇总；群里 @ 触发没有新增也回一句结果；其余情况（每日定时、私聊触发）只追加或什么都没有都不打扰群。"""
+    if created:
+        return build_post(cfg, created, updated, day_label)
+    if reply_trigger:
+        names = {p.get('id'): p.get('name') for p in inp.get('participants') or [] if p.get('id') and p.get('name')}
+        return build_brief(cfg, updated, names, out.get('skipped_reason'))
+    return ''
 
 
 def main():
@@ -150,8 +181,8 @@ def main():
         for u in updates:
             print('update', json.dumps(u, ensure_ascii=False))
         created = [(None, r) for r in new_records]
-        updated = [(u.get('编号'), '', u) for u in updates]
-        post = build_post(cfg, created, updated, day_label) if (created or updated) else ''
+        updated = [(u.get('编号'), '', u, u.get('add_supporters') or []) for u in updates]
+        post = compose_post(cfg, a.reply_trigger, inp, out, created, updated, day_label)
         print('--- post.md ---\n' + post)
         github_output(has_post='false')
         return
@@ -170,8 +201,8 @@ def main():
     updated = []
     for u in updates:
         try:
-            cur = apply_update(cfg, a.identity, u, stamp)
-            updated.append((cur.get('编号') or u.get('编号'), cur.get('需求 / 问题') or '', u))
+            cur, added = apply_update(cfg, a.identity, u, stamp)
+            updated.append((cur.get('编号') or u.get('编号'), cur.get('需求 / 问题') or '', u, added))
             print(f'✅ 追加到 {cur.get("编号")}：{u.get("append_discussion", "")[:40]}')
         except LarkError as e:
             print(f'❌ 追加失败 {u.get("record_id")}：{e}')
@@ -189,10 +220,9 @@ def main():
     save_state(state)
     print(f'💾 水位更新：last_message_time={state["last_message_time"]}，processed_ids={len(state["processed_ids"])}')
 
-    # 只有真的新增了记录才回群；只有追加、或什么都没有，都不打扰群（追加已静默写入需求池）
     post_path = os.path.join(run_dir, 'post.md')
-    if created:
-        post = build_post(cfg, created, updated, day_label)
+    post = compose_post(cfg, a.reply_trigger, inp, out, created, updated, day_label)
+    if post:
         with open(post_path, 'w', encoding='utf-8') as f:
             f.write(post)
         print('--- post.md ---\n' + post)
@@ -205,7 +235,7 @@ def main():
         github_output(has_post='false')
     save_json(os.path.join(run_dir, 'summary.json'), {
         'created': [{'编号': c, '需求 / 问题': r['需求 / 问题']} for c, r in created],
-        'updated': [{'编号': c, '需求 / 问题': t} for c, t, _ in updated],
+        'updated': [{'编号': c, '需求 / 问题': t} for c, t, *_ in updated],
     })
 
 

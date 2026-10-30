@@ -169,8 +169,11 @@ def handle(msg, cfg, state, in_group):
         return
     state['last_dispatch_at'] = now
     log(f'已派发（{sender}：{text[:40]}）')
-    where = '在群里通报' if in_group else f'发到「{cfg["chat_name"]}」群里'
-    reply(mid, f'收到，正在整理「{cfg["chat_name"]}」最近的讨论（约 2–3 分钟）。有新记录才{where}，没有就不打扰。')
+    if in_group:
+        reply(mid, f'收到，正在整理「{cfg["chat_name"]}」最近的讨论（约 2–3 分钟），整理完回结果。')
+    else:
+        reply(mid, f'收到，正在整理「{cfg["chat_name"]}」最近的讨论（约 2–3 分钟）。'
+                   f'有新记录才发到「{cfg["chat_name"]}」群里，没有就不打扰。')
 
 
 def poll(cfg, state):
