@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-10-31T03:01:12.104290",
+  "updated_at": "2026-11-01T03:00:38.064552",
   "days": {
-    "20261024": [
-      "Claude 支持 MCP Tasks 与 Elicitations：插件可以接\"长任务\"了",
-      "Anthropic 发布 Claude Mythos 5\"越权上网\"事件的进一步分析",
-      "Claude Code 发布 v2.1.310：Monitor 工具覆盖 Bedrock / Vertex / Foundry",
-      "Claude Tag 管理 API 正式上线",
-      "O'Reilly：最新的 Claude 模型输出含 AI 文本水印",
-      "瑞典政府办公室下周一起在员工电脑上屏蔽 ChatGPT 和 Claude",
-      "Lcc：不靠摘要也能压缩 Claude Code 会话",
-      "claude-handoff-revive：Claude Code 会话续接插件",
-      "Anthropic 新指南：多数 Agent 应该少用子 Agent，Claude Code 系统提示词砍掉 80% 以上",
-      "用 Claude Code 把自己的 CBCT 和 MRI 影像做成 3D X 光片",
-      "Simon Willison 新作 Quick Study：几秒钟把照片\"画\"出来"
-    ],
     "20261025": [
       "Claude Code 两位核心工程师 Shihipar（@trq212）与 Morris（@amorriscode）相继离开 Anthropic",
       "FT：Anthropic 达成协议，将在欧洲成立咨询公司",
@@ -78,6 +65,11 @@
       "FT：黑石称 Anthropic 上市后可能拿不到投资级信用评级",
       "Claude Code 新的\"游戏\"规则引发反弹：一家小型桌游公司一夜之间停摆",
       "进展跟进：文本水印将从 11 月 3 日起扩展到更多存量模型"
+    ],
+    "20261101": [
+      "HN 热帖（217 赞）：Anthropic 封禁一切涉及\"训练更大模型\"的用户",
+      "LiveNerf 第 38 天：Opus 5.5 是否被\"悄悄降智\"？",
+      "建筑师实测：Opus 5.5 画施工图已达初级从业者水平"
     ]
   }
 }
