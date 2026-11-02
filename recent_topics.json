@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-11-01T03:00:38.064552",
+  "updated_at": "2026-11-02T03:03:12.309414",
   "days": {
-    "20261025": [
-      "Claude Code 两位核心工程师 Shihipar（@trq212）与 Morris（@amorriscode）相继离开 Anthropic",
-      "FT：Anthropic 达成协议，将在欧洲成立咨询公司",
-      "METR 评审 Anthropic 风险报告中的「高风险场景下的模型失准」章节",
-      "HN 热议：有人指称 Claude Code 会在对外 HTTP 请求里悄悄带上用户邮箱",
-      "拆解 Claude Code，做成一门免费的「Harness 工程」课程",
-      "Claude 逆向了《网络创世纪》的游戏文件，搭起私服还陪玩家一起玩"
-    ],
     "20261026": [
       "Anthropic 被指用猫王音乐训练 AI 模型，遭版权起诉",
       "Perch：管理多个 Claude Code 会话的 Mac 应用",
@@ -70,6 +62,10 @@
       "HN 热帖（217 赞）：Anthropic 封禁一切涉及\"训练更大模型\"的用户",
       "LiveNerf 第 38 天：Opus 5.5 是否被\"悄悄降智\"？",
       "建筑师实测：Opus 5.5 画施工图已达初级从业者水平"
+    ],
+    "20261102": [
+      "Karpathy 周末小项目 HackerTube：让 Claude 从 HN 20 年评论里筛出真正好看的视频",
+      "HN 热议（45 赞）：疑似 Anthropic「Mythos 级」模型权重在 Hugging Face 泄露"
     ]
   }
 }
