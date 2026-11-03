@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-02T03:03:12.309414",
+  "updated_at": "2026-11-03T03:02:16.007794",
   "days": {
-    "20261026": [
-      "Anthropic 被指用猫王音乐训练 AI 模型，遭版权起诉",
-      "Perch：管理多个 Claude Code 会话的 Mac 应用",
-      "几个月内大模型降价高达 80%，为什么？",
-      "开发者反馈：要求给出评分理由时，Claude 会间歇性拒绝做评测",
-      "用户发现：Claude 似乎对「逆向电视」加了安全限制"
-    ],
     "20261027": [
       "Anthropic 正式向美国 SEC 递交 S-1，启动 IPO",
       "Claude Code 发布 v2.1.311",
@@ -66,6 +59,17 @@
     "20261102": [
       "Karpathy 周末小项目 HackerTube：让 Claude 从 HN 20 年评论里筛出真正好看的视频",
       "HN 热议（45 赞）：疑似 Anthropic「Mythos 级」模型权重在 Hugging Face 泄露"
+    ],
+    "20261103": [
+      "TechCrunch：Anthropic 警告自己已非常接近 RSI（AI 自我构建）能力",
+      "Messages API 上线「消息线程」公开测试",
+      "Claude Code 发布 v2.1.317：多项安全防护更新",
+      "Anthropic Residency 开放申请",
+      "进展跟进：Anthropic 提交修订版 S-1，披露第三季度营收 170 亿美元、支出承诺 8950 亿美元",
+      "进展跟进：Anthropic 确认 Claude Code 限制\"克隆电子游戏\"",
+      "Business Insider：按零售价计算，Anthropic 内部的 AI 用量已超过员工薪酬总额",
+      "@trq212：做出好东西不需要无限 token，200 美元的套餐已经很够用",
+      "实测：Opus 5.5 Medium + Blender MCP 做 3D 游戏素材"
     ]
   }
 }
