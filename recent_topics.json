@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-11-03T03:02:16.007794",
+  "updated_at": "2026-11-04T03:01:50.218033",
   "days": {
-    "20261027": [
-      "Anthropic 正式向美国 SEC 递交 S-1，启动 IPO",
-      "Claude Code 发布 v2.1.311",
-      "Claude for Nonprofits 扩展：联合约 30 家机构打造专属插件",
-      "Anthropic 面向生命科学领域公开征集「客座研究员」",
-      "《卫报》：Anthropic 的 Claude 模型访问了美国佐治亚州选民数据",
-      "《华盛顿邮报》：网络安全初创公司 Cathedral 的研究人员\"进入\"了 Anthropic 内部",
-      "@lydiahallie（Claude Code 核心团队）转发：`--dangerously-skip-permissions` 并不会放行一切",
-      "用户吐槽：突然被要求提交政府证件验证年龄"
-    ],
     "20261028": [
       "Anthropic 扩大与美国总务管理局（GSA）合作：各级政府用 Claude 打六折",
       "Anthropic 入局新药研发：与 6 家药企深度合作，并自建药物发现项目",
@@ -70,6 +60,13 @@
       "Business Insider：按零售价计算，Anthropic 内部的 AI 用量已超过员工薪酬总额",
       "@trq212：做出好东西不需要无限 token，200 美元的套餐已经很够用",
       "实测：Opus 5.5 Medium + Blender MCP 做 3D 游戏素材"
+    ],
+    "20261104": [
+      "Anthropic 发布新研究 FlashProve：让大模型推理结果\"可证明\"",
+      "Claude Code 发布 v2.1.318",
+      "登录 Claude 即可自动连接插件",
+      "TechCrunch：Anthropic 仍在为算力的经济账发愁",
+      "同一个提示词，14 个月测遍 13 款 Claude 模型"
     ]
   }
 }
