@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-11-04T03:01:50.218033",
+  "updated_at": "2026-11-05T03:02:16.320736",
   "days": {
-    "20261028": [
-      "Anthropic 扩大与美国总务管理局（GSA）合作：各级政府用 Claude 打六折",
-      "Anthropic 入局新药研发：与 6 家药企深度合作，并自建药物发现项目",
-      "Claude Code 发布 v2.1.312",
-      "TechCrunch 解读 S-1：IPO 最大赢家是亚马逊，不是风投",
-      "《华尔街日报》：博通 CEO 亲自出面，敲定与 Anthropic 的 630 亿美元债务交易",
-      "《斯坦福日报》：Anthropic 用非法获取的斯坦福教授著作训练 Claude",
-      "用户热帖：Claude Code 用量单日暴涨 8 倍，服务出错也照扣额度",
-      "@lydiahallie（Claude Code 核心团队）：插件与连接器的界面正在重做，征集反馈"
-    ],
     "20261029": [
       "Anthropic 推出新工具：让企业看清 AI 支出到底买到了什么",
       "Christopher Stubbs 加入 Anthropic 长期利益信托（LTBT）",
@@ -67,6 +57,14 @@
       "登录 Claude 即可自动连接插件",
       "TechCrunch：Anthropic 仍在为算力的经济账发愁",
       "同一个提示词，14 个月测遍 13 款 Claude 模型"
+    ],
+    "20261105": [
+      "Claude Code 后台子 Agent 现在更省用量额度",
+      "Anthropic 生物研究团队借助 Claude，首次解析出细菌\"穹窿颗粒\"的三维结构",
+      "桌面端上线 /storage 命令：查看并清理 Claude 占用的磁盘空间",
+      "IBTimes：埃森哲承包商被指将个人 Claude AI Agent 接入五角大楼系统",
+      "把自动压缩阈值从约 967K 降到 400K，Claude Code 单次请求成本降了 38%",
+      "实战博客：在真实公司里运行 17 个 Claude Code 机器人，每月只花 100 美元"
     ]
   }
 }
