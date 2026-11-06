@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-11-05T03:02:16.320736",
+  "updated_at": "2026-11-06T03:01:59.817879",
   "days": {
-    "20261029": [
-      "Anthropic 推出新工具：让企业看清 AI 支出到底买到了什么",
-      "Christopher Stubbs 加入 Anthropic 长期利益信托（LTBT）",
-      "Claude for Legal 上线现成 Artifact 模板库",
-      "彭博社：银行搁置一笔与 Anthropic 相关的得州数据中心债券发行",
-      "CleanCode：让 Claude Code 与 Codex 在同一张画布上协作",
-      "@bcherny（Claude Code 核心团队）：犹他州政府 Claude Code 试点数据出炉",
-      "ultrathink 回归 Claude Code CLI",
-      "@lydiahallie：动态工作流不一定要上百个子 Agent"
-    ],
     "20261030": [
       "Claude Code 发布 v2.1.314：新增\"禁止写出工作目录\"硬性开关",
       "Claude API 单次请求上限从 32 MB 提高到 128 MB",
@@ -65,6 +55,15 @@
       "IBTimes：埃森哲承包商被指将个人 Claude AI Agent 接入五角大楼系统",
       "把自动压缩阈值从约 967K 降到 400K，Claude Code 单次请求成本降了 38%",
       "实战博客：在真实公司里运行 17 个 Claude Code 机器人，每月只花 100 美元"
+    ],
+    "20261106": [
+      "Claude 推出「个人理财」功能，美国地区开启测试",
+      "WSJ：大型投资机构怀疑 Anthropic IPO 能否撑起 1.5 万亿美元估值",
+      "METR 发布对 Anthropic 2026 年 10 月 AI 研发加速情况的独立评估",
+      "Anthropic 在 IPO 前收购了一家位于肯德尔广场的\"一人\"生物科技公司",
+      "HN 热帖（603 赞）：Claude Code 会把你的邮箱地址发送给网站",
+      "给 Opus 5.5 一栋办公楼、让它开 100 家公司：花了 2000 美元广告费，收入 0，还多盖了一栋楼",
+      "零基础父亲用 Claude Code 给两个儿子做了一个 3D 地球仪"
     ]
   }
 }
