@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-11-06T03:01:59.817879",
+  "updated_at": "2026-11-07T03:01:41.782891",
   "days": {
-    "20261030": [
-      "Claude Code 发布 v2.1.314：新增\"禁止写出工作目录\"硬性开关",
-      "Claude API 单次请求上限从 32 MB 提高到 128 MB",
-      "Anthropic 训练 Claude 主动标记潜在滥用：「自我评估」技术",
-      "AI for Science 计划扩容：从支持单个团队扩展到顶尖科研机构",
-      "彭博社：Anthropic 已成为 SpaceX 最大单一客户，超过 NASA 和五角大楼",
-      "The Register：Anthropic 工程师宣称「编程面试已死」",
-      "HN 热帖（562 赞）：Claude Code 会定期把每个后台 Agent 的会话记录发送给模型",
-      "@trq212（原 Claude Code 核心团队）：小心编码 Agent 带来的「虚假忙碌」",
-      "用 Claude 把全球法律放进 Git"
-    ],
     "20261031": [
       "Cursor 插件市场上的官方 Claude Code 扩展被植入后门近 12 小时",
       "Max 套餐改名：Max 5x 改叫 Max，Max 20x 改叫 Ultra，认证 Ultra 账号取消 5 小时限额",
@@ -64,6 +53,18 @@
       "HN 热帖（603 赞）：Claude Code 会把你的邮箱地址发送给网站",
       "给 Opus 5.5 一栋办公楼、让它开 100 家公司：花了 2000 美元广告费，收入 0，还多盖了一栋楼",
       "零基础父亲用 Claude Code 给两个儿子做了一个 3D 地球仪"
+    ],
+    "20261107": [
+      "Claude Code 云端会话可自动配置运行环境，Pro / Max / Ultra 用户可用",
+      "Claude Code 发布 v2.1.319：auto mode 在关闭遥测或使用 LLM 网关时行为变更",
+      "Claude Duet 现已支持 Claude Code 会话：用手机就能盯进度、批改动",
+      "Anthropic 工程博客：用「做梦」机制帮 Claude 整理记忆",
+      "进展跟进：彭博社称 Anthropic IPO 买方给出的估值最低仅 1.1 万亿美元",
+      "TechCrunch：Ramp 数据显示 AI 支出增长停滞，正值 Anthropic 临近 IPO",
+      "The Verge：OpenAI 新一轮融资 110 亿美元，估值达 1.25 万亿美元",
+      "@lydiahallie：Conductor 用户可以迁移到 Claude Code Projects",
+      "@trq212：创作类应用开始内置 MCP",
+      "让 Claude 自己写 SolidWorks 的 MCP 连接器，7 分钟画出零件"
     ]
   }
 }
