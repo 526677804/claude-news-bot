@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-07T03:01:41.782891",
+  "updated_at": "2026-11-08T03:02:26.111716",
   "days": {
-    "20261031": [
-      "Cursor 插件市场上的官方 Claude Code 扩展被植入后门近 12 小时",
-      "Max 套餐改名：Max 5x 改叫 Max，Max 20x 改叫 Ultra，认证 Ultra 账号取消 5 小时限额",
-      "Claude Code 发布 v2.1.316：可关闭 ultrathink，团队可共享月度预算",
-      "Anthropic 新研究：用自动化方式研究\"隐蔽的涌现式失准\"",
-      "FT：黑石称 Anthropic 上市后可能拿不到投资级信用评级",
-      "Claude Code 新的\"游戏\"规则引发反弹：一家小型桌游公司一夜之间停摆",
-      "进展跟进：文本水印将从 11 月 3 日起扩展到更多存量模型"
-    ],
     "20261101": [
       "HN 热帖（217 赞）：Anthropic 封禁一切涉及\"训练更大模型\"的用户",
       "LiveNerf 第 38 天：Opus 5.5 是否被\"悄悄降智\"？",
@@ -65,6 +56,15 @@
       "@lydiahallie：Conductor 用户可以迁移到 Claude Code Projects",
       "@trq212：创作类应用开始内置 MCP",
       "让 Claude 自己写 SolidWorks 的 MCP 连接器，7 分钟画出零件"
+    ],
+    "20261108": [
+      "安全报告：Claude Code 的「不再询问」选项导致 1,122 个公开 GitHub 文件泄露密码",
+      "Business Insider：Anthropic 工程师 Addy Osmani 警告「认知投降」",
+      "Orca：用自己的订阅同时调度一队编程 Agent",
+      "Pixel Buddy：一只随你写代码一起成长的 Claude Code 像素宠物",
+      "法官认为 Claude Max「20 倍用量」的宣传可能误导付费用户",
+      "GPT 老用户第一次用 Opus 5.5：「感觉被基准测试骗了」",
+      "用 Opus 5.5 做了一个探索人体内部结构的 3D 应用"
     ]
   }
 }
