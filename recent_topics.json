@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-11-08T03:02:26.111716",
+  "updated_at": "2026-11-09T03:01:33.093762",
   "days": {
-    "20261101": [
-      "HN 热帖（217 赞）：Anthropic 封禁一切涉及\"训练更大模型\"的用户",
-      "LiveNerf 第 38 天：Opus 5.5 是否被\"悄悄降智\"？",
-      "建筑师实测：Opus 5.5 画施工图已达初级从业者水平"
-    ],
     "20261102": [
       "Karpathy 周末小项目 HackerTube：让 Claude 从 HN 20 年评论里筛出真正好看的视频",
       "HN 热议（45 赞）：疑似 Anthropic「Mythos 级」模型权重在 Hugging Face 泄露"
@@ -65,6 +60,15 @@
       "法官认为 Claude Max「20 倍用量」的宣传可能误导付费用户",
       "GPT 老用户第一次用 Opus 5.5：「感觉被基准测试骗了」",
       "用 Opus 5.5 做了一个探索人体内部结构的 3D 应用"
+    ],
+    "20261109": [
+      "高盛正在让旗下银行家和交易员停用 Claude Code",
+      "英国《金融时报》：Anthropic 签下 34 亿美元协议，用燃气发电给数据中心供电",
+      "用 Claude Code 做的 MCP 服务器：让 Claude 在后台自己玩 PC 游戏",
+      "Recalc：单元格可以是 Claude Code 或 Codex 终端的电子表格",
+      "claude-bulkhead：回放 Claude Code 日志，统计并行会话之间的冲突",
+      "Claude 帮我把一台旧 iPhone 从电子垃圾堆里救了回来",
+      "用户吐槽：难道不能问 Opus 5.5 任何生物学问题了吗？"
     ]
   }
 }
