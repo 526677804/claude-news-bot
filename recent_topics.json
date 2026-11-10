@@ -1,10 +1,6 @@
 {
-  "updated_at": "2026-11-09T03:01:33.093762",
+  "updated_at": "2026-11-10T03:02:44.449166",
   "days": {
-    "20261102": [
-      "Karpathy 周末小项目 HackerTube：让 Claude 从 HN 20 年评论里筛出真正好看的视频",
-      "HN 热议（45 赞）：疑似 Anthropic「Mythos 级」模型权重在 Hugging Face 泄露"
-    ],
     "20261103": [
       "TechCrunch：Anthropic 警告自己已非常接近 RSI（AI 自我构建）能力",
       "Messages API 上线「消息线程」公开测试",
@@ -69,6 +65,18 @@
       "claude-bulkhead：回放 Claude Code 日志，统计并行会话之间的冲突",
       "Claude 帮我把一台旧 iPhone 从电子垃圾堆里救了回来",
       "用户吐槽：难道不能问 Opus 5.5 任何生物学问题了吗？"
+    ],
+    "20261110": [
+      "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2",
+      "官方选型指南：Fable 5.2、Opus 5.5、Sonnet、Haiku 该怎么选",
+      "Claude Code 发布 v2.1.322：Vertex 支持 fast mode",
+      "Claude Code 发布 v2.1.321：remote-control 支持 `--settings`",
+      "TechCrunch：Anthropic 将推进 IPO，本周有望确定估值区间",
+      "Toolshed：一个 TUI 统一管理 Claude Code 和 Codex 的 MCP 服务器",
+      "Thrum：把 Claude Code、Codex 等编程 Agent 编成一个团队协同运行",
+      "GitGuardian：公开 GitHub 上的 Claude Code `.claude/settings.local.json` 中发现 31,088 个密钥",
+      "Simon Willison：把 AI 写的冗长 PR 描述折叠进 `<details><summary>`",
+      "@noahzweben：「做工程师的加农炮」：AI 时代怎么做开发者工具的产品经理"
     ]
   }
 }
