@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-11-10T03:02:44.449166",
+  "updated_at": "2026-11-11T03:02:27.942760",
   "days": {
-    "20261103": [
-      "TechCrunch：Anthropic 警告自己已非常接近 RSI（AI 自我构建）能力",
-      "Messages API 上线「消息线程」公开测试",
-      "Claude Code 发布 v2.1.317：多项安全防护更新",
-      "Anthropic Residency 开放申请",
-      "进展跟进：Anthropic 提交修订版 S-1，披露第三季度营收 170 亿美元、支出承诺 8950 亿美元",
-      "进展跟进：Anthropic 确认 Claude Code 限制\"克隆电子游戏\"",
-      "Business Insider：按零售价计算，Anthropic 内部的 AI 用量已超过员工薪酬总额",
-      "@trq212：做出好东西不需要无限 token，200 美元的套餐已经很够用",
-      "实测：Opus 5.5 Medium + Blender MCP 做 3D 游戏素材"
-    ],
     "20261104": [
       "Anthropic 发布新研究 FlashProve：让大模型推理结果\"可证明\"",
       "Claude Code 发布 v2.1.318",
@@ -77,6 +66,15 @@
       "GitGuardian：公开 GitHub 上的 Claude Code `.claude/settings.local.json` 中发现 31,088 个密钥",
       "Simon Willison：把 AI 写的冗长 PR 描述折叠进 `<details><summary>`",
       "@noahzweben：「做工程师的加农炮」：AI 时代怎么做开发者工具的产品经理"
+    ],
+    "20261111": [
+      "进展跟进：Anthropic 正式启动 IPO 路演，发行价区间 70–78 美元/股",
+      "Claude 推出办公套件：Whiteboards、Sheets、Data 开始陆续上线",
+      "福利：Pro、Max、Ultra、Team 用户各获一次免费的用量全面重置",
+      "Claude 扩大支持 MCP Apps 扩展：完整应用可以直接跑在 Claude 里",
+      "TechCrunch：纽约州 AI 安全法即将执行，OpenAI、Anthropic 迎来新监管",
+      "Simon Willison 摘录官方 Fable 5.2 提示词指南：写清楚「代码归谁」",
+      "用 Claude Fable 5.2 做了一面网页版「X 光镜子」"
     ]
   }
 }
