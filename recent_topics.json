@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-11T03:02:27.942760",
+  "updated_at": "2026-11-12T03:03:53.227459",
   "days": {
-    "20261104": [
-      "Anthropic 发布新研究 FlashProve：让大模型推理结果\"可证明\"",
-      "Claude Code 发布 v2.1.318",
-      "登录 Claude 即可自动连接插件",
-      "TechCrunch：Anthropic 仍在为算力的经济账发愁",
-      "同一个提示词，14 个月测遍 13 款 Claude 模型"
-    ],
     "20261105": [
       "Claude Code 后台子 Agent 现在更省用量额度",
       "Anthropic 生物研究团队借助 Claude，首次解析出细菌\"穹窿颗粒\"的三维结构",
@@ -75,6 +68,12 @@
       "TechCrunch：纽约州 AI 安全法即将执行，OpenAI、Anthropic 迎来新监管",
       "Simon Willison 摘录官方 Fable 5.2 提示词指南：写清楚「代码归谁」",
       "用 Claude Fable 5.2 做了一面网页版「X 光镜子」"
+    ],
+    "20261112": [
+      "Aq：给 Claude Code 用的「注意力队列」终端界面（TUI）",
+      "HN 热帖（447 赞、219 评论）：VulnCheck 追踪 Anthropic 发现的安全漏洞",
+      "@claudeai：艺术家森万里子用 Claude 写代码，创作回顾展新影像装置",
+      "LiveNerf 第 3 天：社区持续监测 Fable 5.2 会不会「变笨」"
     ]
   }
 }
