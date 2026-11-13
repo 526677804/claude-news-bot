@@ -1,14 +1,6 @@
 {
-  "updated_at": "2026-11-12T03:03:53.227459",
+  "updated_at": "2026-11-13T03:02:12.696990",
   "days": {
-    "20261105": [
-      "Claude Code 后台子 Agent 现在更省用量额度",
-      "Anthropic 生物研究团队借助 Claude，首次解析出细菌\"穹窿颗粒\"的三维结构",
-      "桌面端上线 /storage 命令：查看并清理 Claude 占用的磁盘空间",
-      "IBTimes：埃森哲承包商被指将个人 Claude AI Agent 接入五角大楼系统",
-      "把自动压缩阈值从约 967K 降到 400K，Claude Code 单次请求成本降了 38%",
-      "实战博客：在真实公司里运行 17 个 Claude Code 机器人，每月只花 100 美元"
-    ],
     "20261106": [
       "Claude 推出「个人理财」功能，美国地区开启测试",
       "WSJ：大型投资机构怀疑 Anthropic IPO 能否撑起 1.5 万亿美元估值",
@@ -74,6 +66,16 @@
       "HN 热帖（447 赞、219 评论）：VulnCheck 追踪 Anthropic 发现的安全漏洞",
       "@claudeai：艺术家森万里子用 Claude 写代码，创作回顾展新影像装置",
       "LiveNerf 第 3 天：社区持续监测 Fable 5.2 会不会「变笨」"
+    ],
+    "20261113": [
+      "Claude Meetings 发布：把 Claude 拉进团队视频会议，边开会边产出文档和白板",
+      "Claude Code 发布 v2.1.323：新增实验性 Code Mode",
+      "自托管版 Claude Managed Agents 开启私测",
+      "进展跟进：Anthropic 官方正式发布 IPO 公告",
+      "路透社：OpenAI、Google、Anthropic 被起诉，原告要求叫停前沿 AI 研发",
+      "官方视频：新模型上线后，如何调整 Agent 框架、按任务算清成本",
+      "Claude Code 和 Codex 借助一块 3 美元的 Arduino，逆向了一辆 1994 年 Jeep 的 ECU",
+      "做了 19 年游戏的开发者：作品因用 AI 被游戏开发版块删帖，于是公开了用 Claude 做游戏的全过程"
     ]
   }
 }
