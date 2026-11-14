@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-13T03:02:12.696990",
+  "updated_at": "2026-11-14T03:01:42.102418",
   "days": {
-    "20261106": [
-      "Claude 推出「个人理财」功能，美国地区开启测试",
-      "WSJ：大型投资机构怀疑 Anthropic IPO 能否撑起 1.5 万亿美元估值",
-      "METR 发布对 Anthropic 2026 年 10 月 AI 研发加速情况的独立评估",
-      "Anthropic 在 IPO 前收购了一家位于肯德尔广场的\"一人\"生物科技公司",
-      "HN 热帖（603 赞）：Claude Code 会把你的邮箱地址发送给网站",
-      "给 Opus 5.5 一栋办公楼、让它开 100 家公司：花了 2000 美元广告费，收入 0，还多盖了一栋楼",
-      "零基础父亲用 Claude Code 给两个儿子做了一个 3D 地球仪"
-    ],
     "20261107": [
       "Claude Code 云端会话可自动配置运行环境，Pro / Max / Ultra 用户可用",
       "Claude Code 发布 v2.1.319：auto mode 在关闭遥测或使用 LLM 网关时行为变更",
@@ -76,6 +67,15 @@
       "官方视频：新模型上线后，如何调整 Agent 框架、按任务算清成本",
       "Claude Code 和 Codex 借助一块 3 美元的 Arduino，逆向了一辆 1994 年 Jeep 的 ECU",
       "做了 19 年游戏的开发者：作品因用 AI 被游戏开发版块删帖，于是公开了用 Claude 做游戏的全过程"
+    ],
+    "20261114": [
+      "Claude Code Projects 大更新：协调者更主动，并行任务更省心",
+      "Claude Code 发布 v2.1.325：修复 zstd 压缩响应解码的安全问题",
+      "Claude Code 桌面版支持用 mods 自定义主题",
+      "Anthropic 工程博客：分享模型安全评估的 10 条经验",
+      "HN 热帖（484 赞、383 评论）：claude.ai、Claude Code 与开发者平台错误率升高",
+      "Claude 几天读完哥德尔 1,009 页速记笔记，提炼出 663 条定理",
+      "@lydiahallie 小技巧：Stop hook 想让 Claude 重试，退出码要用 2"
     ]
   }
 }
