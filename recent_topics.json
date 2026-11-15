@@ -1,18 +1,6 @@
 {
-  "updated_at": "2026-11-14T03:01:42.102418",
+  "updated_at": "2026-11-15T03:02:05.717940",
   "days": {
-    "20261107": [
-      "Claude Code 云端会话可自动配置运行环境，Pro / Max / Ultra 用户可用",
-      "Claude Code 发布 v2.1.319：auto mode 在关闭遥测或使用 LLM 网关时行为变更",
-      "Claude Duet 现已支持 Claude Code 会话：用手机就能盯进度、批改动",
-      "Anthropic 工程博客：用「做梦」机制帮 Claude 整理记忆",
-      "进展跟进：彭博社称 Anthropic IPO 买方给出的估值最低仅 1.1 万亿美元",
-      "TechCrunch：Ramp 数据显示 AI 支出增长停滞，正值 Anthropic 临近 IPO",
-      "The Verge：OpenAI 新一轮融资 110 亿美元，估值达 1.25 万亿美元",
-      "@lydiahallie：Conductor 用户可以迁移到 Claude Code Projects",
-      "@trq212：创作类应用开始内置 MCP",
-      "让 Claude 自己写 SolidWorks 的 MCP 连接器，7 分钟画出零件"
-    ],
     "20261108": [
       "安全报告：Claude Code 的「不再询问」选项导致 1,122 个公开 GitHub 文件泄露密码",
       "Business Insider：Anthropic 工程师 Addy Osmani 警告「认知投降」",
@@ -76,6 +64,17 @@
       "HN 热帖（484 赞、383 评论）：claude.ai、Claude Code 与开发者平台错误率升高",
       "Claude 几天读完哥德尔 1,009 页速记笔记，提炼出 663 条定理",
       "@lydiahallie 小技巧：Stop hook 想让 Claude 重试，退出码要用 2"
+    ],
+    "20261115": [
+      "Claude Mythos 向公众开放申请：个人研究者凭 KYC 即可入门",
+      "彭博社：Anthropic IPO 拒绝中国内地与香港机构下单",
+      "IPO 路演披露：Mythos 约 3 天让 Claude 跑上 AMD 芯片",
+      "Memro：给 Claude Code / Cursor / Codex 的持久记忆层",
+      "AI Time Estimator：用你自己的日志估算 Claude Code 要多久",
+      "tvclaude：Turbo Vision 风格的 Claude Code 桌面",
+      "用 Fable 5.2 做出可游泳的水下世界：单文件 97 KB",
+      "同一段提示连写三周：五个模型各写出鲜明「性格」",
+      "用 Claude 做 Minecraft 模组：按 B 把世界变成积木"
     ]
   }
 }
