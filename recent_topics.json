@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-15T03:02:05.717940",
+  "updated_at": "2026-11-16T03:03:01.799431",
   "days": {
-    "20261108": [
-      "安全报告：Claude Code 的「不再询问」选项导致 1,122 个公开 GitHub 文件泄露密码",
-      "Business Insider：Anthropic 工程师 Addy Osmani 警告「认知投降」",
-      "Orca：用自己的订阅同时调度一队编程 Agent",
-      "Pixel Buddy：一只随你写代码一起成长的 Claude Code 像素宠物",
-      "法官认为 Claude Max「20 倍用量」的宣传可能误导付费用户",
-      "GPT 老用户第一次用 Opus 5.5：「感觉被基准测试骗了」",
-      "用 Opus 5.5 做了一个探索人体内部结构的 3D 应用"
-    ],
     "20261109": [
       "高盛正在让旗下银行家和交易员停用 Claude Code",
       "英国《金融时报》：Anthropic 签下 34 亿美元协议，用燃气发电给数据中心供电",
@@ -75,6 +66,12 @@
       "用 Fable 5.2 做出可游泳的水下世界：单文件 97 KB",
       "同一段提示连写三周：五个模型各写出鲜明「性格」",
       "用 Claude 做 Minecraft 模组：按 B 把世界变成积木"
+    ],
+    "20261116": [
+      "Claudette：让 Claude Code 跑上 Mistral 模型",
+      "Hook Me Up：用 macOS 原生通知回应 Claude Code",
+      "GitHub 调研：六分之一双文件仓库从未加载 AGENTS.md",
+      "@lydiahallie：自定义主题可以随会话状态「动起来」"
     ]
   }
 }
