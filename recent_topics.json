@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-16T03:03:01.799431",
+  "updated_at": "2026-11-17T03:00:46.793405",
   "days": {
-    "20261109": [
-      "高盛正在让旗下银行家和交易员停用 Claude Code",
-      "英国《金融时报》：Anthropic 签下 34 亿美元协议，用燃气发电给数据中心供电",
-      "用 Claude Code 做的 MCP 服务器：让 Claude 在后台自己玩 PC 游戏",
-      "Recalc：单元格可以是 Claude Code 或 Codex 终端的电子表格",
-      "claude-bulkhead：回放 Claude Code 日志，统计并行会话之间的冲突",
-      "Claude 帮我把一台旧 iPhone 从电子垃圾堆里救了回来",
-      "用户吐槽：难道不能问 Opus 5.5 任何生物学问题了吗？"
-    ],
     "20261110": [
       "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2",
       "官方选型指南：Fable 5.2、Opus 5.5、Sonnet、Haiku 该怎么选",
@@ -72,6 +63,12 @@
       "Hook Me Up：用 macOS 原生通知回应 Claude Code",
       "GitHub 调研：六分之一双文件仓库从未加载 AGENTS.md",
       "@lydiahallie：自定义主题可以随会话状态「动起来」"
+    ],
+    "20261117": [
+      "Claude Code 发布 v2.1.326",
+      "Discussion Hub for new Claude incident: Claude unable to join meetings on Nov 16, 2026",
+      "How meetings will be in 2027:",
+      "Anthropic founders plan IPO share sales worth $250M each at midpoint"
     ]
   }
 }
