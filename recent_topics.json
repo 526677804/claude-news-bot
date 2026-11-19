@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-18T03:00:52.520313",
+  "updated_at": "2026-11-19T03:00:36.166753",
   "days": {
-    "20261111": [
-      "进展跟进：Anthropic 正式启动 IPO 路演，发行价区间 70–78 美元/股",
-      "Claude 推出办公套件：Whiteboards、Sheets、Data 开始陆续上线",
-      "福利：Pro、Max、Ultra、Team 用户各获一次免费的用量全面重置",
-      "Claude 扩大支持 MCP Apps 扩展：完整应用可以直接跑在 Claude 里",
-      "TechCrunch：纽约州 AI 安全法即将执行，OpenAI、Anthropic 迎来新监管",
-      "Simon Willison 摘录官方 Fable 5.2 提示词指南：写清楚「代码归谁」",
-      "用 Claude Fable 5.2 做了一面网页版「X 光镜子」"
-    ],
     "20261112": [
       "Aq：给 Claude Code 用的「注意力队列」终端界面（TUI）",
       "HN 热帖（447 赞、219 评论）：VulnCheck 追踪 Anthropic 发现的安全漏洞",
@@ -64,6 +55,15 @@
       "How the Claude Code team thinks about verification",
       "Regulatory Capture by Anthropic Through METR",
       "@ClaudeDevs: You can now opt into more frequent builds of Claude Desktop on Windows and Mac. Switch to the Latest"
+    ],
+    "20261119": [
+      "Anthropic Prices Initial Public Offering",
+      "Claude Code 发布 v2.1.328",
+      "Anthropic reportedly prices IPO at $83 a share, above projected range",
+      "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+      "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
+      "@AnthropicAI: We’ve priced our IPO at $83 per share, with trading expected to begin on Nasdaq tomorrow. https://ww",
+      "@trq212: making your own software is tough, even with AI, because it's hard to know what you really want I di"
     ]
   }
 }
