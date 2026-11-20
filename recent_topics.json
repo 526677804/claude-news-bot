@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-11-19T03:00:36.166753",
+  "updated_at": "2026-11-20T03:00:50.734265",
   "days": {
-    "20261112": [
-      "Aq：给 Claude Code 用的「注意力队列」终端界面（TUI）",
-      "HN 热帖（447 赞、219 评论）：VulnCheck 追踪 Anthropic 发现的安全漏洞",
-      "@claudeai：艺术家森万里子用 Claude 写代码，创作回顾展新影像装置",
-      "LiveNerf 第 3 天：社区持续监测 Fable 5.2 会不会「变笨」"
-    ],
     "20261113": [
       "Claude Meetings 发布：把 Claude 拉进团队视频会议，边开会边产出文档和白板",
       "Claude Code 发布 v2.1.323：新增实验性 Code Mode",
@@ -64,6 +58,15 @@
       "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
       "@AnthropicAI: We’ve priced our IPO at $83 per share, with trading expected to begin on Nasdaq tomorrow. https://ww",
       "@trq212: making your own software is tough, even with AI, because it's hard to know what you really want I di"
+    ],
+    "20261120": [
+      "Claude Code 发布 v2.1.329",
+      "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "Anthropic’s IPO could deliver $156B to charity",
+      "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
+      "Anthropic’s Nasdaq debut",
+      "@AnthropicAI: Remarks from Anthropic CEO @DarioAmodei on our initial public offering: My co-founders and I started",
+      "@AnthropicAI: Video"
     ]
   }
 }
