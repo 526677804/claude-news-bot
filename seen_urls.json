@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-20T03:00:50.732451",
+  "updated_at": "2026-11-21T03:00:40.423140",
   "urls": {
-    "https://asyncdot.com/blog/chief-of-staff-pattern-orchestrating-claude-code-sessions/": "20260921",
-    "https://www.politico.com/news/2026/09/18/anthropic-openai-spacexai-google-sued-over-calls-to-pace-ai-development-01085023": "20260921",
-    "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/": "20260921",
-    "https://www.reddit.com/r/ClaudeAI/comments/1wlj3gu/something_is_wrong_with_usage_this_week/": "20260921",
-    "https://www.reddit.com/r/Anthropic/comments/1wlmknz/anthropic_selects_accenture_as_first_embedded/": "20260921",
-    "https://www.reddit.com/r/Anthropic/comments/1wlrist/inside_the_israeli_security_firm_tied_to_openai/": "20260921",
-    "https://www.reddit.com/r/ClaudeAI/comments/1wlrjox/tried_to_prompt_my_way_out_of_opus_5/": "20260921",
-    "https://www.reddit.com/r/Anthropic/comments/1wliep9/claude_sucks_for_anything_writing_heavy_or_that/": "20260921",
-    "https://x.com/trq212/status/2101844435353145452": "20260921",
     "https://www.tomshardware.com/tech-industry/big-tech/anthropic-openai-spacexai-and-google-face-antitrust-lawsuit-for-agreeing-to-slow-ai-development-plaintiffs-say-plan-has-been-in-motion-for-months-before-calls-agreement-self-serving": "20260922",
     "https://www.politico.com/news/magazine/2026/09/20/anthropic-white-house-ai-01085212": "20260922",
     "https://www.ft.com/content/96d0a206-a37b-4166-b78d-b27ed24f7d57": "20260922",
@@ -1353,6 +1344,21 @@
     "https://x.com/trq212/status/2123452888248992024": "20261120",
     "https://x.com/amorriscode/status/2123524144264610208": "20261120",
     "https://x.com/Interior/status/2123446314059055525": "20261120",
-    "https://x.com/ClaudeCodeLog/status/2123546030654333070": "20261120"
+    "https://x.com/ClaudeCodeLog/status/2123546030654333070": "20261120",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.330": "20261121",
+    "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off": "20261121",
+    "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394": "20261121",
+    "https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90": "20261121",
+    "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/": "20261121",
+    "https://news.ycombinator.com/item?id=50566487": "20261121",
+    "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/": "20261121",
+    "https://finance.yahoo.com/markets/stocks/article/anthropic-stock-dives-after-rip-roaring-ipo-095411951.html": "20261121",
+    "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem": "20261121",
+    "https://x.com/AnthropicAI/status/2123822989154369958": "20261121",
+    "https://x.com/trq212/status/2123909357071159327": "20261121",
+    "https://x.com/trq212/status/2123892474334806400": "20261121",
+    "https://x.com/amorriscode/status/2123813627077759176": "20261121",
+    "https://x.com/ClaudeCodeLog/status/2123913205575496028": "20261121",
+    "https://x.com/jackclarkSF/status/2123767332187386143": "20261121"
   }
 }

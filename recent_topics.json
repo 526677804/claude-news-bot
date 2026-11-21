@@ -1,16 +1,6 @@
 {
-  "updated_at": "2026-11-20T03:00:50.734265",
+  "updated_at": "2026-11-21T03:00:40.424856",
   "days": {
-    "20261113": [
-      "Claude Meetings 发布：把 Claude 拉进团队视频会议，边开会边产出文档和白板",
-      "Claude Code 发布 v2.1.323：新增实验性 Code Mode",
-      "自托管版 Claude Managed Agents 开启私测",
-      "进展跟进：Anthropic 官方正式发布 IPO 公告",
-      "路透社：OpenAI、Google、Anthropic 被起诉，原告要求叫停前沿 AI 研发",
-      "官方视频：新模型上线后，如何调整 Agent 框架、按任务算清成本",
-      "Claude Code 和 Codex 借助一块 3 美元的 Arduino，逆向了一辆 1994 年 Jeep 的 ECU",
-      "做了 19 年游戏的开发者：作品因用 AI 被游戏开发版块删帖，于是公开了用 Claude 做游戏的全过程"
-    ],
     "20261114": [
       "Claude Code Projects 大更新：协调者更主动，并行任务更省心",
       "Claude Code 发布 v2.1.325：修复 zstd 压缩响应解码的安全问题",
@@ -67,6 +57,13 @@
       "Anthropic’s Nasdaq debut",
       "@AnthropicAI: Remarks from Anthropic CEO @DarioAmodei on our initial public offering: My co-founders and I started",
       "@AnthropicAI: Video"
+    ],
+    "20261121": [
+      "Claude Code 发布 v2.1.330",
+      "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+      "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
+      "@AnthropicAI: Anthropic’s co-founders on the story so far. Told by Dario Amodei, Daniela Amodei, Tom Brown, Jack C"
     ]
   }
 }
