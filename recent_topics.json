@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-21T03:00:40.424856",
+  "updated_at": "2026-11-22T03:00:25.913396",
   "days": {
-    "20261114": [
-      "Claude Code Projects 大更新：协调者更主动，并行任务更省心",
-      "Claude Code 发布 v2.1.325：修复 zstd 压缩响应解码的安全问题",
-      "Claude Code 桌面版支持用 mods 自定义主题",
-      "Anthropic 工程博客：分享模型安全评估的 10 条经验",
-      "HN 热帖（484 赞、383 评论）：claude.ai、Claude Code 与开发者平台错误率升高",
-      "Claude 几天读完哥德尔 1,009 页速记笔记，提炼出 663 条定理",
-      "@lydiahallie 小技巧：Stop hook 想让 Claude 重试，退出码要用 2"
-    ],
     "20261115": [
       "Claude Mythos 向公众开放申请：个人研究者凭 KYC 即可入门",
       "彭博社：Anthropic IPO 拒绝中国内地与香港机构下单",
@@ -64,6 +55,12 @@
       "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
       "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
       "@AnthropicAI: Anthropic’s co-founders on the story so far. Told by Dario Amodei, Daniela Amodei, Tom Brown, Jack C"
+    ],
+    "20261122": [
+      "Can Anthropic afford to put safety first?",
+      "@trq212: when I see some of the greats using models to make huge advances, like @__alpoge__ on the Riemann hy",
+      "Anthropic's IPO bank closed position meant to stabilize stock",
+      "Show HN: agent-mcts – Monte Carlo tree search on top of Claude Code"
     ]
   }
 }
