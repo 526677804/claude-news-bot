@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-11-22T03:00:25.913396",
+  "updated_at": "2026-11-23T03:03:48.420485",
   "days": {
-    "20261115": [
-      "Claude Mythos 向公众开放申请：个人研究者凭 KYC 即可入门",
-      "彭博社：Anthropic IPO 拒绝中国内地与香港机构下单",
-      "IPO 路演披露：Mythos 约 3 天让 Claude 跑上 AMD 芯片",
-      "Memro：给 Claude Code / Cursor / Codex 的持久记忆层",
-      "AI Time Estimator：用你自己的日志估算 Claude Code 要多久",
-      "tvclaude：Turbo Vision 风格的 Claude Code 桌面",
-      "用 Fable 5.2 做出可游泳的水下世界：单文件 97 KB",
-      "同一段提示连写三周：五个模型各写出鲜明「性格」",
-      "用 Claude 做 Minecraft 模组：按 B 把世界变成积木"
-    ],
     "20261116": [
       "Claudette：让 Claude Code 跑上 Mistral 模型",
       "Hook Me Up：用 macOS 原生通知回应 Claude Code",
@@ -61,6 +50,11 @@
       "@trq212: when I see some of the greats using models to make huge advances, like @__alpoge__ on the Riemann hy",
       "Anthropic's IPO bank closed position meant to stabilize stock",
       "Show HN: agent-mcts – Monte Carlo tree search on top of Claude Code"
+    ],
+    "20261123": [
+      "台积电斥资 5 亿美元购入 Anthropic 约 0.03% 股权",
+      "Notable Capital、GIC 与 Baillie Gifford：IPO 前为何重注 Anthropic",
+      "Anthropic 2028 年用电结构：87% 天然气、11% 煤炭"
     ]
   }
 }
