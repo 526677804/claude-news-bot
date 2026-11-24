@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-11-23T03:03:48.420485",
+  "updated_at": "2026-11-24T03:07:02.732994",
   "days": {
-    "20261116": [
-      "Claudette：让 Claude Code 跑上 Mistral 模型",
-      "Hook Me Up：用 macOS 原生通知回应 Claude Code",
-      "GitHub 调研：六分之一双文件仓库从未加载 AGENTS.md",
-      "@lydiahallie：自定义主题可以随会话状态「动起来」"
-    ],
     "20261117": [
       "Claude Code 发布 v2.1.326",
       "Discussion Hub for new Claude incident: Claude unable to join meetings on Nov 16, 2026",
@@ -55,6 +49,15 @@
       "台积电斥资 5 亿美元购入 Anthropic 约 0.03% 股权",
       "Notable Capital、GIC 与 Baillie Gifford：IPO 前为何重注 Anthropic",
       "Anthropic 2028 年用电结构：87% 天然气、11% 煤炭"
+    ],
+    "20261124": [
+      "Anthropic 推出 Claude Ship（beta）：AI 可审阅、修复并按策略批准 PR",
+      "Claude Code 发布 v2.1.331",
+      "Connectors 与 Skills 合并为 Plugins",
+      "零数据留存（ZDR）+ 企业前沿安全护栏（EFS）进入公开 beta",
+      "纳德拉谈 IDE「淡出」：Claude Code 改写开发工具格局",
+      "Tend：一个本地页面统管所有 Claude Code 会话",
+      "Cal Newport：Anthropic IPO 令我担忧"
     ]
   }
 }
