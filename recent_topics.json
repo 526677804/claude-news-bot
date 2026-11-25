@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-11-24T03:07:02.732994",
+  "updated_at": "2026-11-25T03:04:16.300710",
   "days": {
-    "20261117": [
-      "Claude Code 发布 v2.1.326",
-      "Discussion Hub for new Claude incident: Claude unable to join meetings on Nov 16, 2026",
-      "How meetings will be in 2027:",
-      "Anthropic founders plan IPO share sales worth $250M each at midpoint"
-    ],
     "20261118": [
       "Claude Code 发布 v2.1.327",
       "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
@@ -58,6 +52,17 @@
       "纳德拉谈 IDE「淡出」：Claude Code 改写开发工具格局",
       "Tend：一个本地页面统管所有 Claude Code 会话",
       "Cal Newport：Anthropic IPO 令我担忧"
+    ],
+    "20261125": [
+      "Claude Code 发布 v2.1.332：MCP 服务器可自带 Skills",
+      "Claude Artifacts 现可安装为 Mac / Windows 桌面应用",
+      "新研究 Siren：AI Agent 有机会逃出沙箱时，会不会主动选择？",
+      "Anthropic Fellows 新研究：回到神经元层面做可解释性",
+      "Anthropic 股价跌破 83 美元 IPO 发行价",
+      "Anthropic 与 OpenAI 员工担忧：部分未发布模型「过于危险」不宜上线",
+      "Ask HN：Anthropic 指控我司做蒸馏，如何自证清白？",
+      "Max Tegmark 称 Anthropic 员工公开谈论「接管世界」",
+      "OpenAI 称早于 Anthropic 证明 VP ≠ VNP"
     ]
   }
 }
