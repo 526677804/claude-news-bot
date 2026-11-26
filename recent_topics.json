@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-25T03:04:16.300710",
+  "updated_at": "2026-11-26T03:01:39.105997",
   "days": {
-    "20261118": [
-      "Claude Code 发布 v2.1.327",
-      "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-      "How the Claude Code team thinks about verification",
-      "Regulatory Capture by Anthropic Through METR",
-      "@ClaudeDevs: You can now opt into more frequent builds of Claude Desktop on Windows and Mac. Switch to the Latest"
-    ],
     "20261119": [
       "Anthropic Prices Initial Public Offering",
       "Claude Code 发布 v2.1.328",
@@ -63,6 +56,13 @@
       "Ask HN：Anthropic 指控我司做蒸馏，如何自证清白？",
       "Max Tegmark 称 Anthropic 员工公开谈论「接管世界」",
       "OpenAI 称早于 Anthropic 证明 VP ≠ VNP"
+    ],
+    "20261126": [
+      "Anthropic 工程博客：Claude Messages API 从 Python 迁移到 Rust",
+      "TechCrunch：Dario Amodei 回应「把人类控制权让渡给 AI」的指责，称其「荒谬」",
+      "Claude Code 核心团队成员 @trq212 宣布加入 OpenAI",
+      "Karpathy：让 Claude 用真实美国数据生成「文明」风格游戏地图",
+      "Hacker News 热帖：Anthropic 相关 GRH 的 Lean 验证「大幅精简版」"
     ]
   }
 }
