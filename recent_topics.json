@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-26T03:01:39.105997",
+  "updated_at": "2026-11-27T03:01:43.503027",
   "days": {
-    "20261119": [
-      "Anthropic Prices Initial Public Offering",
-      "Claude Code 发布 v2.1.328",
-      "Anthropic reportedly prices IPO at $83 a share, above projected range",
-      "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
-      "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
-      "@AnthropicAI: We’ve priced our IPO at $83 per share, with trading expected to begin on Nasdaq tomorrow. https://ww",
-      "@trq212: making your own software is tough, even with AI, because it's hard to know what you really want I di"
-    ],
     "20261120": [
       "Claude Code 发布 v2.1.329",
       "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
@@ -63,6 +54,13 @@
       "Claude Code 核心团队成员 @trq212 宣布加入 OpenAI",
       "Karpathy：让 Claude 用真实美国数据生成「文明」风格游戏地图",
       "Hacker News 热帖：Anthropic 相关 GRH 的 Lean 验证「大幅精简版」"
+    ],
+    "20261127": [
+      "测试者称经「Opus 5.5 Extra」路由疑似用到 Claude Opus 5.6",
+      "华尔街预计 Anthropic 承诺的 9000 亿美元债务将被评为垃圾级",
+      "Session Vault：备份 Claude Code 会话，并在任意机器上继续使用",
+      "lip-dictation：用端侧唇语识别为 Claude Code 做「无声听写」",
+      "有人在 Anthropic 办公地外绝食抗议，已进入第 3 天"
     ]
   }
 }
