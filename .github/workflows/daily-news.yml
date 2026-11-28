@@ -69,6 +69,7 @@ jobs:
         id: report
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          PYTHONUNBUFFERED: '1'
         run: |
           python3 ai_report.py || python3 generate_report.py
           if [ -f "news_$(date +%Y%m%d).md" ]; then
@@ -101,4 +102,5 @@ jobs:
           path: |
             raw_news_*.json
             news_*.md
+            skip_*.txt
           retention-days: 14

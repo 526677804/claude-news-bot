@@ -9,6 +9,9 @@ AI 整理脚本（首选整理方式）
 代理运行失败（如 status=error 的瞬时故障）会自动重试一次，重试仍失败才降级，
 并输出运行 ID、时长、结果文本等细节便于排障（2026-08-12 首次线上失败仅有
 status=error 一行可查，教训）。
+AI 判断当天没有值得推送的内容时写 skip_YYYYMMDD.txt 说明原因，脚本正常退出、当天跳过推送；
+代理显示完成却两个文件都没写，按失败重试（2026-11-28 线上出现过一次，无从判断原因，
+直接降级推送了英文模板，教训）。
 """
 
 import json
@@ -90,9 +93,9 @@ def build_prompt(today: str, recent_block: str = '') -> str:
 - 每条格式：**加粗标题**（英文标题翻译成中文或保留原文均可，以可读为准）+ 一句话摘要/点评（说清楚"这条为什么值得看"）+ 🔗 来源链接（原样保留，不得改动 URL）
 - 语言：简体中文，简洁专业，适合技术和非技术读者
 - 事实必须来自 JSON 数据，不得编造内容或链接
-- **如果 JSON 的 items 为空，或没有任何值得推送的内容，不要创建 news 文件**，直接结束并说明原因（当天将跳过推送）
+- **如果没有任何值得推送的内容，不要创建 news 文件**，改为创建 skip_{today}.txt，用一两句话写明原因（当天将跳过推送）
 {dedup_section}
-只创建/覆盖 news_{today}.md 这一个文件，不要修改任何其他文件。"""
+只创建/覆盖 news_{today}.md 或 skip_{today}.txt 其中一个文件，不要修改任何其他文件。"""
 
 
 def main():
@@ -104,10 +107,16 @@ def main():
     today = datetime.now().strftime('%Y%m%d')
     raw_file = os.path.join(BASE_DIR, f'raw_news_{today}.json')
     out_file = os.path.join(BASE_DIR, f'news_{today}.md')
+    skip_file = os.path.join(BASE_DIR, f'skip_{today}.txt')
 
     if not os.path.exists(raw_file):
         print(f'❌ 找不到原始数据 {raw_file}')
         sys.exit(1)
+
+    with open(raw_file, 'r', encoding='utf-8') as f:
+        if not json.load(f).get('items'):
+            print('ℹ️ 今日无新增资讯，跳过 AI 整理')
+            sys.exit(0)
 
     from cursor_sdk import Agent, AgentOptions, LocalAgentOptions, CursorAgentError
 
@@ -116,7 +125,7 @@ def main():
         print(f'🧠 已注入近几日推送记忆（{len(recent_block.splitlines())} 个条目标题）')
 
     print('🤖 启动 Cursor 无头代理进行 AI 整理...')
-    result = None
+    outcome = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
             result = Agent.prompt(
@@ -127,31 +136,35 @@ def main():
                     local=LocalAgentOptions(cwd=BASE_DIR),
                 ),
             )
-            if result.status == 'finished':
+            if result.status != 'finished':
+                print(f'❌ AI 整理运行失败（第 {attempt}/{MAX_ATTEMPTS} 次）: {describe_result(result)}')
+            elif os.path.exists(out_file):
+                outcome = 'report'
                 break
-            print(f'❌ AI 整理运行失败（第 {attempt}/{MAX_ATTEMPTS} 次）: {describe_result(result)}')
+            elif os.path.exists(skip_file):
+                outcome = 'skip'
+                break
+            else:
+                print(f'❌ AI 运行完成但未生成报告或跳过说明（第 {attempt}/{MAX_ATTEMPTS} 次）: '
+                      f'{describe_result(result)}')
         except CursorAgentError as e:
-            result = None
             print(f'❌ AI 代理启动失败（第 {attempt}/{MAX_ATTEMPTS} 次）: {e!r}')
         if attempt < MAX_ATTEMPTS:
             print(f'⏳ {RETRY_DELAY} 秒后重试...')
             time.sleep(RETRY_DELAY)
 
-    if result is None or result.status != 'finished':
+    if outcome is None:
         # 放弃前清掉失败运行可能留下的半成品，避免被当作有效报告推送
-        if os.path.exists(out_file):
-            os.remove(out_file)
+        for path in (out_file, skip_file):
+            if os.path.exists(path):
+                os.remove(path)
         sys.exit(2)
 
-    # 无新内容时 AI 按约定不生成文件，属正常跳过（区别于生成失败）
-    with open(raw_file, 'r', encoding='utf-8') as f:
-        has_items = bool(json.load(f).get('items'))
-    if not os.path.exists(out_file):
-        if not has_items:
-            print('ℹ️ 今日无新增资讯，AI 按约定跳过报告生成')
-            sys.exit(0)
-        print('❌ AI 未生成报告文件')
-        sys.exit(2)
+    if outcome == 'skip':
+        reason = open(skip_file, 'r', encoding='utf-8').read().strip()
+        print(f'ℹ️ AI 判断今日没有值得推送的内容，跳过推送：{reason[:500]}')
+        sys.exit(0)
+
     content = open(out_file, 'r', encoding='utf-8').read()
     if len(content) < 200 or 'Claude Code 每日资讯' not in content:
         print('❌ AI 生成的报告内容不完整')

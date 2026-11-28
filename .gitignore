@@ -29,6 +29,7 @@ auth_qrcode.png
 # 生成的报告文件
 news_*.md
 raw_news_*.json
+skip_*.txt
 
 # G1 内测反馈管线的运行产物（消息快照、图片、AI 输出）
 g1_feedback/runs/
