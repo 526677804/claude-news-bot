@@ -5,8 +5,8 @@ AI 整理脚本（首选整理方式）
 撰写带摘要、点评和 TOP 1 精选的高质量日报 news_YYYYMMDD.md。
 
 需要环境变量 CURSOR_API_KEY（Cursor Dashboard → Integrations 生成）。
-未配置或执行失败时退出非 0，由调用方降级到 generate_report.py（模板整理）。
-代理运行失败（如 status=error 的瞬时故障）会自动重试一次，重试仍失败才降级，
+未配置或执行失败时退出非 0，调用方当天不推送并私信管理员（不再降级到模板整理）。
+代理运行失败（如 status=error 的瞬时故障）会自动重试一次，重试仍失败才放弃，
 并输出运行 ID、时长、结果文本等细节便于排障（2026-08-12 首次线上失败仅有
 status=error 一行可查，教训）。
 AI 判断当天没有值得推送的内容时写 skip_YYYYMMDD.txt 说明原因，脚本正常退出、当天跳过推送；

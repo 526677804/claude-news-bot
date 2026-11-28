@@ -103,13 +103,18 @@
           "accounts": [
             "bcherny",
             "catwu",
-            "trq212",
             "noahzweben",
             "amorriscode",
             "alexalbert__",
             "neilhtennek",
             "lydiahallie"
           ]
+        },
+        "former_claude_code_team": {
+          "name": "前 Claude Code 团队成员",
+          "filter_by_keywords": true,
+          "score": 60,
+          "accounts": ["trq212"]
         },
         "founders": {
           "name": "Anthropic 创始人",

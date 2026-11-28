@@ -140,8 +140,14 @@ claude-news-bot/
           "name": "Claude Code 核心团队",
           "filter_by_keywords": false,
           "score": 80,
-          "accounts": ["bcherny", "catwu", "trq212", "noahzweben",
+          "accounts": ["bcherny", "catwu", "noahzweben",
                        "amorriscode", "alexalbert__", "neilhtennek", "lydiahallie"]
+        },
+        "former_claude_code_team": {
+          "name": "前 Claude Code 团队成员",
+          "filter_by_keywords": true,
+          "score": 60,
+          "accounts": ["trq212"]
         },
         "founders": {
           "name": "Anthropic 创始人",
@@ -271,7 +277,8 @@ class NewsItem:
 **X (Twitter) 账号分组：**
 - **官方账号**（不做关键词过滤）：@AnthropicAI、@claudeai、@ClaudeDevs
 - **生态自动账号**（不做关键词过滤）：@ClaudeCodeLog（Claude Code 变更日志 bot，注意：twitterapi.io 对它无数据，靠 nitter 回退采集）
-- **Claude Code 核心团队**（不做关键词过滤）：@bcherny、@catwu、@trq212、@noahzweben、@amorriscode、@alexalbert__、@neilhtennek、@lydiahallie
+- **Claude Code 核心团队**（不做关键词过滤）：@bcherny、@catwu、@noahzweben、@amorriscode、@alexalbert__、@neilhtennek、@lydiahallie
+- **前 Claude Code 团队成员**（按关键词过滤）：@trq212（2026-11-26 宣布加入 OpenAI）
 - **Anthropic 创始人**（按关键词过滤）：@DarioAmodei、@DanielaAmodei、@jackclarkSF、@jaredkaplan
 - **核心研究员**（按关键词过滤）：@karpathy、@sleepinyourhat、@ch402、@johnschulman2、@amandaaskell
 
@@ -425,8 +432,10 @@ python3 push_to_feishu.py
 
 | 模式 | 执行者 | 质量 | 适用场景 |
 |------|--------|------|---------|
-| AI 整理 | `ai_report.py`（Cursor SDK 无头代理，需 `CURSOR_API_KEY`） | 高（摘要、点评、TOP 1 精选、择优） | 首选，Actions 中自动优先 |
-| 降级整理 | `generate_report.py`（纯模板） | 基础（标题+链接+板块分类） | AI 不可用时自动兜底 |
+| AI 整理 | `ai_report.py`（Cursor SDK 无头代理，需 `CURSOR_API_KEY`） | 高（摘要、点评、TOP 1 精选、择优） | Actions 唯一整理方式 |
+| 模板整理 | `generate_report.py`（纯模板） | 基础（标题+链接+板块分类，英文原文不翻译） | 仅本地手动使用；Actions 中 AI 失败时不再用它兜底 |
+
+Actions 中 AI 的三种结局：写出日报则推群；AI 判断当天没有值得推送的内容时写 `skip_YYYYMMDD.txt` 说明原因，当天静默跳过；运行出错或完成却未产出则重试一次，仍失败就当天不推送、私信管理员，且不记已推送，留给备份触发当天重跑。
 
 ### 编辑原则（两种模式共同遵守）
 - **宁缺毋滥**：板块没有新内容就整个省略，不硬塞旧闻；TOP 1 仅在官方有真正重要内容时设置
@@ -448,7 +457,7 @@ python3 push_to_feishu.py
   - `LARK_APP_ID`：飞书应用 App ID（必需）
   - `LARK_APP_SECRET`：飞书应用 App Secret（必需）
   - `TWITTERAPI_IO_KEY`：twitterapi.io 的 API Key（必需）
-  - `CURSOR_API_KEY`：Cursor API Key，用于 AI 整理（可选，缺省时自动降级模板整理）
+  - `CURSOR_API_KEY`：Cursor API Key，用于 AI 整理（必需，需付费计划账号签发；缺失或失效时当天不推送并私信管理员）
 - 优势：公开仓库 Actions 免费无限量；runner 在海外，所有海外信息源直连；全 bot 身份认证无需扫码，天然适配 CI
 - 注意：Actions cron 有 3~15 分钟浮动；每次运行的 raw/news 产物会归档为 artifact 保留 14 天
 - **限制：互动指令机器人（bot_listener）是常驻进程，无法跑在 Actions 上**，需要单独宿主（本机 manage.sh 或服务器 systemd）
@@ -597,7 +606,12 @@ systemctl status claude-news-bot
 
 ## 📝 版本历史
 
-### v2.8 (当前版本)
+### v2.9 (当前版本)
+- AI 整理失败不再降级推送英文模板：重试仍失败则当天不推送、私信管理员，不记已推送，由备份触发当天重跑（2026-11-17 起 key 失效、11-28 AI 偶发未产出，两次推送了英文模板）
+- AI 主动跳过需写 `skip_YYYYMMDD.txt` 说明原因，与「运行完成却未产出」区分开；后者计入重试，并把 AI 回复文本写进日志
+- @trq212 移到「前 Claude Code 团队成员」分组，按关键词过滤
+
+### v2.8
 - 新增跨天事件去重：`mark_seen.py` 把每日日报条目标题记入 `recent_topics.json`（保留 7 天，Actions 回写），`ai_report.py` 注入 prompt——同一事件的连日跟进报道仅在有实质新进展时以"进展跟进"形式出现，最多上一次 TOP 1（修复 Auto Mode 事件连续 3 天占据 TOP 1 的问题，2026-08-09~11 实例）
 - 种子数据已回填 8/9~8/11 三天的推送标题（从群消息整理，8/10、8/11 为部分清单）
 

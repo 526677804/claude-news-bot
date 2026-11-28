@@ -65,25 +65,37 @@ jobs:
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
         run: python3 fetch_news.py
 
-      - name: 生成报告（AI 整理优先，失败自动降级模板整理）
+      # 不再降级到 generate_report.py：模板版是未翻译的英文原文，宁缺毋滥（2026-11-28 决定）
+      - name: 生成报告（AI 整理；重试仍失败则当天不推送并私信管理员）
         id: report
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           PYTHONUNBUFFERED: '1'
         run: |
-          python3 ai_report.py || python3 generate_report.py
+          if ! python3 ai_report.py; then
+            echo "ai_failed=true" >> "$GITHUB_OUTPUT"
+          fi
           if [ -f "news_$(date +%Y%m%d).md" ]; then
             echo "has_report=true" >> "$GITHUB_OUTPUT"
           else
             echo "has_report=false" >> "$GITHUB_OUTPUT"
-            echo "ℹ️ 今日无新增资讯，跳过推送"
+            echo "ℹ️ 今天没有可推送的日报，跳过推送"
           fi
+
+      - name: AI 整理失败告警（私信管理员）
+        if: steps.report.outputs.ai_failed == 'true'
+        run: |
+          python3 push_to_feishu.py --alert "AI 整理重试后仍失败，今天的日报没有推送" \
+            "当天的资讯没有记为已推送；当天晚些时候备份触发会自动重试一次（GitHub 定时常延迟到晚上），成功会照常推群。
+          运行日志：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
       - name: 推送到飞书
         if: steps.report.outputs.has_report == 'true'
         run: python3 push_to_feishu.py
 
+      # AI 失败时不记已推送：seen_urls.json 的更新日期决定备份触发是否重跑，资讯也留给重跑使用
       - name: 更新已推送记录（防止旧闻重复推送）
+        if: steps.report.outputs.ai_failed != 'true'
         run: |
           python3 mark_seen.py
           git add seen_urls.json recent_topics.json

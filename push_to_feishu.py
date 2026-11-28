@@ -78,7 +78,14 @@ def send_text_message(chat_id: str, text: str) -> bool:
         return False
 
 
-def send_alert_to_admin(admin_user_id: str, error_msg: str) -> bool:
+DEFAULT_ALERT_HINTS = """请检查：
+1. 采集脚本是否正常运行
+2. 飞书 API 是否可用
+3. 网络连接是否正常"""
+
+
+def send_alert_to_admin(admin_user_id: str, error_msg: str,
+                        hints: str = DEFAULT_ALERT_HINTS) -> bool:
     """
     给管理员发送失败告警私信
     """
@@ -89,10 +96,7 @@ def send_alert_to_admin(admin_user_id: str, error_msg: str) -> bool:
 时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 错误信息：{error_msg}
 
-请检查：
-1. 采集脚本是否正常运行
-2. 飞书 API 是否可用
-3. 网络连接是否正常
+{hints}
 """.strip()
         
         cmd = [
@@ -126,6 +130,13 @@ def main():
     chat_id = config['feishu']['chat_id']
     chat_name = config['feishu']['chat_name']
     admin_user_id = config['feishu'].get('admin_user_id', '')
+
+    # 用法：push_to_feishu.py --alert "错误信息" ["处理说明"]，只私信管理员，不推群
+    if len(sys.argv) >= 3 and sys.argv[1] == '--alert':
+        hints = sys.argv[3] if len(sys.argv) >= 4 else DEFAULT_ALERT_HINTS
+        if not admin_user_id or not send_alert_to_admin(admin_user_id, sys.argv[2], hints):
+            sys.exit(1)
+        return
     
     print(f"📤 准备推送到飞书群: {chat_name}")
     print(f"   Chat ID: {chat_id}")
