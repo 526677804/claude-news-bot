@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-11-27T03:01:43.503027",
+  "updated_at": "2026-11-28T03:01:19.085055",
   "days": {
-    "20261120": [
-      "Claude Code 发布 v2.1.329",
-      "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-      "Anthropic’s IPO could deliver $156B to charity",
-      "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-      "Anthropic’s Nasdaq debut",
-      "@AnthropicAI: Remarks from Anthropic CEO @DarioAmodei on our initial public offering: My co-founders and I started",
-      "@AnthropicAI: Video"
-    ],
     "20261121": [
       "Claude Code 发布 v2.1.330",
       "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
@@ -61,6 +52,11 @@
       "Session Vault：备份 Claude Code 会话，并在任意机器上继续使用",
       "lip-dictation：用端侧唇语识别为 Claude Code 做「无声听写」",
       "有人在 Anthropic 办公地外绝食抗议，已进入第 3 天"
+    ],
+    "20261128": [
+      "@trq212: Models should be scored more like an RPG stat sheet than a leaderboard. https://t.co/dVkFqXXgNE",
+      "@trq212: everything is reps https://t.co/K3nHtzfySl",
+      "@trq212: RT @ryolu_: the race is not inevitable  last year was fun.  the models weren't that good yet, so i h"
     ]
   }
 }
